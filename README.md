@@ -2,6 +2,8 @@
 
 A monitoring agent for humanitarian assistance and disaster response (HADR).
 
+> Status: starter template — see [The end state](#the-end-state) for what this becomes by the end of the course.
+
 ## The end state
 
 By Wednesday afternoon this repository contains an agent that:
