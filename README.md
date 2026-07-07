@@ -25,6 +25,14 @@ How it does any of that is not specified anywhere in this repository. That is th
 
 `prd.html` · `system-view.html` · `implementation-notes.md` · `dashboard.html` · `goal.md` · at least one skill
 
+## Repository layout
+
+- `feeds/` — reference notes on the live disaster feeds (`gdacs.md`, `reliefweb.md`, `usgs.md`)
+- `docs/` — supporting documentation, including `solutions/`
+- `scripts/` — helper scripts (see `scripts/README.md`)
+- `skills/` — agent skills (see `skills/README.md`)
+- `CLAUDE.md` — project instructions for Claude Code; fill this in first
+
 ## Day 1 setup
 
 1. Sign in to Claude Code with your Team seat
