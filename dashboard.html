@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HADR Sitrep — 8 Jul 2026</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1d21; --muted: #5c6570; --line: #e3e7eb; --card: #f6f8fa;
+    --red: #c62828; --orange: #e65100; --yellow: #9a7b00; --green: #2e7d32; --accent: #0f62fe;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --fg: #e6e9ec; --muted: #9aa4ae; --line: #2b3138; --card: #1c2126;
+      --red: #ef9a9a; --orange: #ffb74d; --yellow: #ffe082; --green: #a5d6a7; --accent: #6ea8ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 2.2rem 1.4rem 4rem; }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: -.02em; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .6rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); font-size: .9rem; margin: .2rem 0 1.4rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .incident { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--line);
+    border-radius: 6px; padding: .9rem 1.1rem; margin: .8rem 0; }
+  .incident.red { border-left-color: var(--red); }
+  .incident.orange { border-left-color: var(--orange); }
+  .incident.yellow { border-left-color: var(--yellow); }
+  .badge { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .06em; padding: .12em .55em; border-radius: 4px; border: 1px solid currentColor; }
+  .badge.red { color: var(--red); } .badge.orange { color: var(--orange); } .badge.yellow { color: var(--yellow); }
+  .incident h3 { margin: .35rem 0 .3rem; font-size: 1.02rem; }
+  .incident p { margin: .3rem 0; font-size: .95rem; }
+  .detail { color: var(--muted); font-size: .85rem; }
+  .quietline { color: var(--muted); }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .84rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>HADR situation report</h1>
+<p class="meta">Generated 8 July 2026, 10:28 SGT (02:28 UTC) · first report from this monitor ·
+sources: USGS <span title="healthy">✅</span></p>
+
+<p>Six earthquakes in the monitoring window meet the humanitarian-impact threshold
+(USGS PAGER yellow or above). All are first-time reports — this is the monitor's
+first run, covering events revised or published over the past week. Two are
+red-level, both from the same sequence in Venezuela.</p>
+
+<h2>Red — humanitarian crisis likely</h2>
+
+<div class="incident red">
+  <span class="badge red">PAGER red</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp">M 7.5 — 20 km ESE of Yumare, Venezuela</a></h3>
+  <p>Struck 25 June, 06:05 SGT at 10 km depth — shallow, with severe estimated shaking
+  (MMI 8.6) and 704 felt reports. PAGER red signals estimated losses of 1,000+ fatalities
+  or $1B+. Reviewed status; parameters last revised 8 July.</p>
+  <p class="detail">Occurred 2026-06-24 22:05 UTC · lat 10.51, lon −68.50 · significance 2612</p>
+</div>
+
+<div class="incident red">
+  <span class="badge red">PAGER red</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc">M 7.2 — 21 km ENE of San Felipe, Venezuela</a></h3>
+  <p>Struck one minute before the M 7.5 above, roughly 6 km away — a doublet within the
+  same sequence, at 28 km depth with MMI 8.6. Combined, these two events are the dominant
+  humanitarian concern in this report.</p>
+  <p class="detail">Occurred 2026-06-24 22:04 UTC · lat 10.41, lon −68.56 · significance 2000</p>
+</div>
+
+<h2>Orange — significant impact expected</h2>
+
+<div class="incident orange">
+  <span class="badge orange">PAGER orange</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000stbz">M 6.3 — 262 km SSE of Dunhuang, China (Qinghai)</a></h3>
+  <p>16 June, 17:06 SGT, 10 km depth, MMI 7.7. Note the yellow-level M 5.3 on 1 July
+  (below) is ~12 km away — an active sequence worth watching for further aftershocks.</p>
+  <p class="detail">Occurred 2026-06-16 09:06 UTC · lat 37.89, lon 95.49 · significance 1000</p>
+</div>
+
+<h2>Yellow — localized impact possible</h2>
+
+<div class="incident yellow">
+  <span class="badge yellow">PAGER yellow</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zq">M 6.9 — 33 km ENE of Noda, Japan</a></h3>
+  <p>25 June, 06:30 SGT, offshore at 34 km depth, MMI 6.7, 95 felt reports.</p>
+  <p class="detail">Occurred 2026-06-24 22:30 UTC · lat 40.25, lon 142.16 · significance 798</p>
+</div>
+
+<div class="incident yellow">
+  <span class="badge yellow">PAGER yellow</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936">M 5.6 — 11 km N of Redwood Valley, CA, USA</a></h3>
+  <p>24 June, 23:10 SGT, shallow (8.9 km) with strong local shaking (MMI 7.4) and
+  5,304 felt reports.</p>
+  <p class="detail">Occurred 2026-06-24 15:10 UTC · lat 39.36, lon −123.23 · significance 1330</p>
+</div>
+
+<div class="incident yellow">
+  <span class="badge yellow">PAGER yellow</span>
+  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9bg">M 5.3 — 272 km SSE of Dunhuang, China (Qinghai)</a></h3>
+  <p>1 July, 07:44 SGT, 10 km depth, MMI 6.5 — within the same sequence as the orange
+  M 6.3 above.</p>
+  <p class="detail">Occurred 2026-06-30 23:44 UTC · lat 37.78, lon 95.41 · significance 650</p>
+</div>
+
+<h2>Changes since last report</h2>
+<p class="quietline">First report — no prior ledger. All six incidents above are new to this monitor.</p>
+
+<h2>Everything else</h2>
+<p class="quietline">313 earthquakes of M 4.5+ tracked in the window; none of the other 307
+met the impact threshold. No data-source outages: USGS healthy throughout.</p>
+
+<footer>
+  HADR Monitor · slice 1 (USGS only — GDACS and ReliefWeb arrive in slices 2–3) ·
+  every statement above derives from <code>data/facts.json</code> generated
+  2026-07-08T02:28 UTC · alert levels are USGS PAGER estimates, not observations.
+</footer>
+
+</main>
+</body>
+</html>
