@@ -28,10 +28,9 @@
     border-radius: 6px; padding: .9rem 1.1rem; margin: .8rem 0; }
   .incident.red { border-left-color: var(--red); }
   .incident.orange { border-left-color: var(--orange); }
-  .incident.yellow { border-left-color: var(--yellow); }
   .badge { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: .06em; padding: .12em .55em; border-radius: 4px; border: 1px solid currentColor; }
-  .badge.red { color: var(--red); } .badge.orange { color: var(--orange); } .badge.yellow { color: var(--yellow); }
+  .badge.red { color: var(--red); } .badge.orange { color: var(--orange); }
   .incident h3 { margin: .35rem 0 .3rem; font-size: 1.02rem; }
   .incident p { margin: .3rem 0; font-size: .95rem; }
   .detail { color: var(--muted); font-size: .85rem; }
@@ -44,80 +43,63 @@
 <main>
 
 <h1>HADR situation report</h1>
-<p class="meta">Generated 8 July 2026, 10:28 SGT (02:28 UTC) · first report from this monitor ·
-sources: USGS <span title="healthy">✅</span></p>
+<p class="meta">Generated 8 July 2026, 10:52 SGT (02:52 UTC) ·
+sources: USGS <span title="healthy">✅</span> GDACS <span title="healthy">✅</span></p>
 
-<p>Six earthquakes in the monitoring window meet the humanitarian-impact threshold
-(USGS PAGER yellow or above). All are first-time reports — this is the monitor's
-first run, covering events revised or published over the past week. Two are
-red-level, both from the same sequence in Venezuela.</p>
+<p>Three new incidents meet the impact threshold, all from GDACS (which joined the
+monitor in this report): a red-level typhoon in the western Pacific, and two
+orange-level events — a month-long flood in China and forest fires in France.
+The six earthquake incidents reported previously are unchanged.</p>
 
 <h2>Red — humanitarian crisis likely</h2>
 
 <div class="incident red">
-  <span class="badge red">PAGER red</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp">M 7.5 — 20 km ESE of Yumare, Venezuela</a></h3>
-  <p>Struck 25 June, 06:05 SGT at 10 km depth — shallow, with severe estimated shaking
-  (MMI 8.6) and 704 felt reports. PAGER red signals estimated losses of 1,000+ fatalities
-  or $1B+. Reviewed status; parameters last revised 8 July.</p>
-  <p class="detail">Occurred 2026-06-24 22:05 UTC · lat 10.51, lon −68.50 · significance 2612</p>
-</div>
-
-<div class="incident red">
-  <span class="badge red">PAGER red</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc">M 7.2 — 21 km ENE of San Felipe, Venezuela</a></h3>
-  <p>Struck one minute before the M 7.5 above, roughly 6 km away — a doublet within the
-  same sequence, at 28 km depth with MMI 8.6. Combined, these two events are the dominant
-  humanitarian concern in this report.</p>
-  <p class="detail">Occurred 2026-06-24 22:04 UTC · lat 10.41, lon −68.56 · significance 2000</p>
+  <span class="badge red">GDACS red</span>
+  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=28&eventtype=TC">Typhoon BAVI-26 — Guam, Northern Mariana Islands, Japan, Taiwan, China</a></h3>
+  <p>Active since 1 July with maximum wind speeds of 287 km/h (Hurricane/Typhoon
+  class, &gt;74 mph). GDACS red signals that international humanitarian assistance
+  is considered likely; the current forecast episode is also red. Last updated
+  8 July, 10:35 SGT. GLIDE: TC-2026-000099-GUM.</p>
+  <p class="detail">Track position 16.8°N 135.3°E · active 1–7 Jul · alert score 3</p>
 </div>
 
 <h2>Orange — significant impact expected</h2>
 
 <div class="incident orange">
-  <span class="badge orange">PAGER orange</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000stbz">M 6.3 — 262 km SSE of Dunhuang, China (Qinghai)</a></h3>
-  <p>16 June, 17:06 SGT, 10 km depth, MMI 7.7. Note the yellow-level M 5.3 on 1 July
-  (below) is ~12 km away — an active sequence worth watching for further aftershocks.</p>
-  <p class="detail">Occurred 2026-06-16 09:06 UTC · lat 37.89, lon 95.49 · significance 1000</p>
+  <span class="badge orange">GDACS orange</span>
+  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=17&eventtype=FL">Flood — south-central China</a></h3>
+  <p>Ongoing since 6 June — a month-long event. Overall alert is orange; the most
+  recent analysis episode is green, which may indicate easing conditions worth
+  confirming tomorrow. GLIDE: FL-2026-000105-CHN.</p>
+  <p class="detail">Centred near 27.1°N 111.0°E · active since 6 Jun · alert score 2</p>
 </div>
 
-<h2>Yellow — localized impact possible</h2>
-
-<div class="incident yellow">
-  <span class="badge yellow">PAGER yellow</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zq">M 6.9 — 33 km ENE of Noda, Japan</a></h3>
-  <p>25 June, 06:30 SGT, offshore at 34 km depth, MMI 6.7, 95 felt reports.</p>
-  <p class="detail">Occurred 2026-06-24 22:30 UTC · lat 40.25, lon 142.16 · significance 798</p>
-</div>
-
-<div class="incident yellow">
-  <span class="badge yellow">PAGER yellow</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936">M 5.6 — 11 km N of Redwood Valley, CA, USA</a></h3>
-  <p>24 June, 23:10 SGT, shallow (8.9 km) with strong local shaking (MMI 7.4) and
-  5,304 felt reports.</p>
-  <p class="detail">Occurred 2026-06-24 15:10 UTC · lat 39.36, lon −123.23 · significance 1330</p>
-</div>
-
-<div class="incident yellow">
-  <span class="badge yellow">PAGER yellow</span>
-  <h3><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9bg">M 5.3 — 272 km SSE of Dunhuang, China (Qinghai)</a></h3>
-  <p>1 July, 07:44 SGT, 10 km depth, MMI 6.5 — within the same sequence as the orange
-  M 6.3 above.</p>
-  <p class="detail">Occurred 2026-06-30 23:44 UTC · lat 37.78, lon 95.41 · significance 650</p>
+<div class="incident orange">
+  <span class="badge orange">GDACS orange</span>
+  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF">Forest fires — southern France</a></h3>
+  <p>Burning since 4 July with an affected area of 6,561 ha. Current episode
+  remains orange. GLIDE: WF-2026-000102-FRA.</p>
+  <p class="detail">Centred near 42.67°N 2.57°E · active 4–7 Jul · alert score 2</p>
 </div>
 
 <h2>Changes since last report</h2>
-<p class="quietline">First report — no prior ledger. All six incidents above are new to this monitor.</p>
+<p class="quietline">All six previously reported earthquake incidents are unchanged:
+the Venezuela M 7.5 and M 7.2 remain red; the Qinghai (China) M 6.3 remains orange;
+the Noda (Japan) M 6.9, Redwood Valley (CA) M 5.6 and Qinghai M 5.3 remain yellow.
+No downgrades, no retractions.</p>
 
 <h2>Everything else</h2>
-<p class="quietline">313 earthquakes of M 4.5+ tracked in the window; none of the other 307
-met the impact threshold. No data-source outages: USGS healthy throughout.</p>
+<p class="quietline">413 events tracked across both sources (313 USGS earthquakes,
+100 GDACS multi-hazard events); 11 incidents are corroborated by both sources —
+every fresh significant earthquake GDACS lists is matched to its USGS record.
+None of the remaining tracked events met the impact threshold. No data-source
+outages.</p>
 
 <footer>
-  HADR Monitor · slice 1 (USGS only — GDACS and ReliefWeb arrive in slices 2–3) ·
-  every statement above derives from <code>data/facts.json</code> generated
-  2026-07-08T02:28 UTC · alert levels are USGS PAGER estimates, not observations.
+  HADR Monitor · slice 2 (USGS + GDACS with cross-source correlation — ReliefWeb
+  arrives in slice 3) · every statement above derives from <code>data/facts.json</code>
+  generated 2026-07-08T02:52 UTC · alert levels are PAGER/GDACS impact estimates,
+  not observations.
 </footer>
 
 </main>

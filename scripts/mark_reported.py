@@ -23,13 +23,20 @@ def main() -> int:
         facts = json.load(handle)
     state = store.load_state(STATE_PATH)
 
+    marked = 0
     for item in facts["significant"]:
-        state["ledger"][item["key"]] = {
-            "reported_level": item["event"]["impact"]["pager_alert"],
-            "reported_at": facts["generated_at"],
-        }
+        # The reader was shown the whole incident, so every member is
+        # reported at its own current level - a corroborating source view
+        # arriving later must not re-alert.
+        for member in item["incident"]["members"]:
+            state["ledger"][member["key"]] = {
+                "reported_level": member["alert_level"],
+                "reported_at": facts["generated_at"],
+            }
+            marked += 1
     store.save_state(state, STATE_PATH)
-    print("ledger: marked {} incident(s) as reported".format(len(facts["significant"])))
+    print("ledger: marked {} event record(s) across {} incident(s)".format(
+        marked, len(facts["significant"])))
     return 0
 
 
