@@ -9,13 +9,23 @@ render time. Every normalized event carries:
                         without changing its alert level.
 """
 
+import re
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from typing import Optional
 
 GDACS_HAZARDS = {
     "EQ": "earthquake", "TS": "tsunami", "TC": "tropical_cyclone",
     "FL": "flood", "VO": "volcano", "DR": "drought", "WF": "wildfire",
 }
+
+# GLIDE type prefixes (glidenumber.net) mapped onto our hazard vocabulary.
+GLIDE_HAZARDS = dict(GDACS_HAZARDS, **{
+    "FF": "flood", "ST": "storm", "EP": "epidemic", "LS": "landslide",
+    "CW": "cold_wave", "HT": "heat_wave", "FR": "fire", "AC": "accident",
+})
+
+GLIDE_PATTERN = re.compile(r"^[A-Z]{2}-\d{4}-\d{6}(-[A-Z]{3})?$")
 
 
 def _iso_from_epoch_ms(ms: Optional[int]) -> Optional[str]:
@@ -66,6 +76,54 @@ def usgs_feature(feature: dict) -> Optional[dict]:
         },
         "review_status": props.get("status"),  # automatic | reviewed | deleted
         "url": props.get("url"),
+    }
+
+
+def reliefweb_item(item: dict) -> Optional[dict]:
+    """ReliefWeb disasters RSS item -> normalized event, or None if unusable.
+
+    A ReliefWeb disaster record is an editorial decision, not a measurement:
+    it has no alert level and no coordinates. Its existence is the signal.
+    """
+    link = item.get("link") or ""
+    if not link:
+        return None
+    glide = None
+    countries = []
+    for category in item.get("categories", []):
+        if GLIDE_PATTERN.match(category):
+            glide = category
+        elif category:
+            # "Venezuela (Bolivarian Republic of)" -> "Venezuela"
+            countries.append(category.split(" (")[0].strip())
+    key = "reliefweb:" + (glide or link.rstrip("/").rsplit("/", 1)[-1])
+    occurred = None
+    if item.get("pubdate"):
+        try:
+            occurred = parsedate_to_datetime(item["pubdate"]).astimezone(timezone.utc).isoformat()
+        except (TypeError, ValueError):
+            pass
+    hazard = GLIDE_HAZARDS.get(glide.split("-")[0], "other") if glide else "other"
+    return {
+        "source": "reliefweb",
+        "stable_key": key,
+        "alias_ids": [key],
+        "hazard": hazard,
+        "alert_level": None,  # editorial record; existence is the signal
+        "revision_signature": item.get("title") or "",
+        "occurred_at": occurred,  # record creation date (day precision), lags the event
+        "updated_at": occurred,
+        "geo": {"lon": None, "lat": None, "depth_km": None},
+        "title": item.get("title"),
+        "place": ", ".join(countries) or None,
+        "countries": countries,
+        "magnitude": None,
+        "mag_type": None,
+        "glide": glide,
+        "iso3": glide.rsplit("-", 1)[-1] if glide and GLIDE_PATTERN.match(glide) and glide.count("-") == 3 else None,
+        "impact": {"editorial": True},
+        "review_status": "current",
+        "url": link,
     }
 
 

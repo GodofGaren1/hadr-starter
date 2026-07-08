@@ -1,0 +1,70 @@
+# Morning sitrep.
+#
+# The shape matters more than the contents:
+#   1. a deterministic script decides whether anything changed;
+#   2. a headless model call runs only if it did.
+# The model never decides whether to wake up.
+
+name: Morning sitrep
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # 08:20 Asia/Singapore = 00:20 UTC (SG has no DST, so a fixed UTC time is
+    # correct year-round; :20 avoids the on-the-hour Actions cron jitter).
+    - cron: "20 0 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sitrep
+  cancel-in-progress: false
+
+jobs:
+  sitrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The deterministic check: fetch, reconcile, correlate, triage.
+      # Exit 0 even when a source is down (degradation is data); nonzero
+      # means the pipeline itself is broken and the run must fail loudly.
+      - name: Run pipeline
+        run: python3 scripts/run_pipeline.py
+
+      - name: Decide whether anything changed
+        id: check
+        run: python3 scripts/check_changes.py
+
+      # The report, only on change. Headless Claude runs /sitrep, which reads
+      # data/facts.json and rewrites dashboard.html — nothing else.
+      - name: Write the sitrep
+        if: steps.check.outputs.changed == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: "/sitrep"
+          claude_args: '--allowedTools "Read,Glob,Write,Edit"'
+
+      # Deterministic again: the ledger records what was actually published.
+      # If the model step failed, this is skipped and the same incidents
+      # re-surface on the next run instead of being lost.
+      - name: Mark incidents as reported
+        if: steps.check.outputs.changed == 'true'
+        run: python3 scripts/mark_reported.py
+
+      # State commits on every run (quiet runs included - proof of life);
+      # the dashboard only changes when a sitrep was written.
+      - name: Commit state and dashboard
+        run: |
+          git config user.name "hadr-monitor[bot]"
+          git config user.email "hadr-monitor[bot]@users.noreply.github.com"
+          git add data dashboard.html
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          elif [ "${{ steps.check.outputs.changed }}" = "true" ]; then
+            git commit -m "sitrep: $(date -u +%Y-%m-%d)" && git push
+          else
+            git commit -m "state: quiet run $(date -u +%Y-%m-%d)" && git push
+          fi
