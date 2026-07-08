@@ -30,3 +30,24 @@ def fetch(updated_after_iso: str) -> FetchResult:
         return FetchResult(ok=True, features=payload.get("features", []))
     except Exception as exc:
         return FetchResult(ok=False, error="{}: {}".format(type(exc).__name__, exc))
+
+
+def fetch_event_status(alias_ids: list) -> str:
+    """'deleted', 'exists', or 'unknown' for a previously seen event (FR-8).
+
+    Deleted events silently vanish from normal queries with no tombstone;
+    includedeleted=true is the only way to see them. Tried against every
+    alias because the preferred id may have changed since we stored it.
+    'unknown' (network trouble, all aliases 404) must never be treated as
+    deleted - a retraction needs positive evidence.
+    """
+    for alias in alias_ids:
+        params = {"format": "geojson", "eventid": alias, "includedeleted": "true"}
+        try:
+            payload = get_json(FDSN_URL + "?" + urllib.parse.urlencode(params))
+        except Exception:
+            continue
+        properties = payload.get("properties") or {}
+        status = (properties.get("status") or "").lower()
+        return "deleted" if status == "deleted" else "exists"
+    return "unknown"

@@ -23,6 +23,25 @@ FIRST_RUN_LOOKBACK = timedelta(days=7)
 CURSOR_OVERLAP = timedelta(minutes=10)  # re-fetch a sliver so a clock skew can't drop events
 
 
+def check_deletions(state, now_iso) -> list:
+    """FR-8: only previously REPORTED USGS events are re-checked — those are
+    the ones whose disappearance the reader must hear about. A handful of
+    queries per run, and only positive evidence retracts."""
+    deletion_changes = []
+    for key in list(state["ledger"]):
+        record = state["events"].get(key)
+        if (not record
+                or record["latest"]["source"] != "usgs"
+                or record["latest"]["review_status"] == "deleted"
+                or (state["ledger"][key] or {}).get("retraction_reported")):
+            continue
+        status = usgs.fetch_event_status(record["alias_ids"])
+        if status == "deleted":
+            deletion_changes.append(store.apply_deletion(state, key, now_iso))
+            print("usgs: {} deleted at source - retraction queued".format(key))
+    return deletion_changes
+
+
 def enrich_gdacs_details(state) -> None:
     """Lazy detail fetch, Orange+ only (FR-2): fills usgs_ref (the id bridge,
     FR-9) and late-arriving GLIDE numbers. Best-effort - a miss just leaves
@@ -79,6 +98,7 @@ def main() -> int:
     # ReliefWeb RSS: the 20 most recent editorial disaster records.
     ingest("reliefweb", reliefweb_rss.fetch(), normalize.reliefweb_item)
 
+    changes.extend(check_deletions(state, now_iso))
     enrich_gdacs_details(state)
     correlate.build_incidents(state)
 

@@ -35,7 +35,8 @@ file's look). Structure, in order:
    orange before yellow, then editorial items. For each: title, level badge,
    what happened (from `event` fields only), the `reason` in plain words
    (new incident / escalation from X / downgrade from X / now confirmed by a
-   ReliefWeb disaster record), all member source views with links
+   ReliefWeb disaster record / retraction — the source deleted this event and
+   an earlier report about it was wrong), all member source views with links
    (`incident.members`), GLIDE if present, and occurrence time in SGT.
 5. **Changes since last report** — from `previously_reported`: every entry
    whose `current_level` differs from `reported_level` gets its own line
