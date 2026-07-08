@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRD — HADR Monitor</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1d21; --muted: #5c6570; --line: #e3e7eb;
+    --accent: #0f62fe; --card: #f6f8fa; --code-bg: #f0f2f5;
+    --p0: #b3261e; --p1: #b26a00; --p2: #3d6b35;
+    --green: #2e7d32; --orange: #e65100; --red: #c62828;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --fg: #e6e9ec; --muted: #9aa4ae; --line: #2b3138;
+      --accent: #6ea8ff; --card: #1c2126; --code-bg: #20262c;
+      --p0: #ff8a80; --p1: #ffb74d; --p2: #a5d6a7;
+      --green: #81c995; --orange: #ffb74d; --red: #ef9a9a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.3rem; margin: 2.8rem 0 .8rem; padding-top: 1rem; border-top: 1px solid var(--line); letter-spacing: -.01em; }
+  h3 { font-size: 1.05rem; margin: 1.6rem 0 .5rem; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  .meta span + span::before { content: " · "; color: var(--line); }
+  .lede { font-size: 1.08rem; color: var(--muted); max-width: 46em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, pre {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: .86em; background: var(--code-bg); border-radius: 4px;
+  }
+  code { padding: .1em .35em; }
+  pre { padding: 1rem; overflow-x: auto; line-height: 1.5; }
+  .tablewrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .pill { display: inline-block; font-size: .72rem; font-weight: 600; padding: .1em .55em; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; }
+  .p0 { color: var(--p0); } .p1 { color: var(--p1); } .p2 { color: var(--p2); }
+  .lvl-green { color: var(--green); font-weight: 600; }
+  .lvl-orange { color: var(--orange); font-weight: 600; }
+  .lvl-red { color: var(--red); font-weight: 600; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .card strong:first-child { display: block; margin-bottom: .3rem; }
+  .rid { font-family: ui-monospace, Consolas, monospace; font-size: .82em; color: var(--muted); white-space: nowrap; }
+  ul.tight li { margin: .25rem 0; }
+  .nongoal li { color: var(--muted); }
+  .nongoal li strong { color: var(--fg); }
+  footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>HADR Monitor — Product Requirements</h1>
+<div class="meta">
+  <span>Version 0.1 (draft)</span>
+  <span>8 July 2026</span>
+  <span>Repo: <code>hadr-starter</code></span>
+  <span>Status: for review before Slice 1</span>
+</div>
+
+<p class="lede">
+An unattended agent that watches three live disaster feeds — GDACS, USGS and ReliefWeb —
+filters out the noise, assesses what remains, and publishes a morning situation report to
+<code>dashboard.html</code> at 08:30 Singapore time. When nothing has changed, it stays quiet.
+</p>
+
+<h2 id="problem">1. Problem &amp; context</h2>
+<p>
+A reader who cares about humanitarian disasters faces two failure modes: drowning
+(the USGS feed alone carries ~200 events a day, almost all irrelevant) and missing the
+one that matters (a shallow M6.0 under a vulnerable city, reported at 3&nbsp;a.m.).
+The three public sources that cover this space are different kinds of systems —
+<strong>USGS</strong> is a sensor catalog (minutes latency, earthquakes only),
+<strong>GDACS</strong> is an impact model (Green/Orange/Red predictions of humanitarian need,
+~25&nbsp;min–hours), and <strong>ReliefWeb</strong> is a curated editorial archive
+(hours–days) — and none of them is append-only: events are revised, upgraded, merged
+and deleted after first publication.
+</p>
+<p>
+The product turns those three sources into one trustworthy morning read: what happened,
+where, how bad, who is affected, and <em>what changed since yesterday's report</em>.
+</p>
+
+<h2 id="goals">2. Goals and non-goals</h2>
+<h3>Goals</h3>
+<ul class="tight">
+  <li>One situation report per day at 08:30 SGT, published to <code>dashboard.html</code>, generated unattended.</li>
+  <li>Triage by <strong>humanitarian impact</strong>, not physical magnitude.</li>
+  <li>Honest change tracking: upgrades, downgrades and retractions are reported, never silently rewritten.</li>
+  <li>Silence is meaningful: no report update means "nothing significant changed", never "the pipeline broke".</li>
+  <li>Every statement on the dashboard traces to a machine-recorded fact.</li>
+</ul>
+<h3>Non-goals</h3>
+<ul class="tight nongoal">
+  <li><strong>Not a real-time alerting system.</strong> Daily cadence; no pager duty, no push notifications.</li>
+  <li><strong>Not a conflict monitor.</strong> GDACS covers seven natural hazards; USGS covers one. Conflict and displacement crises are out of scope and the dashboard says so.</li>
+  <li><strong>Not an authority.</strong> The report links to sources and never substitutes for national warning systems (per GDACS terms of use).</li>
+  <li><strong>No tsunami warnings.</strong> The USGS <code>tsunami</code> flag does not indicate an actual tsunami; issuing tsunami warnings requires tsunami.gov, which is out of scope for v1.</li>
+</ul>
+
+<h2 id="users">3. Primary user &amp; scenario</h2>
+<p>
+A single analyst opens <code>dashboard.html</code> with coffee at 08:30 SGT. In under two
+minutes they know: (a) any new Orange/Red-class incidents overnight, (b) status changes to
+incidents already being tracked — escalations first, (c) corrections/retractions, and
+(d) whether any data source was unreachable, so absence of news is trustworthy.
+</p>
+
+<h2 id="sources">4. Data sources (verified July 2026)</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Source</th><th>Role</th><th>Interface used</th><th>Key constraints</th></tr>
+  <tr>
+    <td><strong>USGS</strong></td>
+    <td>Detection — raw earthquake catalog</td>
+    <td>FDSN query API<br><code>earthquake.usgs.gov/fdsnws/event/1/query</code><br>with <code>updatedafter=&lt;cursor&gt;</code></td>
+    <td>Event IDs mutate (dedupe via <code>ids</code> alias set); events deleted silently; parameters revised for days; PAGER <code>alert</code> null for ~30 min; timestamps in ms epoch; public domain.</td>
+  </tr>
+  <tr>
+    <td><strong>GDACS</strong></td>
+    <td>Impact assessment — 7 hazards, alert colours</td>
+    <td>JSON API<br><code>gdacs.org/gdacsapi/api/events/geteventlist/EVENTS4APP</code> (4-day window)</td>
+    <td>Alert level = predicted need for international assistance, changes across episodes; <code>alertscore</code> not comparable across hazard types; droughts are slow-onset (10-day updates, months long); intermittent timeouts; CC&nbsp;BY&nbsp;4.0.</td>
+  </tr>
+  <tr>
+    <td><strong>ReliefWeb</strong></td>
+    <td>Confirmation &amp; enrichment — curated disasters</td>
+    <td><strong>Phase 1:</strong> RSS <code>reliefweb.int/disasters/rss.xml</code> (no approval)<br><strong>Phase 2:</strong> API v2 (pre-approved <code>appname</code>, pending)</td>
+    <td>Appname approval has human lead time — form submitted, awaiting email; 1,000 calls/day; editorial latency hours–1 day; a disaster record is an editorial decision (free triage signal); v1 API returns 410.</td>
+  </tr>
+</table>
+</div>
+<p>
+The three sources form a pipeline, not redundant copies:
+<strong>detect</strong> (USGS, minutes) → <strong>assess</strong> (GDACS, ~25 min–hours) →
+<strong>confirm &amp; enrich</strong> (ReliefWeb, hours–days).
+</p>
+
+<h2 id="system">5. System overview</h2>
+<pre>
+GitHub Actions cron — 00:20 UTC (≈ 08:30 SGT after jitter; SG has no DST)
+│
+├─ 1 FETCH        one fetcher per source; failures isolated per source
+├─ 2 NORMALIZE    source payloads → common event schema (UTC internally)
+├─ 3 RECONCILE    diff vs data/state.json → NEW / UPGRADED / DOWNGRADED /
+│                 REVISED / NEW_EPISODE / DELETED
+├─ 4 CORRELATE    GLIDE → GDACS↔USGS id bridge → fuzzy (type+country+time+distance)
+├─ 5 TRIAGE       impact rules (§6) → significant-change set + facts.json
+├─ 6 GATE         deterministic script: empty set → exit quiet, no model call
+│      └─ only if changed:
+├─ 7 ASSESS       headless Claude runs /sitrep skill on facts.json only
+└─ 8 PUBLISH      commit dashboard.html + data/state.json to the repo
+</pre>
+<div class="card">
+  <strong>The model boundary (structural rule, from sitrep.yml)</strong>
+  Deterministic code fetches, diffs, correlates and decides whether anything changed.
+  The model writes prose from a facts file. The model never fetches a feed, never decides
+  whether to wake up, and never states a fact absent from <code>facts.json</code>.
+</div>
+<p>
+State lives in the repo (<code>data/state.json</code>, committed each run): per-source event
+records with revision history, the alias/correlation table, and a <strong>reporting
+ledger</strong> — which incidents were reported at which alert level. "Changed" always means
+<em>changed relative to what the reader was last told</em>, not relative to the last poll.
+Git history is the audit log.
+</p>
+
+<h2 id="triage">6. Triage policy</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Signal</th><th>Rule</th><th>Rationale</th></tr>
+  <tr>
+    <td>GDACS alert level</td>
+    <td>Report <span class="lvl-orange">Orange</span> and <span class="lvl-red">Red</span> (event-level <code>alertlevel</code>, the running max). <span class="lvl-green">Green</span> is counted, not itemised.</td>
+    <td>Encodes predicted need for international assistance — the product's definition of "matters".</td>
+  </tr>
+  <tr>
+    <td>USGS PAGER</td>
+    <td>Report <code>alert</code> ∈ {yellow, orange, red}. Magnitude alone never triggers a report.</td>
+    <td>Magnitude is a poor impact proxy (M7 offshore ≪ shallow M6 under a city).</td>
+  </tr>
+  <tr>
+    <td>ReliefWeb disaster record</td>
+    <td>Any new disaster record is report-worthy.</td>
+    <td>A human editor at UN OCHA already decided it matters — free triage.</td>
+  </tr>
+  <tr>
+    <td>Level changes</td>
+    <td>Upgrades lead the report; downgrades and retractions appear in "changes since yesterday".</td>
+    <td>Honest change tracking; a yellow→red upgrade is the event the reader most needs.</td>
+  </tr>
+  <tr>
+    <td>Droughts (GDACS DR)</td>
+    <td>Exempt from daily "new" logic; one weekly status line.</td>
+    <td>Slow-onset: 10-day update cycle, months-long lifetime; daily diffing produces noise.</td>
+  </tr>
+  <tr>
+    <td>Cross-hazard ranking</td>
+    <td>Never sort by <code>alertscore</code> across hazard types.</td>
+    <td>Scales differ per hazard (EQ continuous; TC/FL/VO snap to 0.5/1.5/2.5; DR expert scale).</td>
+  </tr>
+</table>
+</div>
+
+<h2 id="requirements">7. Functional requirements</h2>
+
+<h3>Fetch &amp; normalize</h3>
+<div class="tablewrap">
+<table>
+  <tr><th>ID</th><th></th><th>Requirement</th><th>Acceptance</th></tr>
+  <tr><td class="rid">FR-1</td><td><span class="pill p0">P0</span></td>
+    <td>Fetch USGS via FDSN query with <code>updatedafter</code> cursor from state — returns new <em>and revised</em> events in one call; immune to rolling-window edges on delayed cron runs.</td>
+    <td>A magnitude revision to a 3-day-old event appears in the next run's diff.</td></tr>
+  <tr><td class="rid">FR-2</td><td><span class="pill p0">P0</span></td>
+    <td>Fetch GDACS <code>EVENTS4APP</code>; per-event detail and geometry fetched lazily, Orange+ only.</td>
+    <td>Green events cause no detail requests.</td></tr>
+  <tr><td class="rid">FR-3</td><td><span class="pill p1">P1</span></td>
+    <td>Fetch ReliefWeb disasters via RSS; GLIDE parsed from item description. API v2 implementation behind the same interface, activated when appname approved.</td>
+    <td>Swapping RSS→API changes no code outside the fetcher module.</td></tr>
+  <tr><td class="rid">FR-4</td><td><span class="pill p0">P0</span></td>
+    <td>A source failure never fails the run: fetcher returns data or a typed failure recorded in state.</td>
+    <td>With GDACS unreachable, the run completes and the report carries a staleness banner.</td></tr>
+  <tr><td class="rid">FR-5</td><td><span class="pill p0">P0</span></td>
+    <td>Normalize to a common schema: <code>(source, stable_key, hazard, occurred_at, geo, impact_signal, raw)</code>; all times UTC internally, SGT only at render.</td>
+    <td>USGS ms-epoch and GDACS local-naive timestamps compare correctly.</td></tr>
+</table>
+</div>
+
+<h3>Reconcile &amp; correlate</h3>
+<div class="tablewrap">
+<table>
+  <tr><th>ID</th><th></th><th>Requirement</th><th>Acceptance</th></tr>
+  <tr><td class="rid">FR-6</td><td><span class="pill p0">P0</span></td>
+    <td>USGS identity by <code>ids</code> alias-set intersection, never by single <code>id</code>; alias sets merged on every run.</td>
+    <td>An event whose preferred id flips <code>ci…</code>→<code>us…</code> is not duplicated.</td></tr>
+  <tr><td class="rid">FR-7</td><td><span class="pill p0">P0</span></td>
+    <td>GDACS identity by <code>eventtype+eventid</code>; episodes stored as versions; event-level and episode-level alert levels both tracked.</td>
+    <td>A new episode raising Orange→Red emits <code>UPGRADED</code>, not <code>NEW</code>.</td></tr>
+  <tr><td class="rid">FR-8</td><td><span class="pill p1">P1</span></td>
+    <td>Detect deletions: previously <em>reported</em> USGS events re-checked with <code>includedeleted=true</code>; deletions emit a retraction fact.</td>
+    <td>A deleted event we reported yesterday produces a retraction line, not silence.</td></tr>
+  <tr><td class="rid">FR-9</td><td><span class="pill p1">P1</span></td>
+    <td>Correlate into incidents by priority: GLIDE (late-binding, re-checked every run) → GDACS↔USGS id bridge for earthquakes → fuzzy (hazard + country + ±48 h + &lt;300 km).</td>
+    <td>The same quake from USGS and GDACS renders as one incident with two source views.</td></tr>
+</table>
+</div>
+
+<h3>Triage, gate, report</h3>
+<div class="tablewrap">
+<table>
+  <tr><th>ID</th><th></th><th>Requirement</th><th>Acceptance</th></tr>
+  <tr><td class="rid">FR-10</td><td><span class="pill p0">P0</span></td>
+    <td>Apply §6 triage to the reconciled diff; output <code>facts.json</code>: incidents, typed changes vs the reporting ledger, staleness warnings.</td>
+    <td>Every dashboard statement maps to a facts.json field.</td></tr>
+  <tr><td class="rid">FR-11</td><td><span class="pill p0">P0</span></td>
+    <td><code>scripts/check_changes.py</code>: deterministic, no model call, exit status the workflow branches on.</td>
+    <td>Empty change set → workflow ends with no model invocation and no dashboard commit.</td></tr>
+  <tr><td class="rid">FR-12</td><td><span class="pill p0">P0</span></td>
+    <td>The <code>/sitrep</code> skill (headless <code>claude -p</code>) writes <code>dashboard.html</code> from facts.json only: lead incidents, "changes since yesterday" (upgrades, downgrades, retractions), staleness banner, source links.</td>
+    <td>Report contains no claim absent from facts.json; retractions phrased as corrections.</td></tr>
+  <tr><td class="rid">FR-13</td><td><span class="pill p0">P0</span></td>
+    <td>Publish: workflow commits <code>dashboard.html</code> + <code>data/state.json</code>; state committed even on quiet runs (proof of life).</td>
+    <td>A quiet day still shows a state commit; the dashboard timestamp is unchanged.</td></tr>
+  <tr><td class="rid">FR-14</td><td><span class="pill p2">P2</span></td>
+    <td>Raw payload snapshots archived per run for replay/backtesting of triage rules.</td>
+    <td>Yesterday's run reproducible from snapshots without network access.</td></tr>
+</table>
+</div>
+
+<h2 id="nfr">8. Non-functional requirements</h2>
+<ul class="tight">
+  <li><span class="rid">NFR-1</span> <strong>Politeness:</strong> one fetch per source per run; descriptive User-Agent; registered appname on every ReliefWeb API call; back off and degrade to RSS on 4xx — never hammer-retry.</li>
+  <li><span class="rid">NFR-2</span> <strong>Schedule:</strong> cron at 00:20 UTC (Actions cron jitters at popular minutes; Singapore has no DST, so a fixed UTC time is correct year-round).</li>
+  <li><span class="rid">NFR-3</span> <strong>Trust:</strong> silence means "no change", so pipeline failures must be loud — a failed run notifies (Actions failure email/badge), never fails silently.</li>
+  <li><span class="rid">NFR-4</span> <strong>Runtime:</strong> Python (repo standard; local interpreter is 3.9 — pin CI to match or upgrade local first). No servers, no databases: state is a committed JSON file.</li>
+  <li><span class="rid">NFR-5</span> <strong>Licensing:</strong> GDACS content attributed CC&nbsp;BY&nbsp;4.0; ReliefWeb items linked with source attribution, full document text never republished; USGS public domain.</li>
+</ul>
+
+<h2 id="plan">9. Delivery plan (three days)</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Slice</th><th>Day</th><th>Scope</th><th>Demo</th></tr>
+  <tr><td>1</td><td>2 (am)</td><td>USGS end-to-end: fetch → state → gate → hand-run sitrep → dashboard.</td><td>Smallest thing exercising every pipeline stage.</td></tr>
+  <tr><td>2</td><td>2</td><td>GDACS fetcher + correlation (NEIC id bridge) + impact triage.</td><td>One quake, two sources, one incident on the dashboard.</td></tr>
+  <tr><td>3</td><td>2 (pm)</td><td>ReliefWeb RSS enrichment, GLIDE late-binding; wire <code>sitrep.yml</code> cron; launch overnight loop.</td><td>08:30 report generated unattended.</td></tr>
+  <tr><td>4</td><td>3</td><td>Revision handling: upgrades, downgrades, deletions, reporting ledger, "changes since yesterday".</td><td>Simulated PAGER upgrade produces an escalation lead.</td></tr>
+  <tr><td>5</td><td>3</td><td>Hardening: staleness banners, retries, replay harness; demo.</td><td>Run with GDACS blocked → honest degraded report.</td></tr>
+</table>
+</div>
+
+<h2 id="risks">10. Risks &amp; mitigations</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Risk</th><th>Likelihood</th><th>Mitigation</th></tr>
+  <tr><td>ReliefWeb appname not approved this week</td><td>High</td><td>RSS-first design (FR-3); API is a drop-in swap later.</td></tr>
+  <tr><td>GDACS downtime on demo morning</td><td>Medium</td><td>FR-4 degradation + staleness banner; 4-day window self-heals next run.</td></tr>
+  <tr><td>Quiet news week → nothing to demo</td><td>Medium</td><td>Replay harness (FR-14) on an archived busy day; simulated upgrade fixture for Slice 4.</td></tr>
+  <tr><td>Actions cron delay past 08:30</td><td>Medium</td><td>Schedule 00:20 UTC; report renders its own generation time.</td></tr>
+  <tr><td>Model asserts facts not in facts.json</td><td>Medium</td><td>Model boundary (§5); skill instructs traceability; Day-3 review checks it.</td></tr>
+</table>
+</div>
+
+<h2 id="open">11. Open decisions</h2>
+<ul class="tight">
+  <li>Geographic scope: global, or weighted to a region of interest? (Affects triage thresholds; default: global.)</li>
+  <li>Dashboard on quiet days: untouched file vs. a "no significant change as of &lt;date&gt;" stamp. (Default: untouched, per "stays quiet".)</li>
+  <li>Snapshot retention: how many days of raw payloads to keep in-repo before pruning. (Default: 14.)</li>
+  <li>Whether Slice 5 adds tsunami.gov as a fourth source or defers past the course.</li>
+</ul>
+
+<h2 id="done">12. Definition of done (Wednesday)</h2>
+<ul class="tight">
+  <li>Scheduled workflow runs unattended and has produced at least one real morning report.</li>
+  <li>A quiet run provably makes no model call and no dashboard change.</li>
+  <li>One incident on the dashboard is correlated from ≥2 sources.</li>
+  <li>A revision (level change or retraction) has flowed through to a "changes since yesterday" entry.</li>
+  <li>Artefacts present: <code>prd.html</code>, <code>system-view.html</code>, <code>implementation-notes.md</code>, <code>dashboard.html</code>, <code>goal.md</code>, the <code>/sitrep</code> skill.</li>
+</ul>
+
+<footer>
+  HADR Monitor PRD v0.1 · sources verified 6–7 July 2026 (see <code>feeds/</code>) ·
+  feed research and blindspot analysis recorded in the project log.
+</footer>
+
+</main>
+</body>
+</html>
