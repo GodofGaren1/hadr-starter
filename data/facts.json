@@ -1,9 +1,70 @@
 {
  "counts": {
   "changes_this_run": 0,
-  "events_tracked": 313
+  "correlated_incidents": 11,
+  "events_tracked": 413,
+  "tracked_by_source": {
+   "gdacs": 100,
+   "usgs": 313
+  }
  },
- "generated_at": "2026-07-08T02:36:38.635194+00:00",
+ "generated_at": "2026-07-08T02:54:05.550398+00:00",
+ "previously_reported": [
+  {
+   "current_level": "orange",
+   "key": "gdacs:FL:1103933",
+   "reported_level": "orange",
+   "title": "Orange Flood in China from: 06 Jun 2026 01 to: 07 Jul 2026 01."
+  },
+  {
+   "current_level": "red",
+   "key": "gdacs:TC:1001279",
+   "reported_level": "red",
+   "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 07 Jul 2026 ."
+  },
+  {
+   "current_level": "orange",
+   "key": "gdacs:WF:1029331",
+   "reported_level": "orange",
+   "title": "Orange Forest fires in France from: 04 Jul 2026 to: 07 Jul 2026."
+  },
+  {
+   "current_level": "yellow",
+   "key": "nc75382936",
+   "reported_level": "yellow",
+   "title": "M 5.6 - 11 km N of Redwood Valley, CA"
+  },
+  {
+   "current_level": "red",
+   "key": "us6000t7zc",
+   "reported_level": "red",
+   "title": "M 7.2 - 21 km ENE of San Felipe, Venezuela"
+  },
+  {
+   "current_level": "red",
+   "key": "us6000t7zp",
+   "reported_level": "red",
+   "title": "M 7.5 - 20 km ESE of Yumare, Venezuela"
+  },
+  {
+   "current_level": "yellow",
+   "key": "us6000t7zq",
+   "reported_level": "yellow",
+   "title": "M 6.9 - 33 km ENE of Noda, Japan"
+  },
+  {
+   "current_level": "yellow",
+   "key": "us6000t9bg",
+   "reported_level": "yellow",
+   "title": "M 5.3 - 272 km SSE of Dunhuang, China"
+  },
+  {
+   "current_level": "orange",
+   "key": "us7000stbz",
+   "reported_level": "orange",
+   "title": "M 6.3 - 262 km SSE of Dunhuang, China"
+  }
+ ],
  "quiet": true,
  "significant": [],
  "source_notes": [],

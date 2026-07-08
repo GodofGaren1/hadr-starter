@@ -1,4 +1,4 @@
-"""State store and reconciliation (FR-6, FR-7 groundwork).
+"""State store and reconciliation (FR-6, FR-7).
 
 State is a single committed JSON file. Reconcile diffs freshly fetched events
 against it and emits typed changes; "changed" downstream always means changed
@@ -8,7 +8,7 @@ relative to the reporting ledger, which only mark_reported.py may write.
 import json
 from pathlib import Path
 
-STATE_VERSION = 1
+STATE_VERSION = 2
 
 ALERT_RANK = {None: 0, "": 0, "green": 1, "yellow": 2, "orange": 3, "red": 4}
 
@@ -19,15 +19,30 @@ def empty_state() -> dict:
         "cursors": {},          # source -> ISO timestamp for updatedafter-style fetching
         "sources": {},          # source -> {last_success, last_error, consecutive_failures}
         "events": {},           # canonical key -> record
+        "incidents": {},        # incident id -> {members, methods} (cross-source, FR-9)
         "ledger": {},           # canonical key -> {reported_level, reported_at}
     }
+
+
+def _migrate(state: dict) -> dict:
+    for key, default in empty_state().items():
+        state.setdefault(key, default)
+    for record in state["events"].values():  # v1 records predate the unified fields
+        latest = record["latest"]
+        latest.setdefault("alert_level", latest.get("impact", {}).get("pager_alert"))
+        latest.setdefault("revision_signature", "{}|{}".format(
+            latest.get("magnitude"), latest.get("review_status")))
+        latest.setdefault("glide", None)
+        latest.setdefault("iso3", None)
+    state["version"] = STATE_VERSION
+    return state
 
 
 def load_state(path: Path) -> dict:
     if not path.exists():
         return empty_state()
     with open(path, encoding="utf-8") as handle:
-        return json.load(handle)
+        return _migrate(json.load(handle))
 
 
 def save_state(state: dict, path: Path) -> None:
@@ -57,7 +72,11 @@ def reconcile(state: dict, events: list, now_iso: str) -> list:
                 "alias_ids": event["alias_ids"],
                 "latest": event,
                 "first_seen": now_iso,
-                "level_history": [{"at": now_iso, "level": event["impact"]["pager_alert"]}],
+                "level_history": [{
+                    "at": now_iso,
+                    "level": event["alert_level"],
+                    "episode": event.get("episode_id"),
+                }],
             }
             changes.append({"type": "NEW", "key": key})
             continue
@@ -65,22 +84,23 @@ def reconcile(state: dict, events: list, now_iso: str) -> list:
         record = state["events"][key]
         record["alias_ids"] = sorted(set(record["alias_ids"]) | set(event["alias_ids"]))
         previous = record["latest"]
-        old_rank = ALERT_RANK.get(previous["impact"]["pager_alert"], 0)
-        new_rank = ALERT_RANK.get(event["impact"]["pager_alert"], 0)
+        old_rank = ALERT_RANK.get(previous["alert_level"], 0)
+        new_rank = ALERT_RANK.get(event["alert_level"], 0)
         record["latest"] = event
 
         if new_rank != old_rank:
-            record["level_history"].append(
-                {"at": now_iso, "level": event["impact"]["pager_alert"]}
-            )
+            record["level_history"].append({
+                "at": now_iso,
+                "level": event["alert_level"],
+                "episode": event.get("episode_id"),
+            })
             kind = "UPGRADED" if new_rank > old_rank else "DOWNGRADED"
             changes.append({
                 "type": kind, "key": key,
-                "from_level": previous["impact"]["pager_alert"],
-                "to_level": event["impact"]["pager_alert"],
+                "from_level": previous["alert_level"],
+                "to_level": event["alert_level"],
             })
-        elif (event["magnitude"] != previous["magnitude"]
-              or event["review_status"] != previous["review_status"]):
+        elif event["revision_signature"] != previous["revision_signature"]:
             changes.append({"type": "REVISED", "key": key})
     return changes
 
