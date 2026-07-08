@@ -1,14 +1,15 @@
 {
  "counts": {
   "changes_this_run": 0,
-  "correlated_incidents": 11,
-  "events_tracked": 413,
+  "correlated_incidents": 13,
+  "events_tracked": 433,
   "tracked_by_source": {
    "gdacs": 100,
+   "reliefweb": 20,
    "usgs": 313
   }
  },
- "generated_at": "2026-07-08T02:54:05.550398+00:00",
+ "generated_at": "2026-07-08T03:06:52.295760+00:00",
  "previously_reported": [
   {
    "current_level": "orange",
@@ -20,7 +21,7 @@
    "current_level": "red",
    "key": "gdacs:TC:1001279",
    "reported_level": "red",
-   "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 07 Jul 2026 ."
+   "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 08 Jul 2026 ."
   },
   {
    "current_level": "orange",
@@ -33,6 +34,12 @@
    "key": "nc75382936",
    "reported_level": "yellow",
    "title": "M 5.6 - 11 km N of Redwood Valley, CA"
+  },
+  {
+   "current_level": null,
+   "key": "reliefweb:EQ-2026-000093-VEN",
+   "reported_level": null,
+   "title": "Venezuela: Earthquakes - Jun 2026"
   },
   {
    "current_level": "red",
@@ -53,10 +60,34 @@
    "title": "M 6.9 - 33 km ENE of Noda, Japan"
   },
   {
+   "current_level": null,
+   "key": "us6000t80d",
+   "reported_level": null,
+   "title": "M 4.5 - 20 km WSW of Catia La Mar, Venezuela"
+  },
+  {
+   "current_level": null,
+   "key": "us6000t8k6",
+   "reported_level": null,
+   "title": "M 4.7 - 54 km N of El Lim\u00f3n, Venezuela"
+  },
+  {
+   "current_level": null,
+   "key": "us6000t8q8",
+   "reported_level": null,
+   "title": "M 4.8 - 41 km N of El Lim\u00f3n, Venezuela"
+  },
+  {
    "current_level": "yellow",
    "key": "us6000t9bg",
    "reported_level": "yellow",
    "title": "M 5.3 - 272 km SSE of Dunhuang, China"
+  },
+  {
+   "current_level": null,
+   "key": "us6000t9w3",
+   "reported_level": null,
+   "title": "M 5.0 - 31 km NNE of Catia La Mar, Venezuela"
   },
   {
    "current_level": "orange",

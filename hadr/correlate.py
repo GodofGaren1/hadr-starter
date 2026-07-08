@@ -1,10 +1,13 @@
 """Cross-source correlation into incidents (FR-9).
 
-Three passes, strongest first: shared GLIDE number (late-binding — re-checked
+Passes, strongest first: shared GLIDE number (late-binding — re-checked
 every run because GDACS often fills it days late), the GDACS-to-USGS id
-bridge for earthquakes, then a fuzzy match (same hazard, different sources,
-within 48 hours and 300 km). Correlation links records; it never merges their
-identities — each source keeps its own view.
+bridge for earthquakes, a fuzzy match (same hazard, different sources,
+within 48 hours and 300 km), and a country-based pass for ReliefWeb records,
+which carry no coordinates (same hazard, affected country named in the other
+record's place, within 96 hours — day-precision dates plus editorial lag).
+Correlation links records; it never merges their identities — each source
+keeps its own view.
 
 Recomputed from scratch each run: the passes are deterministic and incident
 ids derive from member keys, so ids stay stable without a counter.
@@ -14,6 +17,7 @@ import math
 
 FUZZY_MAX_HOURS = 48
 FUZZY_MAX_KM = 300
+COUNTRY_PASS_MAX_HOURS = 96
 
 
 def _haversine_km(a: dict, b: dict) -> float:
@@ -91,6 +95,27 @@ def build_incidents(state: dict) -> None:
                     and _hours_apart(a["occurred_at"], b["occurred_at"]) <= FUZZY_MAX_HOURS
                     and _haversine_km(a["geo"], b["geo"]) <= FUZZY_MAX_KM):
                 link(key_a, key_b, "fuzzy")
+
+    # Pass 4 — ReliefWeb country match (no coordinates on that side)
+    def country_match(rw_event, other):
+        if rw_event.get("iso3") and other.get("iso3"):
+            return rw_event["iso3"] == other["iso3"]
+        haystack = (other.get("place") or "").lower()
+        return any(c.lower() in haystack for c in rw_event.get("countries", []) if c)
+
+    for key_a in keys:
+        a = events[key_a]
+        if a["source"] != "reliefweb":
+            continue
+        for key_b in keys:
+            b = events[key_b]
+            if (b["source"] not in ("usgs", "gdacs")
+                    or a["hazard"] != b["hazard"]
+                    or uf.find(key_a) == uf.find(key_b)):
+                continue
+            if (_hours_apart(a["occurred_at"], b["occurred_at"]) <= COUNTRY_PASS_MAX_HOURS
+                    and country_match(a, b)):
+                link(key_a, key_b, "country")
 
     groups = {}
     for key in events:

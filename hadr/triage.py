@@ -3,6 +3,11 @@
 Physical severity alone never triggers a report; the signals are USGS PAGER
 (yellow+) and the GDACS alert level (orange+ — GDACS has no yellow tier).
 
+ReliefWeb has no levels at all: a disaster record existing is the signal — a
+human editor at UN OCHA decided it matters. A recent record (7 days) makes
+its incident report-worthy on its own; an older or already-covered one
+attaching to a reported incident fires once as editorial confirmation.
+
 Significance is judged by scanning every tracked incident against the
 reporting ledger — what the reader was last told — NOT against this run's
 diff. An incident that fired while a sitrep failed (or was never published)
@@ -11,10 +16,13 @@ exempt from daily "new" logic (slow-onset; they get a periodic status line
 instead).
 """
 
+from datetime import datetime, timedelta
+
 from hadr.store import ALERT_RANK
 
 REPORT_THRESHOLD = {"usgs": ALERT_RANK["yellow"], "gdacs": ALERT_RANK["orange"]}
 DOWNGRADE_FLOOR = min(REPORT_THRESHOLD.values())
+RELIEFWEB_FRESH_DAYS = 7
 
 
 def _reportable_units(state: dict) -> list:
@@ -44,15 +52,27 @@ def _member_view(state: dict, key: str) -> dict:
 def build_facts(state: dict, changes: list, stale_transitions: list, now_iso: str) -> dict:
     changes_by_key = {c["key"]: c for c in changes}
     significant = []
+    fresh_cutoff = (datetime.fromisoformat(now_iso)
+                    - timedelta(days=RELIEFWEB_FRESH_DAYS)).isoformat()
 
     for incident_id, members in _reportable_units(state):
         report_rank = 0      # highest level that clears its own source threshold
         current_rank = 0     # highest level regardless of threshold
         reported_rank = 0    # highest level the reader has been told
+        anyone_reported = False
         lead_key = None
+        rw_unseen = None     # ReliefWeb record the reader has never been shown
+        rw_fresh = False
         for key in members:
             event = state["events"][key]["latest"]
             if event["hazard"] == "drought":
+                continue
+            if event["source"] == "reliefweb":
+                if key not in state["ledger"]:
+                    rw_unseen = key
+                    rw_fresh = bool(event["occurred_at"]) and event["occurred_at"] >= fresh_cutoff
+                else:
+                    anyone_reported = True
                 continue
             rank = ALERT_RANK.get(event["alert_level"], 0)
             current_rank = max(current_rank, rank)
@@ -61,17 +81,23 @@ def build_facts(state: dict, changes: list, stale_transitions: list, now_iso: st
                 lead_key = key
             entry = state["ledger"].get(key)
             if entry:
+                anyone_reported = True
                 reported_rank = max(reported_rank, ALERT_RANK.get(entry["reported_level"], 0))
 
         reason = None
         if report_rank > reported_rank:
-            reason = "escalation" if reported_rank else "new_incident"
+            reason = "escalation" if anyone_reported else "new_incident"
         elif reported_rank >= DOWNGRADE_FLOOR and current_rank < reported_rank:
             reason = "downgrade"
             lead_key = max(
                 (k for k in members if k in state["ledger"]),
                 key=lambda k: ALERT_RANK.get(state["ledger"][k]["reported_level"], 0),
             )
+        elif rw_unseen and (rw_fresh or anyone_reported):
+            # A fresh editorial record is news by itself; an older one only
+            # matters as confirmation of an incident the reader knows about.
+            reason = "editorial_confirmation" if anyone_reported else "new_incident"
+            lead_key = rw_unseen
 
         if reason:
             significant.append({

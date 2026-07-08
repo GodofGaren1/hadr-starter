@@ -14,7 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
 from hadr import correlate, normalize, store, triage
-from hadr.fetchers import gdacs, usgs
+from hadr.fetchers import gdacs, reliefweb_rss, usgs
 
 STATE_PATH = REPO_ROOT / "data" / "state.json"
 FACTS_PATH = REPO_ROOT / "data" / "facts.json"
@@ -75,6 +75,9 @@ def main() -> int:
     # GDACS has no cursor: EVENTS4APP is a rolling ~4-day window and
     # reconcile makes re-ingesting the same events idempotent.
     ingest("gdacs", gdacs.fetch(), normalize.gdacs_feature)
+
+    # ReliefWeb RSS: the 20 most recent editorial disaster records.
+    ingest("reliefweb", reliefweb_rss.fetch(), normalize.reliefweb_item)
 
     enrich_gdacs_details(state)
     correlate.build_incidents(state)

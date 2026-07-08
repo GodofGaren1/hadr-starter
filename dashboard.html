@@ -27,12 +27,13 @@
   .incident { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--line);
     border-radius: 6px; padding: .9rem 1.1rem; margin: .8rem 0; }
   .incident.red { border-left-color: var(--red); }
-  .incident.orange { border-left-color: var(--orange); }
+  .incident.editorial { border-left-color: var(--accent); }
   .badge { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: .06em; padding: .12em .55em; border-radius: 4px; border: 1px solid currentColor; }
-  .badge.red { color: var(--red); } .badge.orange { color: var(--orange); }
+  .badge.red { color: var(--red); } .badge.editorial { color: var(--accent); }
   .incident h3 { margin: .35rem 0 .3rem; font-size: 1.02rem; }
   .incident p { margin: .3rem 0; font-size: .95rem; }
+  .incident ul { margin: .3rem 0 .2rem; padding-left: 1.2rem; font-size: .9rem; }
   .detail { color: var(--muted); font-size: .85rem; }
   .quietline { color: var(--muted); }
   footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
@@ -43,63 +44,53 @@
 <main>
 
 <h1>HADR situation report</h1>
-<p class="meta">Generated 8 July 2026, 10:52 SGT (02:52 UTC) ·
-sources: USGS <span title="healthy">✅</span> GDACS <span title="healthy">✅</span></p>
+<p class="meta">Generated 8 July 2026, 11:04 SGT (03:04 UTC) ·
+sources: USGS <span title="healthy">✅</span> GDACS <span title="healthy">✅</span>
+ReliefWeb <span title="healthy">✅</span></p>
 
-<p>Three new incidents meet the impact threshold, all from GDACS (which joined the
-monitor in this report): a red-level typhoon in the western Pacific, and two
-orange-level events — a month-long flood in China and forest fires in France.
-The six earthquake incidents reported previously are unchanged.</p>
+<p>One significant update this run: UN OCHA's ReliefWeb — which joined the monitor
+in this report — has confirmed the Venezuela earthquakes as a tracked humanitarian
+disaster, tying together both red-level quakes and four aftershocks into a single
+incident. No new red or orange alerts from USGS or GDACS; all previously reported
+incidents are unchanged.</p>
 
-<h2>Red — humanitarian crisis likely</h2>
+<h2>Update — Venezuela earthquakes confirmed by UN OCHA</h2>
 
 <div class="incident red">
-  <span class="badge red">GDACS red</span>
-  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=28&eventtype=TC">Typhoon BAVI-26 — Guam, Northern Mariana Islands, Japan, Taiwan, China</a></h3>
-  <p>Active since 1 July with maximum wind speeds of 287 km/h (Hurricane/Typhoon
-  class, &gt;74 mph). GDACS red signals that international humanitarian assistance
-  is considered likely; the current forecast episode is also red. Last updated
-  8 July, 10:35 SGT. GLIDE: TC-2026-000099-GUM.</p>
-  <p class="detail">Track position 16.8°N 135.3°E · active 1–7 Jul · alert score 3</p>
-</div>
-
-<h2>Orange — significant impact expected</h2>
-
-<div class="incident orange">
-  <span class="badge orange">GDACS orange</span>
-  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1103933&episodeid=17&eventtype=FL">Flood — south-central China</a></h3>
-  <p>Ongoing since 6 June — a month-long event. Overall alert is orange; the most
-  recent analysis episode is green, which may indicate easing conditions worth
-  confirming tomorrow. GLIDE: FL-2026-000105-CHN.</p>
-  <p class="detail">Centred near 27.1°N 111.0°E · active since 6 Jun · alert score 2</p>
-</div>
-
-<div class="incident orange">
-  <span class="badge orange">GDACS orange</span>
-  <h3><a href="https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF">Forest fires — southern France</a></h3>
-  <p>Burning since 4 July with an affected area of 6,561 ha. Current episode
-  remains orange. GLIDE: WF-2026-000102-FRA.</p>
-  <p class="detail">Centred near 42.67°N 2.57°E · active 4–7 Jul · alert score 2</p>
+  <span class="badge red">Reported red</span>
+  <span class="badge editorial">ReliefWeb confirmed</span>
+  <h3><a href="https://reliefweb.int/disaster/eq-2026-000093-ven">Venezuela: Earthquakes — Jun 2026</a></h3>
+  <p>The M 7.5 and M 7.2 earthquakes reported previously (both PAGER red) are now a
+  ReliefWeb disaster record, created 24 June — a human editor at UN OCHA has judged
+  this a matter of humanitarian concern. The record carries GLIDE
+  <strong>EQ-2026-000093-VEN</strong>, which now links this incident across systems.
+  Correlation also attached four tracked aftershocks (M 4.5–5.0, none above the
+  impact threshold) to the same incident.</p>
+  <ul>
+    <li>ReliefWeb: <a href="https://reliefweb.int/disaster/eq-2026-000093-ven">Venezuela: Earthquakes - Jun 2026</a> (disaster record)</li>
+    <li>USGS: <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp">M 7.5 — 20 km ESE of Yumare</a> (red), <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc">M 7.2 — 21 km ENE of San Felipe</a> (red), plus 4 aftershocks M 4.5–5.0</li>
+  </ul>
+  <p class="detail">Disaster record created 24 Jun 2026 · GLIDE EQ-2026-000093-VEN · correlation: country + time match</p>
 </div>
 
 <h2>Changes since last report</h2>
-<p class="quietline">All six previously reported earthquake incidents are unchanged:
-the Venezuela M 7.5 and M 7.2 remain red; the Qinghai (China) M 6.3 remains orange;
-the Noda (Japan) M 6.9, Redwood Valley (CA) M 5.6 and Qinghai M 5.3 remain yellow.
-No downgrades, no retractions.</p>
+<p class="quietline">All nine previously reported incidents are unchanged: Typhoon
+BAVI-26 remains red; the south-central China flood and southern-France forest fires
+remain orange; the Venezuela M 7.5 and M 7.2 remain red; the Qinghai M 6.3 remains
+orange; the Noda (Japan) M 6.9, Redwood Valley (CA) M 5.6 and Qinghai M 5.3 remain
+yellow. No escalations, no downgrades, no retractions.</p>
 
 <h2>Everything else</h2>
-<p class="quietline">413 events tracked across both sources (313 USGS earthquakes,
-100 GDACS multi-hazard events); 11 incidents are corroborated by both sources —
-every fresh significant earthquake GDACS lists is matched to its USGS record.
-None of the remaining tracked events met the impact threshold. No data-source
-outages.</p>
+<p class="quietline">433 events tracked (313 USGS earthquakes, 100 GDACS multi-hazard
+events, 20 ReliefWeb disaster records); 13 correlated cross-source incidents. The
+other 19 ReliefWeb records are older disasters already past this monitor's freshness
+window and triggered no alerts. No data-source outages.</p>
 
 <footer>
-  HADR Monitor · slice 2 (USGS + GDACS with cross-source correlation — ReliefWeb
-  arrives in slice 3) · every statement above derives from <code>data/facts.json</code>
-  generated 2026-07-08T02:52 UTC · alert levels are PAGER/GDACS impact estimates,
-  not observations.
+  HADR Monitor · slice 3 (USGS + GDACS + ReliefWeb RSS; unattended 08:30 SGT run
+  wired in sitrep.yml) · every statement above derives from <code>data/facts.json</code>
+  generated 2026-07-08T03:04 UTC · alert levels are PAGER/GDACS impact estimates,
+  not observations; ReliefWeb records are editorial decisions by UN OCHA.
 </footer>
 
 </main>

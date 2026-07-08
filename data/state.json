@@ -1,6 +1,6 @@
 {
  "cursors": {
-  "usgs": "2026-07-08T02:44:05.550398+00:00"
+  "usgs": "2026-07-08T02:56:52.295760+00:00"
  },
  "events": {
   "aka2026mpakbo": {
@@ -1193,11 +1193,11 @@
     "alias_ids": [
      "gdacs:TC:1001279"
     ],
-    "episode_id": 28,
+    "episode_id": 29,
     "geo": {
      "depth_km": null,
-     "lat": 16.8,
-     "lon": 135.3
+     "lat": 16.9,
+     "lon": 134.1
     },
     "glide": "TC-2026-000099-GUM",
     "hazard": "tropical_cyclone",
@@ -1213,12 +1213,12 @@
     "occurred_at": "2026-07-01T00:00:00+00:00",
     "place": "Guam, Northern Mariana Islands, Japan, Taiwan, China",
     "review_status": "current",
-    "revision_signature": "28|3",
+    "revision_signature": "29|3",
     "source": "gdacs",
     "stable_key": "gdacs:TC:1001279",
-    "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 07 Jul 2026 .",
-    "updated_at": "2026-07-08T02:35:06+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=28&eventtype=TC",
+    "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 08 Jul 2026 .",
+    "updated_at": "2026-07-08T03:05:04+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=29&eventtype=TC",
     "usgs_ref": null
    },
    "level_history": [
@@ -1358,7 +1358,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029271",
     "title": "Green Forest fires in Angola from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:04:23+00:00",
+    "updated_at": "2026-07-08T03:04:58+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029271&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
@@ -1593,7 +1593,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029285",
     "title": "Green Forest fires in Australia from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:02:25+00:00",
+    "updated_at": "2026-07-08T03:03:26+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029285&episodeid=8&eventtype=WF",
     "usgs_ref": null
    },
@@ -1640,7 +1640,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029287",
     "title": "Green Forest fires in Australia from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:20+00:00",
+    "updated_at": "2026-07-08T03:04:14+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029287&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
@@ -1687,7 +1687,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029288",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:04:37+00:00",
+    "updated_at": "2026-07-08T03:05:06+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029288&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
@@ -1734,7 +1734,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029289",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:04:14+00:00",
+    "updated_at": "2026-07-08T03:04:51+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029289&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
@@ -1969,7 +1969,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029300",
     "title": "Green Forest fires in Angola from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:04:45+00:00",
+    "updated_at": "2026-07-08T03:05:17+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029300&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -2157,7 +2157,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029311",
     "title": "Green Forest fires in Brazil from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:44+00:00",
+    "updated_at": "2026-07-08T03:04:31+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029311&episodeid=13&eventtype=WF",
     "usgs_ref": null
    },
@@ -2486,7 +2486,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029326",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:37+00:00",
+    "updated_at": "2026-07-08T03:04:27+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029326&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
@@ -2627,7 +2627,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029329",
     "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:06:07+00:00",
+    "updated_at": "2026-07-08T03:06:40+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029329&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
@@ -2674,7 +2674,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029331",
     "title": "Orange Forest fires in France from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:02:08+00:00",
+    "updated_at": "2026-07-08T03:03:10+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
@@ -2721,7 +2721,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029332",
     "title": "Green Forest fires in Australia from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:00:35+00:00",
+    "updated_at": "2026-07-08T03:01:58+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029332&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
@@ -2815,7 +2815,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029334",
     "title": "Green Forest fires in The Democratic Republic of Congo from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:00:46+00:00",
+    "updated_at": "2026-07-08T03:02:07+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029334&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
@@ -2862,7 +2862,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029335",
     "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:01:07+00:00",
+    "updated_at": "2026-07-08T03:02:24+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029335&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
@@ -2909,7 +2909,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029336",
     "title": "Green Forest fires in The Democratic Republic of Congo from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:01+00:00",
+    "updated_at": "2026-07-08T03:03:59+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029336&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
@@ -3332,7 +3332,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029347",
     "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:02:35+00:00",
+    "updated_at": "2026-07-08T03:03:34+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029347&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
@@ -3520,7 +3520,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029352",
     "title": "Green Forest fires in Australia from: 07 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:00:15+00:00",
+    "updated_at": "2026-07-08T03:01:01+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029352&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -3543,11 +3543,11 @@
     "alias_ids": [
      "gdacs:WF:1029353"
     ],
-    "episode_id": 4,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
      "lat": 56.8252,
-     "lon": -66.3886
+     "lon": -66.3882
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3555,7 +3555,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8350 ha"
+     "severity_text": "Green impact for forestfire in 8484 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3563,12 +3563,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029353",
     "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:01:18+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029353&episodeid=4&eventtype=WF",
+    "updated_at": "2026-07-08T03:02:31+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029353&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3614,7 +3614,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029354",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:27+00:00",
+    "updated_at": "2026-07-08T03:04:20+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029354&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -3661,7 +3661,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029355",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:43+00:00",
+    "updated_at": "2026-07-08T03:06:11+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029355&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
@@ -3708,7 +3708,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029356",
     "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:51+00:00",
+    "updated_at": "2026-07-08T03:06:20+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029356&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -3802,7 +3802,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029358",
     "title": "Green Forest fires in Sudan from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:02:15+00:00",
+    "updated_at": "2026-07-08T03:03:17+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029358&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
@@ -3849,7 +3849,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029359",
     "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:04:05+00:00",
+    "updated_at": "2026-07-08T03:04:43+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029359&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
@@ -3943,7 +3943,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029361",
     "title": "Green Forest fires in The Democratic Republic of Congo from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:00:25+00:00",
+    "updated_at": "2026-07-08T03:01:44+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029361&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -3990,7 +3990,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029362",
     "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:01:29+00:00",
+    "updated_at": "2026-07-08T03:02:17+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029362&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -4037,7 +4037,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029363",
     "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:01:57+00:00",
+    "updated_at": "2026-07-08T03:03:03+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029363&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
@@ -4084,7 +4084,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029364",
     "title": "Green Forest fires in The Democratic Republic of Congo from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:03:11+00:00",
+    "updated_at": "2026-07-08T03:04:06+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029364&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4366,7 +4366,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029370",
     "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:00:56+00:00",
+    "updated_at": "2026-07-08T03:02:40+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029370&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4389,11 +4389,11 @@
     "alias_ids": [
      "gdacs:WF:1029371"
     ],
-    "episode_id": 1,
+    "episode_id": 2,
     "geo": {
      "depth_km": null,
-     "lat": 54.8124,
-     "lon": -76.3713
+     "lat": 54.8122,
+     "lon": -76.3704
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4401,7 +4401,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 9749 ha"
+     "severity_text": "Green impact for forestfire in 9979 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4409,12 +4409,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "2|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029371",
     "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:01:38+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029371&episodeid=1&eventtype=WF",
+    "updated_at": "2026-07-08T03:02:48+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029371&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4436,11 +4436,11 @@
     "alias_ids": [
      "gdacs:WF:1029372"
     ],
-    "episode_id": 1,
+    "episode_id": 2,
     "geo": {
      "depth_km": null,
      "lat": 54.7526,
-     "lon": -76.2069
+     "lon": -76.2071
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4448,7 +4448,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8334 ha"
+     "severity_text": "Green impact for forestfire in 8331 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4456,12 +4456,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "2|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029372",
     "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:02:44+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029372&episodeid=1&eventtype=WF",
+    "updated_at": "2026-07-08T03:03:50+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029372&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4507,7 +4507,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029373",
     "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:05+00:00",
+    "updated_at": "2026-07-08T03:05:32+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029373&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4554,7 +4554,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029374",
     "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:24+00:00",
+    "updated_at": "2026-07-08T03:05:52+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029374&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4601,7 +4601,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029375",
     "title": "Green Forest fires in Russian Federation from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:34+00:00",
+    "updated_at": "2026-07-08T03:06:00+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029375&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4648,7 +4648,7 @@
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029376",
     "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:05:59+00:00",
+    "updated_at": "2026-07-08T03:06:29+00:00",
     "url": "https://www.gdacs.org/report.aspx?eventid=1029376&episodeid=1&eventtype=WF",
     "usgs_ref": null
    },
@@ -4991,6 +4991,912 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EP-2026-000048-BGD": {
+   "alias_ids": [
+    "reliefweb:EP-2026-000048-BGD"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EP-2026-000048-BGD"
+    ],
+    "countries": [
+     "Bangladesh"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EP-2026-000048-BGD",
+    "hazard": "epidemic",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "BGD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-15T00:00:00+00:00",
+    "place": "Bangladesh",
+    "review_status": "current",
+    "revision_signature": "Bangladesh: Measles Outbreak - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EP-2026-000048-BGD",
+    "title": "Bangladesh: Measles Outbreak - Mar 2026",
+    "updated_at": "2026-03-15T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/ep-2026-000048-bgd"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EP-2026-000071-COD": {
+   "alias_ids": [
+    "reliefweb:EP-2026-000071-COD"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EP-2026-000071-COD"
+    ],
+    "countries": [
+     "Democratic Republic of the Congo",
+     "Uganda"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EP-2026-000071-COD",
+    "hazard": "epidemic",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-05-05T00:00:00+00:00",
+    "place": "Democratic Republic of the Congo, Uganda",
+    "review_status": "current",
+    "revision_signature": "DR Congo/Uganda: Ebola Outbreak - May 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EP-2026-000071-COD",
+    "title": "DR Congo/Uganda: Ebola Outbreak - May 2026",
+    "updated_at": "2026-05-05T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/ep-2026-000071-cod"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EP-2026-000085-LKA": {
+   "alias_ids": [
+    "reliefweb:EP-2026-000085-LKA"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EP-2026-000085-LKA"
+    ],
+    "countries": [
+     "Sri Lanka"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EP-2026-000085-LKA",
+    "hazard": "epidemic",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "LKA",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-05-01T00:00:00+00:00",
+    "place": "Sri Lanka",
+    "review_status": "current",
+    "revision_signature": "Sri Lanka: Dengue Outbreak - May 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EP-2026-000085-LKA",
+    "title": "Sri Lanka: Dengue Outbreak - May 2026",
+    "updated_at": "2026-05-01T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/ep-2026-000085-lka"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EQ-2026-000083-PHL": {
+   "alias_ids": [
+    "reliefweb:EQ-2026-000083-PHL"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EQ-2026-000083-PHL"
+    ],
+    "countries": [
+     "Indonesia",
+     "Philippines"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EQ-2026-000083-PHL",
+    "hazard": "earthquake",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "PHL",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-08T00:00:00+00:00",
+    "place": "Indonesia, Philippines",
+    "review_status": "current",
+    "revision_signature": "Philippines: Earthquake and Tsunami - Jun 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EQ-2026-000083-PHL",
+    "title": "Philippines: Earthquake and Tsunami - Jun 2026",
+    "updated_at": "2026-06-08T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/eq-2026-000083-phl"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EQ-2026-000093-VEN": {
+   "alias_ids": [
+    "reliefweb:EQ-2026-000093-VEN"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EQ-2026-000093-VEN"
+    ],
+    "countries": [
+     "Venezuela"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EQ-2026-000093-VEN",
+    "hazard": "earthquake",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "VEN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-24T00:00:00+00:00",
+    "place": "Venezuela",
+    "review_status": "current",
+    "revision_signature": "Venezuela: Earthquakes - Jun 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EQ-2026-000093-VEN",
+    "title": "Venezuela: Earthquakes - Jun 2026",
+    "updated_at": "2026-06-24T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FF-2026-000043-AFG": {
+   "alias_ids": [
+    "reliefweb:FF-2026-000043-AFG"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FF-2026-000043-AFG"
+    ],
+    "countries": [
+     "Afghanistan"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FF-2026-000043-AFG",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "AFG",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-25T00:00:00+00:00",
+    "place": "Afghanistan",
+    "review_status": "current",
+    "revision_signature": "Afghanistan: Floods - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FF-2026-000043-AFG",
+    "title": "Afghanistan: Floods - Mar 2026",
+    "updated_at": "2026-03-25T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/ff-2026-000043-afg"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000033-ETH": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000033-ETH"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000033-ETH"
+    ],
+    "countries": [
+     "Ethiopia"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000033-ETH",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "ETH",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-10T00:00:00+00:00",
+    "place": "Ethiopia",
+    "review_status": "current",
+    "revision_signature": "Ethiopia: Floods and Landslides - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000033-ETH",
+    "title": "Ethiopia: Floods and Landslides - Mar 2026",
+    "updated_at": "2026-03-10T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000033-eth"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000044-YEM": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000044-YEM"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000044-YEM"
+    ],
+    "countries": [
+     "Yemen"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000044-YEM",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "YEM",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-27T00:00:00+00:00",
+    "place": "Yemen",
+    "review_status": "current",
+    "revision_signature": "Yemen: Floods - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000044-YEM",
+    "title": "Yemen: Floods - Mar 2026",
+    "updated_at": "2026-03-27T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000044-yem"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000046-BWA": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000046-BWA"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000046-BWA"
+    ],
+    "countries": [
+     "Botswana"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000046-BWA",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "BWA",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-15T00:00:00+00:00",
+    "place": "Botswana",
+    "review_status": "current",
+    "revision_signature": "Botswana: Floods - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000046-BWA",
+    "title": "Botswana: Floods - Mar 2026",
+    "updated_at": "2026-03-15T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000046-bwa"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000063-TZA": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000063-TZA"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000063-TZA"
+    ],
+    "countries": [
+     "United Republic of Tanzania"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000063-TZA",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "TZA",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-25T00:00:00+00:00",
+    "place": "United Republic of Tanzania",
+    "review_status": "current",
+    "revision_signature": "Tanzania: Floods and Landslides - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000063-TZA",
+    "title": "Tanzania: Floods and Landslides - Mar 2026",
+    "updated_at": "2026-03-25T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000063-tza"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000080-SYR": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000080-SYR"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000080-SYR"
+    ],
+    "countries": [
+     "Syrian Arab Republic"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000080-SYR",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "SYR",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-05-20T00:00:00+00:00",
+    "place": "Syrian Arab Republic",
+    "review_status": "current",
+    "revision_signature": "Syria: Floods - May 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000080-SYR",
+    "title": "Syria: Floods - May 2026",
+    "updated_at": "2026-05-20T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000080-syr"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000087-DOM": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000087-DOM"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000087-DOM"
+    ],
+    "countries": [
+     "Dominican Republic"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000087-DOM",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "DOM",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-04-07T00:00:00+00:00",
+    "place": "Dominican Republic",
+    "review_status": "current",
+    "revision_signature": "Dominican Republic: Floods - Apr 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000087-DOM",
+    "title": "Dominican Republic: Floods - Apr 2026",
+    "updated_at": "2026-04-07T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000087-dom"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FL-2026-000106-GEO": {
+   "alias_ids": [
+    "reliefweb:FL-2026-000106-GEO"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FL-2026-000106-GEO"
+    ],
+    "countries": [
+     "Georgia"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FL-2026-000106-GEO",
+    "hazard": "flood",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "GEO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-27T00:00:00+00:00",
+    "place": "Georgia",
+    "review_status": "current",
+    "revision_signature": "Georgia: Floods - Jun 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FL-2026-000106-GEO",
+    "title": "Georgia: Floods - Jun 2026",
+    "updated_at": "2026-06-27T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fl-2026-000106-geo"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FR-2026-000052-LBR": {
+   "alias_ids": [
+    "reliefweb:FR-2026-000052-LBR"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FR-2026-000052-LBR"
+    ],
+    "countries": [
+     "Liberia"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FR-2026-000052-LBR",
+    "hazard": "fire",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "LBR",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-24T00:00:00+00:00",
+    "place": "Liberia",
+    "review_status": "current",
+    "revision_signature": "Liberia: Fires - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FR-2026-000052-LBR",
+    "title": "Liberia: Fires - Mar 2026",
+    "updated_at": "2026-03-24T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fr-2026-000052-lbr"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:FR-2026-000055-GNB": {
+   "alias_ids": [
+    "reliefweb:FR-2026-000055-GNB"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:FR-2026-000055-GNB"
+    ],
+    "countries": [
+     "Guinea-Bissau"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "FR-2026-000055-GNB",
+    "hazard": "fire",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "GNB",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-24T00:00:00+00:00",
+    "place": "Guinea-Bissau",
+    "review_status": "current",
+    "revision_signature": "Guinea-Bissau: Fire - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:FR-2026-000055-GNB",
+    "title": "Guinea-Bissau: Fire - Mar 2026",
+    "updated_at": "2026-03-24T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/fr-2026-000055-gnb"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:ST-2026-000086-ARM": {
+   "alias_ids": [
+    "reliefweb:ST-2026-000086-ARM"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:ST-2026-000086-ARM"
+    ],
+    "countries": [
+     "Armenia"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "ST-2026-000086-ARM",
+    "hazard": "storm",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "ARM",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-06T00:00:00+00:00",
+    "place": "Armenia",
+    "review_status": "current",
+    "revision_signature": "Armenia: Hailstorm - Jun 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:ST-2026-000086-ARM",
+    "title": "Armenia: Hailstorm - Jun 2026",
+    "updated_at": "2026-06-06T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/st-2026-000086-arm"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:TC-2026-000050-FSM": {
+   "alias_ids": [
+    "reliefweb:TC-2026-000050-FSM"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:TC-2026-000050-FSM"
+    ],
+    "countries": [
+     "Guam",
+     "Micronesia",
+     "Northern Mariana Islands"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "TC-2026-000050-FSM",
+    "hazard": "tropical_cyclone",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "FSM",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-04-09T00:00:00+00:00",
+    "place": "Guam, Micronesia, Northern Mariana Islands",
+    "review_status": "current",
+    "revision_signature": "Typhoon Sinlaku - Apr 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:TC-2026-000050-FSM",
+    "title": "Typhoon Sinlaku - Apr 2026",
+    "updated_at": "2026-04-09T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/tc-2026-000050-fsm"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:TC-2026-000051-SLB": {
+   "alias_ids": [
+    "reliefweb:TC-2026-000051-SLB"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:TC-2026-000051-SLB"
+    ],
+    "countries": [
+     "Australia",
+     "Papua New Guinea",
+     "Solomon Islands"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "TC-2026-000051-SLB",
+    "hazard": "tropical_cyclone",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "SLB",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-04-06T00:00:00+00:00",
+    "place": "Australia, Papua New Guinea, Solomon Islands",
+    "review_status": "current",
+    "revision_signature": "Tropical Cyclone Maila - Apr 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:TC-2026-000051-SLB",
+    "title": "Tropical Cyclone Maila - Apr 2026",
+    "updated_at": "2026-04-06T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/tc-2026-000051-slb"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:TC-2026-000053-FJI": {
+   "alias_ids": [
+    "reliefweb:TC-2026-000053-FJI"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:TC-2026-000053-FJI"
+    ],
+    "countries": [
+     "Fiji"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "TC-2026-000053-FJI",
+    "hazard": "tropical_cyclone",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "FJI",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-04-06T00:00:00+00:00",
+    "place": "Fiji",
+    "review_status": "current",
+    "revision_signature": "Tropical Cyclone Vaianu - Apr 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:TC-2026-000053-FJI",
+    "title": "Tropical Cyclone Vaianu - Apr 2026",
+    "updated_at": "2026-04-06T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/tc-2026-000053-fji"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:VW-2026-000054-LBR": {
+   "alias_ids": [
+    "reliefweb:VW-2026-000054-LBR"
+   ],
+   "first_seen": "2026-07-08T03:04:10.628145+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:VW-2026-000054-LBR"
+    ],
+    "countries": [
+     "Liberia"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "VW-2026-000054-LBR",
+    "hazard": "other",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "LBR",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-03-24T00:00:00+00:00",
+    "place": "Liberia",
+    "review_status": "current",
+    "revision_signature": "Liberia: Windstorms - Mar 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:VW-2026-000054-LBR",
+    "title": "Liberia: Windstorms - Mar 2026",
+    "updated_at": "2026-03-24T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/vw-2026-000054-lbr"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -5441,7 +6347,7 @@
     "us6000t7zc"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": "red",
     "alias_ids": [
@@ -5486,7 +6392,7 @@
     "us6000t7zp"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": "red",
     "alias_ids": [
@@ -5578,7 +6484,7 @@
     "us6000t80d"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -6248,7 +7154,7 @@
     "us6000t8k6"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -6380,7 +7286,7 @@
     "us6000t8q8"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -9150,7 +10056,7 @@
     "us6000t9w3"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000093-VEN",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12020,10 +12926,10 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 25,
+     "felt": 26,
      "mmi": null,
      "pager_alert": null,
-     "sig": 442
+     "sig": 443
     },
     "iso3": null,
     "mag_type": "mww",
@@ -12035,7 +12941,7 @@
     "source": "usgs",
     "stable_key": "us6000tarc",
     "title": "M 5.3 - 10 km WSW of Orotina, Costa Rica",
-    "updated_at": "2026-07-08T01:54:12.957000+00:00",
+    "updated_at": "2026-07-08T02:57:10.661000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc"
    },
    "level_history": [
@@ -12410,7 +13316,7 @@
     "us7000srdr"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12454,7 +13360,7 @@
     "us7000srds"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": "green",
     "alias_ids": [
@@ -12498,7 +13404,7 @@
     "us7000srdu"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12542,7 +13448,7 @@
     "us7000srdy"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12586,7 +13492,7 @@
     "us7000sre1"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": "green",
     "alias_ids": [
@@ -12630,7 +13536,7 @@
     "us7000sre4"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12674,7 +13580,7 @@
     "us7000sre5"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12718,7 +13624,7 @@
     "us7000sre8"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12762,7 +13668,7 @@
     "us7000srec"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12806,7 +13712,7 @@
     "us7000sred"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12850,7 +13756,7 @@
     "us7000sref"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12894,7 +13800,7 @@
     "us7000srei"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12938,7 +13844,7 @@
     "us7000srem"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12982,7 +13888,7 @@
     "us7000sret"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13026,7 +13932,7 @@
     "us7000srf1"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13070,7 +13976,7 @@
     "us7000srf6"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13114,7 +14020,7 @@
     "us7000srf8"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": "green",
     "alias_ids": [
@@ -13158,7 +14064,7 @@
     "us7000srfa"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13202,7 +14108,7 @@
     "us7000srfd"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13294,7 +14200,7 @@
     "us7000srml"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13339,7 +14245,7 @@
     "us7000srmq"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13384,7 +14290,7 @@
     "us7000srn9"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13428,7 +14334,7 @@
     "us7000srnk"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13472,7 +14378,7 @@
     "us7000srpa"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13516,7 +14422,7 @@
     "us7000srph"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13560,7 +14466,7 @@
     "us7000srpn"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13605,7 +14511,7 @@
     "usauto7000srpr"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13651,7 +14557,7 @@
     "usauto7000srpu"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": "green",
     "alias_ids": [
@@ -13740,7 +14646,7 @@
     "us7000srqm"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -13916,7 +14822,7 @@
     "us7000srxa"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -14138,7 +15044,7 @@
     "us7000srzt"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -14272,7 +15178,7 @@
     "us7000ss0f"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -14316,7 +15222,7 @@
     "us7000ss4y"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -14361,7 +15267,7 @@
     "us7000ss6g"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": "green",
     "alias_ids": [
@@ -14496,7 +15402,7 @@
     "us7000ss7v"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16498,7 +17404,7 @@
     "us7000stvj"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16542,7 +17448,7 @@
     "us7000stvk"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16586,7 +17492,7 @@
     "us7000stvm"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16630,7 +17536,7 @@
     "us7000stvn"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16674,7 +17580,7 @@
     "us7000stvq"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16718,7 +17624,7 @@
     "us7000stvr"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16762,7 +17668,7 @@
     "us7000stvt"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16806,7 +17712,7 @@
     "us7000stvv"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16850,7 +17756,7 @@
     "us7000stvw"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16894,7 +17800,7 @@
     "us7000stvx"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16938,7 +17844,7 @@
     "us7000stw4"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -16982,7 +17888,7 @@
     "us7000styg"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17026,7 +17932,7 @@
     "us7000styl"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17070,7 +17976,7 @@
     "us7000styn"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17114,7 +18020,7 @@
     "us7000styr"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17158,7 +18064,7 @@
     "us7000styt"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17202,7 +18108,7 @@
     "us7000styw"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17246,7 +18152,7 @@
     "us7000stz1"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17290,7 +18196,7 @@
     "us7000stz2"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17334,7 +18240,7 @@
     "us7000su0f"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17378,7 +18284,7 @@
     "us7000su41"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17510,7 +18416,7 @@
     "us7000su4l"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17554,7 +18460,7 @@
     "us7000su4m"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17642,7 +18548,7 @@
     "us7000su57"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -17686,7 +18592,7 @@
     "us7000su59"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:reliefweb:EQ-2026-000083-PHL",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -18770,6 +19676,88 @@
    "methods": [
     "fuzzy"
    ]
+  },
+  "inc:reliefweb:EQ-2026-000083-PHL": {
+   "members": [
+    "reliefweb:EQ-2026-000083-PHL",
+    "us7000srdr",
+    "us7000srds",
+    "us7000srdu",
+    "us7000srdy",
+    "us7000sre1",
+    "us7000sre4",
+    "us7000sre5",
+    "us7000sre8",
+    "us7000srec",
+    "us7000sred",
+    "us7000sref",
+    "us7000srei",
+    "us7000srem",
+    "us7000sret",
+    "us7000srf1",
+    "us7000srf6",
+    "us7000srf8",
+    "us7000srfa",
+    "us7000srfd",
+    "us7000srml",
+    "us7000srmq",
+    "us7000srn9",
+    "us7000srnk",
+    "us7000srpa",
+    "us7000srph",
+    "us7000srpn",
+    "us7000srpr",
+    "us7000srpu",
+    "us7000srqm",
+    "us7000srxa",
+    "us7000srzt",
+    "us7000ss0f",
+    "us7000ss4y",
+    "us7000ss6g",
+    "us7000ss7v",
+    "us7000stvj",
+    "us7000stvk",
+    "us7000stvm",
+    "us7000stvn",
+    "us7000stvq",
+    "us7000stvr",
+    "us7000stvt",
+    "us7000stvv",
+    "us7000stvw",
+    "us7000stvx",
+    "us7000stw4",
+    "us7000styg",
+    "us7000styl",
+    "us7000styn",
+    "us7000styr",
+    "us7000styt",
+    "us7000styw",
+    "us7000stz1",
+    "us7000stz2",
+    "us7000su0f",
+    "us7000su41",
+    "us7000su4l",
+    "us7000su4m",
+    "us7000su57",
+    "us7000su59"
+   ],
+   "methods": [
+    "country"
+   ]
+  },
+  "inc:reliefweb:EQ-2026-000093-VEN": {
+   "members": [
+    "reliefweb:EQ-2026-000093-VEN",
+    "us6000t7zc",
+    "us6000t7zp",
+    "us6000t80d",
+    "us6000t8k6",
+    "us6000t8q8",
+    "us6000t9w3"
+   ],
+   "methods": [
+    "country"
+   ]
   }
  },
  "ledger": {
@@ -18789,21 +19777,41 @@
    "reported_at": "2026-07-08T02:28:18.028074+00:00",
    "reported_level": "yellow"
   },
+  "reliefweb:EQ-2026-000093-VEN": {
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
+   "reported_level": null
+  },
   "us6000t7zc": {
-   "reported_at": "2026-07-08T02:28:18.028074+00:00",
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
    "reported_level": "red"
   },
   "us6000t7zp": {
-   "reported_at": "2026-07-08T02:28:18.028074+00:00",
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
    "reported_level": "red"
   },
   "us6000t7zq": {
    "reported_at": "2026-07-08T02:28:18.028074+00:00",
    "reported_level": "yellow"
   },
+  "us6000t80d": {
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
+   "reported_level": null
+  },
+  "us6000t8k6": {
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
+   "reported_level": null
+  },
+  "us6000t8q8": {
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
+   "reported_level": null
+  },
   "us6000t9bg": {
    "reported_at": "2026-07-08T02:28:18.028074+00:00",
    "reported_level": "yellow"
+  },
+  "us6000t9w3": {
+   "reported_at": "2026-07-08T03:04:10.628145+00:00",
+   "reported_level": null
   },
   "us7000stbz": {
    "reported_at": "2026-07-08T02:28:18.028074+00:00",
@@ -18814,12 +19822,17 @@
   "gdacs": {
    "consecutive_failures": 0,
    "last_error": null,
-   "last_success": "2026-07-08T02:54:05.550398+00:00"
+   "last_success": "2026-07-08T03:06:52.295760+00:00"
+  },
+  "reliefweb": {
+   "consecutive_failures": 0,
+   "last_error": null,
+   "last_success": "2026-07-08T03:06:52.295760+00:00"
   },
   "usgs": {
    "consecutive_failures": 0,
    "last_error": null,
-   "last_success": "2026-07-08T02:54:05.550398+00:00"
+   "last_success": "2026-07-08T03:06:52.295760+00:00"
   }
  },
  "version": 2
