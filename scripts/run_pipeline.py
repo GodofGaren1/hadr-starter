@@ -3,8 +3,14 @@
 Writes data/state.json and data/facts.json. Never calls a model (the model
 boundary lives between this script and the /sitrep step). Exit 0 even when a
 source is down — only a bug in the pipeline itself is a failure.
+
+--replay <snapshot-dir>: re-run from an archived snapshot with no network at
+all (no fetches, no deletion checks, no detail enrichment). For backtesting
+triage against a past day, point it at a data/snapshots/<stamp>/ directory —
+and copy data/state.json aside first if you don't want the replay folded in.
 """
 
+import argparse
 import json
 import sys
 from datetime import datetime, timedelta, timezone
@@ -13,11 +19,12 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
-from hadr import correlate, normalize, store, triage
-from hadr.fetchers import gdacs, reliefweb_rss, usgs
+from hadr import correlate, normalize, snapshots, store, triage
+from hadr.fetchers import FetchResult, gdacs, reliefweb_rss, usgs
 
 STATE_PATH = REPO_ROOT / "data" / "state.json"
 FACTS_PATH = REPO_ROOT / "data" / "facts.json"
+SNAPSHOT_ROOT = REPO_ROOT / "data" / "snapshots"
 
 FIRST_RUN_LOOKBACK = timedelta(days=7)
 CURSOR_OVERLAP = timedelta(minutes=10)  # re-fetch a sliver so a clock skew can't drop events
@@ -65,8 +72,15 @@ def enrich_gdacs_details(state) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--replay", metavar="SNAPSHOT_DIR",
+                        help="re-run offline from an archived snapshot directory")
+    args = parser.parse_args()
+    replay_dir = Path(args.replay) if args.replay else None
+
     now = datetime.now(timezone.utc)
     now_iso = now.isoformat()
+    stamp = now.strftime("%Y%m%dT%H%M%SZ")
     state = store.load_state(STATE_PATH)
 
     stale_transitions = []
@@ -74,6 +88,8 @@ def main() -> int:
 
     def ingest(source: str, result, normalizer):
         if result.ok:
+            if not replay_dir:
+                snapshots.save(SNAPSHOT_ROOT, stamp, source, result.features)
             events = [e for e in map(normalizer, result.features) if e]
             source_changes = store.reconcile(state, events, now_iso)
             changes.extend(source_changes)
@@ -85,21 +101,34 @@ def main() -> int:
                 stale_transitions.append({"source": source, "error": result.error})
             print("{}: FETCH FAILED ({}); continuing degraded".format(source, result.error))
 
-    cursor = state["cursors"].get("usgs") or (now - FIRST_RUN_LOOKBACK).isoformat()
-    usgs_result = usgs.fetch(cursor)
-    ingest("usgs", usgs_result, normalize.usgs_feature)
-    if usgs_result.ok:
-        state["cursors"]["usgs"] = (now - CURSOR_OVERLAP).isoformat()
+    def replayed(source: str) -> FetchResult:
+        features = snapshots.load(replay_dir, source)
+        if features is None:
+            return FetchResult(ok=False, error="no {} snapshot in {}".format(source, replay_dir))
+        return FetchResult(ok=True, features=features)
+
+    if replay_dir:
+        ingest("usgs", replayed("usgs"), normalize.usgs_feature)
+    else:
+        cursor = state["cursors"].get("usgs") or (now - FIRST_RUN_LOOKBACK).isoformat()
+        usgs_result = usgs.fetch(cursor)
+        ingest("usgs", usgs_result, normalize.usgs_feature)
+        if usgs_result.ok:
+            state["cursors"]["usgs"] = (now - CURSOR_OVERLAP).isoformat()
 
     # GDACS has no cursor: EVENTS4APP is a rolling ~4-day window and
     # reconcile makes re-ingesting the same events idempotent.
-    ingest("gdacs", gdacs.fetch(), normalize.gdacs_feature)
+    ingest("gdacs", replayed("gdacs") if replay_dir else gdacs.fetch(),
+           normalize.gdacs_feature)
 
     # ReliefWeb RSS: the 20 most recent editorial disaster records.
-    ingest("reliefweb", reliefweb_rss.fetch(), normalize.reliefweb_item)
+    ingest("reliefweb", replayed("reliefweb") if replay_dir else reliefweb_rss.fetch(),
+           normalize.reliefweb_item)
 
-    changes.extend(check_deletions(state, now_iso))
-    enrich_gdacs_details(state)
+    if not replay_dir:  # replay is strictly offline
+        changes.extend(check_deletions(state, now_iso))
+        enrich_gdacs_details(state)
+        snapshots.prune(SNAPSHOT_ROOT)
     correlate.build_incidents(state)
 
     facts = triage.build_facts(state, changes, stale_transitions, now_iso)
