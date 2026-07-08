@@ -25,6 +25,14 @@ def main() -> int:
 
     marked = 0
     for item in facts["significant"]:
+        if item["reason"] == "retraction":
+            # Flag rather than level: the retraction was published once and
+            # must not re-fire tomorrow.
+            entry = state["ledger"].setdefault(item["key"], {})
+            entry["retraction_reported"] = True
+            entry["reported_at"] = facts["generated_at"]
+            marked += 1
+            continue
         # The reader was shown the whole incident, so every member is
         # reported at its own current level - a corroborating source view
         # arriving later must not re-alert.

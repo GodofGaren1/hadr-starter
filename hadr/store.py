@@ -105,6 +105,14 @@ def reconcile(state: dict, events: list, now_iso: str) -> list:
     return changes
 
 
+def apply_deletion(state: dict, key: str, now_iso: str) -> dict:
+    """Mark a tracked event as deleted at source; returns the change dict."""
+    record = state["events"][key]
+    record["latest"]["review_status"] = "deleted"
+    record["level_history"].append({"at": now_iso, "level": None, "deleted": True})
+    return {"type": "DELETED", "key": key}
+
+
 def record_source_status(state: dict, source: str, ok: bool, error: str, now_iso: str) -> bool:
     """Update source health; return True when the source newly went stale."""
     status = state["sources"].setdefault(

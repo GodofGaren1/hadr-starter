@@ -63,10 +63,18 @@ def build_facts(state: dict, changes: list, stale_transitions: list, now_iso: st
         lead_key = None
         rw_unseen = None     # ReliefWeb record the reader has never been shown
         rw_fresh = False
+        retracted_key = None  # reported event deleted at source, not yet retracted
         for key in members:
             event = state["events"][key]["latest"]
             if event["hazard"] == "drought":
                 continue
+            entry_for_key = state["ledger"].get(key) or {}
+            if (event["review_status"] == "deleted"
+                    and key in state["ledger"]
+                    and not entry_for_key.get("retraction_reported")):
+                retracted_key = key
+            if event["review_status"] == "deleted":
+                continue  # deleted events contribute nothing but the retraction
             if event["source"] == "reliefweb":
                 if key not in state["ledger"]:
                     rw_unseen = key
@@ -85,7 +93,11 @@ def build_facts(state: dict, changes: list, stale_transitions: list, now_iso: st
                 reported_rank = max(reported_rank, ALERT_RANK.get(entry["reported_level"], 0))
 
         reason = None
-        if report_rank > reported_rank:
+        if retracted_key:
+            # A correction to something the reader was told outranks news.
+            reason = "retraction"
+            lead_key = retracted_key
+        elif report_rank > reported_rank:
             reason = "escalation" if anyone_reported else "new_incident"
         elif reported_rank >= DOWNGRADE_FLOOR and current_rank < reported_rank:
             reason = "downgrade"
