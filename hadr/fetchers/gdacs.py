@@ -9,7 +9,7 @@ GDACS-to-USGS bridge (FR-9) needs fetch_detail — called lazily, Orange+ only.
 
 from typing import Optional
 
-from hadr.fetchers import FetchResult, get_json
+from hadr.fetchers import FetchResult, get_json, resolve_url
 
 EVENTS_URL = "https://www.gdacs.org/gdacsapi/api/events/geteventlist/EVENTS4APP"
 DETAIL_URL = "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype={}&eventid={}"
@@ -17,7 +17,7 @@ DETAIL_URL = "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype={
 
 def fetch() -> FetchResult:
     try:
-        payload = get_json(EVENTS_URL)
+        payload = get_json(resolve_url("HADR_GDACS_URL", EVENTS_URL))
         return FetchResult(ok=True, features=payload.get("features", []))
     except Exception as exc:
         return FetchResult(ok=False, error="{}: {}".format(type(exc).__name__, exc))

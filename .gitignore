@@ -2,6 +2,9 @@
 reports/
 *.sitrep.html
 
+# Raw feed snapshots — replay material, archived as CI artifacts, never committed.
+data/snapshots/
+
 # dashboard.html is the exception: it is the product, and it is committed.
 !dashboard.html
 

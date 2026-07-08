@@ -7,19 +7,16 @@ module behind the same interface once the registered appname is approved;
 nothing outside the fetcher changes.
 """
 
-import urllib.request
 import xml.etree.ElementTree as ET
 
-from hadr.fetchers import FetchResult, TIMEOUT_SECONDS, USER_AGENT
+from hadr.fetchers import FetchResult, get_bytes, resolve_url
 
 RSS_URL = "https://reliefweb.int/disasters/rss.xml"
 
 
 def fetch() -> FetchResult:
     try:
-        request = urllib.request.Request(RSS_URL, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
-            root = ET.fromstring(response.read())
+        root = ET.fromstring(get_bytes(resolve_url("HADR_RELIEFWEB_URL", RSS_URL)))
         items = []
         for item in root.findall(".//item"):
             items.append({

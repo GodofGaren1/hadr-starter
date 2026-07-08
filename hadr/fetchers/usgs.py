@@ -7,9 +7,13 @@ ones, and a delayed cron run cannot fall off a window edge.
 
 import urllib.parse
 
-from hadr.fetchers import FetchResult, get_json
+from hadr.fetchers import FetchResult, get_json, resolve_url
 
 FDSN_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query"
+
+
+def _url() -> str:
+    return resolve_url("HADR_USGS_URL", FDSN_URL)
 
 # M4.5 is the reliable global detection floor; below it international
 # coverage is too spotty to diff meaningfully.
@@ -26,7 +30,7 @@ def fetch(updated_after_iso: str) -> FetchResult:
         "eventtype": "earthquake",
     }
     try:
-        payload = get_json(FDSN_URL + "?" + urllib.parse.urlencode(params))
+        payload = get_json(_url() + "?" + urllib.parse.urlencode(params))
         return FetchResult(ok=True, features=payload.get("features", []))
     except Exception as exc:
         return FetchResult(ok=False, error="{}: {}".format(type(exc).__name__, exc))
@@ -44,7 +48,7 @@ def fetch_event_status(alias_ids: list) -> str:
     for alias in alias_ids:
         params = {"format": "geojson", "eventid": alias, "includedeleted": "true"}
         try:
-            payload = get_json(FDSN_URL + "?" + urllib.parse.urlencode(params))
+            payload = get_json(_url() + "?" + urllib.parse.urlencode(params))
         except Exception:
             continue
         properties = payload.get("properties") or {}

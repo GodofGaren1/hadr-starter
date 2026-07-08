@@ -27,11 +27,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Offline test suite first: a broken pipeline must fail loudly here,
+      # before it can write bad state or a bad report.
+      - name: Run tests
+        run: python3 -m unittest discover -s tests
+
       # The deterministic check: fetch, reconcile, correlate, triage.
       # Exit 0 even when a source is down (degradation is data); nonzero
       # means the pipeline itself is broken and the run must fail loudly.
       - name: Run pipeline
         run: python3 scripts/run_pipeline.py
+
+      # Raw feed payloads for replay/backtesting (FR-14). Not committed —
+      # archived as a build artifact instead.
+      - name: Archive feed snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshots-${{ github.run_id }}
+          path: data/snapshots/
+          retention-days: 14
+          if-no-files-found: ignore
 
       - name: Decide whether anything changed
         id: check
