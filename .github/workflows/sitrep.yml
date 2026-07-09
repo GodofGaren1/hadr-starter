@@ -13,6 +13,10 @@ on:
     # 08:20 Asia/Singapore = 00:20 UTC (SG has no DST, so a fixed UTC time is
     # correct year-round; :20 avoids the on-the-hour Actions cron jitter).
     - cron: "20 0 * * *"
+    # TEMPORARY (2026-07-09): the 00:20 cron never fired on its first day;
+    # this extra slot verifies the scheduler works at all. Remove once a
+    # schedule-triggered run has been observed.
+    - cron: "20 2 * * *"
 
 permissions:
   contents: write
