@@ -74,6 +74,16 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         run: python3 scripts/mark_reported.py
 
+      # Push a headline to Telegram on changed mornings (deterministic, no
+      # model; headline + link only). Skips itself until the TELEGRAM_*
+      # repository secrets are configured.
+      - name: Telegram notification
+        if: steps.check.outputs.changed == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 scripts/notify_telegram.py
+
       # State commits on every run (quiet runs included - proof of life);
       # the dashboard only changes when a sitrep was written.
       - name: Commit state and dashboard
