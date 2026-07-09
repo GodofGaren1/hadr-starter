@@ -13,11 +13,11 @@ on:
     # 08:20 Asia/Singapore = 00:20 UTC (SG has no DST, so a fixed UTC time is
     # correct year-round; :20 avoids the on-the-hour Actions cron jitter).
     - cron: "20 0 * * *"
-    # TEMPORARY (2026-07-09): the 00:20 cron never fired on its first day;
-    # these extra slots verify the scheduler works at all. Remove once a
+    # TEMPORARY (2026-07-09): 00:20, 02:00 and 02:20 UTC all failed to fire;
+    # the workflow has since been disable/enable-toggled to force schedule
+    # re-registration. This slot is the post-toggle test. Remove once a
     # schedule-triggered run has been observed.
-    - cron: "0 2 * * *"
-    - cron: "20 2 * * *"
+    - cron: "30 3 * * *"
 
 permissions:
   contents: write
