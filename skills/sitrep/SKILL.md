@@ -44,7 +44,8 @@ file's look). Structure, in order:
    previously reported incidents are unchanged, naming their levels.
 6. **Everything else** — counts from `counts`: events tracked per source,
    correlated incidents. One sentence.
-7. **Footer** — slice/source coverage note, the facts.json generation
+7. **Footer** — a link to the about page (`<a href="index.html">About this
+   monitor</a>`), the source coverage note, the facts.json generation
    timestamp, and the caveat that alert levels are PAGER/GDACS impact
    estimates, not observations.
 
