@@ -13,11 +13,11 @@ on:
     # 08:20 Asia/Singapore = 00:20 UTC (SG has no DST, so a fixed UTC time is
     # correct year-round; :20 avoids the on-the-hour Actions cron jitter).
     - cron: "20 0 * * *"
-    # TEMPORARY (2026-07-09): 00:20, 02:00 and 02:20 UTC all failed to fire;
-    # the workflow has since been disable/enable-toggled to force schedule
-    # re-registration. This slot is the post-toggle test. Remove once a
-    # schedule-triggered run has been observed.
-    - cron: "30 3 * * *"
+    # TEMPORARY (2026-07-09): schedules never fired while this repo was a
+    # fork (GitHub suppresses cron on forks). The repo has now left the fork
+    # network; this slot verifies the scheduler works post-detach. Remove
+    # once a schedule-triggered run has been observed.
+    - cron: "45 5 * * *"
 
 permissions:
   contents: write
