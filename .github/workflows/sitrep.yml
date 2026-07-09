@@ -17,6 +17,7 @@ on:
     # fork (GitHub suppresses cron on forks). The repo has now left the fork
     # network; this slot verifies the scheduler works post-detach. Remove
     # once a schedule-triggered run has been observed.
+    - cron: "30 5 * * *"
     - cron: "45 5 * * *"
 
 permissions:
