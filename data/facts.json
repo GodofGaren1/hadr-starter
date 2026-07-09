@@ -1,15 +1,15 @@
 {
  "counts": {
-  "changes_this_run": 0,
-  "correlated_incidents": 13,
-  "events_tracked": 433,
+  "changes_this_run": 141,
+  "correlated_incidents": 23,
+  "events_tracked": 528,
   "tracked_by_source": {
-   "gdacs": 100,
-   "reliefweb": 20,
-   "usgs": 313
+   "gdacs": 153,
+   "reliefweb": 21,
+   "usgs": 354
   }
  },
- "generated_at": "2026-07-08T03:29:15.198569+00:00",
+ "generated_at": "2026-07-09T01:40:32.058428+00:00",
  "previously_reported": [
   {
    "current_level": "orange",
@@ -27,7 +27,7 @@
    "current_level": "orange",
    "key": "gdacs:WF:1029331",
    "reported_level": "orange",
-   "title": "Orange Forest fires in France from: 04 Jul 2026 to: 07 Jul 2026."
+   "title": "Orange Forest fires in France from: 04 Jul 2026 to: 08 Jul 2026."
   },
   {
    "current_level": "yellow",

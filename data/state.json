@@ -1,13 +1,13 @@
 {
  "cursors": {
-  "usgs": "2026-07-08T03:19:01.580386+00:00"
+  "usgs": "2026-07-09T01:30:32.058428+00:00"
  },
  "events": {
   "aka2026mpakbo": {
    "alias_ids": [
     "aka2026mpakbo",
-    "us6000t8kx",
-    "atth9nhv"
+    "atth9nhv",
+    "us6000t8kx"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -41,7 +41,7 @@
     "source": "usgs",
     "stable_key": "aka2026mpakbo",
     "title": "M 4.9 - 13 km SSE of Clam Gulch, Alaska",
-    "updated_at": "2026-07-03T02:21:38.959000+00:00",
+    "updated_at": "2026-07-08T15:53:35.286000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026mpakbo"
    },
    "level_history": [
@@ -54,9 +54,9 @@
   "aka2026msxacu": {
    "alias_ids": [
     "aka2026msxacu",
-    "usauto6000t8wt",
+    "atthdj6f",
     "us6000t8wt",
-    "atthdj6f"
+    "usauto6000t8wt"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -91,7 +91,7 @@
     "source": "usgs",
     "stable_key": "aka2026msxacu",
     "title": "M 5.3 - 35 km SSW of Cordova, Alaska",
-    "updated_at": "2026-07-07T03:47:44.500000+00:00",
+    "updated_at": "2026-07-08T03:42:52.202000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026msxacu"
    },
    "level_history": [
@@ -994,6 +994,711 @@
     }
    ]
   },
+  "gdacs:EQ:1550718": {
+   "alias_ids": [
+    "gdacs:EQ:1550718"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550718",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550718"
+    ],
+    "episode_id": 1716915,
+    "geo": {
+     "depth_km": null,
+     "lat": 71.1194,
+     "lon": -7.1298
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.7M, Depth:10km"
+    },
+    "iso3": null,
+    "mag_type": null,
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T04:21:46+00:00",
+    "place": "Jan Mayen Island Region",
+    "review_status": "current",
+    "revision_signature": "1716915|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550718",
+    "title": "Green M 4.7 Earthquake in Jan Mayen Island Region at: 08 Jul 2026 04:21:46.",
+    "updated_at": "2026-07-08T05:02:07+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550718&episodeid=1716915&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716915,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550728": {
+   "alias_ids": [
+    "gdacs:EQ:1550728"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550728",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550728"
+    ],
+    "episode_id": 1716944,
+    "geo": {
+     "depth_km": null,
+     "lat": -10.7092,
+     "lon": -74.7855
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.7M, Depth:10km"
+    },
+    "iso3": "PER",
+    "mag_type": null,
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T05:00:32+00:00",
+    "place": "Peru",
+    "review_status": "current",
+    "revision_signature": "1716944|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550728",
+    "title": "Green M 4.7 Earthquake in Peru at: 08 Jul 2026 05:00:32.",
+    "updated_at": "2026-07-08T06:54:03+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550728&episodeid=1716944&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716944,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550754": {
+   "alias_ids": [
+    "gdacs:EQ:1550754"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550754",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550754"
+    ],
+    "episode_id": 1716959,
+    "geo": {
+     "depth_km": null,
+     "lat": 40.1437,
+     "lon": 141.8982
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.7M, Depth:58.199km"
+    },
+    "iso3": "JPN",
+    "mag_type": null,
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T07:35:51+00:00",
+    "place": "Japan",
+    "review_status": "current",
+    "revision_signature": "1716959|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550754",
+    "title": "Green M 4.7 Earthquake in Japan at: 08 Jul 2026 07:35:51.",
+    "updated_at": "2026-07-08T08:28:43+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550754&episodeid=1716959&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716959,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550763": {
+   "alias_ids": [
+    "gdacs:EQ:1550763"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550568",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550763"
+    ],
+    "episode_id": 1716963,
+    "geo": {
+     "depth_km": null,
+     "lat": 1.8113,
+     "lon": 127.4396
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.8M, Depth:141.091km"
+    },
+    "iso3": "IDN",
+    "mag_type": null,
+    "magnitude": 4.8,
+    "occurred_at": "2026-07-08T08:36:06+00:00",
+    "place": "Indonesia",
+    "review_status": "current",
+    "revision_signature": "1716963|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550763",
+    "title": "Green M 4.8 Earthquake in Indonesia at: 08 Jul 2026 08:36:06.",
+    "updated_at": "2026-07-08T09:16:26+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550763&episodeid=1716963&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716963,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550772": {
+   "alias_ids": [
+    "gdacs:EQ:1550772"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550772",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550772"
+    ],
+    "episode_id": 1716973,
+    "geo": {
+     "depth_km": null,
+     "lat": -20.2559,
+     "lon": 168.8353
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5.8M, Depth:10km"
+    },
+    "iso3": "VUT",
+    "mag_type": null,
+    "magnitude": 5.8,
+    "occurred_at": "2026-07-08T09:50:23+00:00",
+    "place": "Vanuatu",
+    "review_status": "current",
+    "revision_signature": "1716973|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550772",
+    "title": "Green M 5.8 Earthquake in Vanuatu at: 08 Jul 2026 09:50:23.",
+    "updated_at": "2026-07-08T12:18:17+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550772&episodeid=1716973&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716973,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550780": {
+   "alias_ids": [
+    "gdacs:EQ:1550780"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550780",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550780"
+    ],
+    "episode_id": 1716982,
+    "geo": {
+     "depth_km": null,
+     "lat": -6.1834,
+     "lon": 150.91
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5M, Depth:25.506km"
+    },
+    "iso3": "PNG",
+    "mag_type": null,
+    "magnitude": 5.0,
+    "occurred_at": "2026-07-08T11:23:04+00:00",
+    "place": "Papua New Guinea",
+    "review_status": "current",
+    "revision_signature": "1716982|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550780",
+    "title": "Green M 5 Earthquake in Papua New Guinea at: 08 Jul 2026 11:23:04.",
+    "updated_at": "2026-07-08T12:03:56+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550780&episodeid=1716982&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716982,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550781": {
+   "alias_ids": [
+    "gdacs:EQ:1550781"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550772",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550781"
+    ],
+    "episode_id": 1716985,
+    "geo": {
+     "depth_km": null,
+     "lat": -20.3518,
+     "lon": 168.6887
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5.2M, Depth:10km"
+    },
+    "iso3": "VUT",
+    "mag_type": null,
+    "magnitude": 5.2,
+    "occurred_at": "2026-07-08T11:42:51+00:00",
+    "place": "Vanuatu",
+    "review_status": "current",
+    "revision_signature": "1716985|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550781",
+    "title": "Green M 5.2 Earthquake in Vanuatu at: 08 Jul 2026 11:42:51.",
+    "updated_at": "2026-07-08T12:03:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550781&episodeid=1716985&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716985,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550783": {
+   "alias_ids": [
+    "gdacs:EQ:1550783"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550783",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550783"
+    ],
+    "episode_id": 1716988,
+    "geo": {
+     "depth_km": null,
+     "lat": -23.5549,
+     "lon": -174.9716
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5.4M, Depth:10km"
+    },
+    "iso3": null,
+    "mag_type": null,
+    "magnitude": 5.4,
+    "occurred_at": "2026-07-08T12:18:59+00:00",
+    "place": "Tonga Islands Region",
+    "review_status": "current",
+    "revision_signature": "1716988|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550783",
+    "title": "Green M 5.4 Earthquake in Tonga Islands Region at: 08 Jul 2026 12:18:59.",
+    "updated_at": "2026-07-08T14:50:47+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550783&episodeid=1716988&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1716988,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550787": {
+   "alias_ids": [
+    "gdacs:EQ:1550787"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550787",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550787"
+    ],
+    "episode_id": 1717028,
+    "geo": {
+     "depth_km": null,
+     "lat": -6.427,
+     "lon": 68.7
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5.3M, Depth:10km"
+    },
+    "iso3": null,
+    "mag_type": null,
+    "magnitude": 5.3,
+    "occurred_at": "2026-07-08T13:01:10+00:00",
+    "place": "Chagos Archipelago Region",
+    "review_status": "current",
+    "revision_signature": "1717028|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550787",
+    "title": "Green M 5.3 Earthquake in Chagos Archipelago Region at: 08 Jul 2026 13:01:10.",
+    "updated_at": "2026-07-08T16:10:42+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550787&episodeid=1717028&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717028,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550816": {
+   "alias_ids": [
+    "gdacs:EQ:1550816"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550816",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550816"
+    ],
+    "episode_id": 1717024,
+    "geo": {
+     "depth_km": null,
+     "lat": 33.0578,
+     "lon": 47.3941
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.5M, Depth:10km"
+    },
+    "iso3": "IRN",
+    "mag_type": null,
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-08T15:22:34+00:00",
+    "place": "Islamic Republic of Iran",
+    "review_status": "current",
+    "revision_signature": "1717024|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550816",
+    "title": "Green M 4.5 Earthquake in Islamic Republic of Iran at: 08 Jul 2026 15:22:34.",
+    "updated_at": "2026-07-08T16:02:43+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550816&episodeid=1717024&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717024,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550840": {
+   "alias_ids": [
+    "gdacs:EQ:1550840"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550840",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550840"
+    ],
+    "episode_id": 1717052,
+    "geo": {
+     "depth_km": null,
+     "lat": -61.7788,
+     "lon": 154.8869
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5.5M, Depth:10km"
+    },
+    "iso3": null,
+    "mag_type": null,
+    "magnitude": 5.5,
+    "occurred_at": "2026-07-08T19:07:10+00:00",
+    "place": "Balleny Islands Region",
+    "review_status": "current",
+    "revision_signature": "1717052|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550840",
+    "title": "Green M 5.5 Earthquake in Balleny Islands Region at: 08 Jul 2026 19:07:10.",
+    "updated_at": "2026-07-08T21:36:50+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550840&episodeid=1717052&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717052,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550851": {
+   "alias_ids": [
+    "gdacs:EQ:1550851"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550851",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550851"
+    ],
+    "episode_id": 1717062,
+    "geo": {
+     "depth_km": null,
+     "lat": 11.319,
+     "lon": 126.335
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.9M, Depth:10km"
+    },
+    "iso3": "PHL",
+    "mag_type": null,
+    "magnitude": 4.9,
+    "occurred_at": "2026-07-08T20:32:04+00:00",
+    "place": "Philippines",
+    "review_status": "current",
+    "revision_signature": "1717062|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550851",
+    "title": "Green M 4.9 Earthquake in Philippines at: 08 Jul 2026 20:32:04.",
+    "updated_at": "2026-07-08T21:12:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550851&episodeid=1717062&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717062,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550868": {
+   "alias_ids": [
+    "gdacs:EQ:1550868"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550669",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550868"
+    ],
+    "episode_id": 1717083,
+    "geo": {
+     "depth_km": null,
+     "lat": 28.4707,
+     "lon": 104.7074
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 5M, Depth:10km"
+    },
+    "iso3": "CHN",
+    "mag_type": null,
+    "magnitude": 5.0,
+    "occurred_at": "2026-07-08T23:44:13+00:00",
+    "place": "China",
+    "review_status": "current",
+    "revision_signature": "1717083|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550868",
+    "title": "Green M 5 Earthquake in China at: 08 Jul 2026 23:44:13.",
+    "updated_at": "2026-07-09T00:24:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550868&episodeid=1717083&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717083,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550874": {
+   "alias_ids": [
+    "gdacs:EQ:1550874"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550568",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550874"
+    ],
+    "episode_id": 1717092,
+    "geo": {
+     "depth_km": null,
+     "lat": 1.4658,
+     "lon": 126.3353
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.7M, Depth:35km"
+    },
+    "iso3": "IDN",
+    "mag_type": null,
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-09T01:16:25+00:00",
+    "place": "Indonesia",
+    "review_status": "current",
+    "revision_signature": "1717092|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550874",
+    "title": "Green M 4.7 Earthquake in Indonesia at: 09 Jul 2026 01:16:25.",
+    "updated_at": "2026-07-09T01:35:25+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550874&episodeid=1717092&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717092,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:EQ:1550875": {
+   "alias_ids": [
+    "gdacs:EQ:1550875"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550675",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:EQ:1550875"
+    ],
+    "episode_id": 1717091,
+    "geo": {
+     "depth_km": null,
+     "lat": 38.2486,
+     "lon": 74.0686
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Magnitude 4.5M, Depth:155.94km"
+    },
+    "iso3": "TJK",
+    "mag_type": null,
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-09T01:15:09+00:00",
+    "place": "Tajikistan",
+    "review_status": "current",
+    "revision_signature": "1717091|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:EQ:1550875",
+    "title": "Green M 4.5 Earthquake in Tajikistan at: 09 Jul 2026 01:15:09.",
+    "updated_at": "2026-07-09T01:26:21+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1550875&episodeid=1717091&eventtype=EQ",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1717091,
+     "level": "green"
+    }
+   ]
+  },
   "gdacs:FL:1103888": {
    "alias_ids": [
     "gdacs:FL:1103888"
@@ -1193,17 +1898,17 @@
     "alias_ids": [
      "gdacs:TC:1001279"
     ],
-    "episode_id": 29,
+    "episode_id": 32,
     "geo": {
      "depth_km": null,
-     "lat": 16.9,
-     "lon": 134.1
+     "lat": 17.6,
+     "lon": 130.8
     },
     "glide": "TC-2026-000099-GUM",
     "hazard": "tropical_cyclone",
     "impact": {
      "alertscore": 3,
-     "episode_alert": "red",
+     "episode_alert": "orange",
      "gdacs_alert": "red",
      "severity_text": "Hurricane/Typhoon > 74 mph (maximum wind speed of 287 km/h)"
     },
@@ -1213,12 +1918,12 @@
     "occurred_at": "2026-07-01T00:00:00+00:00",
     "place": "Guam, Northern Mariana Islands, Japan, Taiwan, China",
     "review_status": "current",
-    "revision_signature": "29|3",
+    "revision_signature": "32|3",
     "source": "gdacs",
     "stable_key": "gdacs:TC:1001279",
     "title": "Red Tropical Cyclone BAVI-26 in Guam, Northern Mariana Islands, Japan, Taiwan, China from: 01 Jul 2026  to: 08 Jul 2026 .",
-    "updated_at": "2026-07-08T03:20:05+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=29&eventtype=TC",
+    "updated_at": "2026-07-09T01:35:04+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1001279&episodeid=32&eventtype=TC",
     "usgs_ref": null
    },
    "level_history": [
@@ -2039,11 +2744,11 @@
     "alias_ids": [
      "gdacs:WF:1029305"
     ],
-    "episode_id": 4,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": -6.9294,
-     "lon": 18.3095
+     "lat": -6.9311,
+     "lon": 18.3088
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2051,7 +2756,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6632 ha"
+     "severity_text": "Green impact for forestfire in 6942 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -2059,17 +2764,64 @@
     "occurred_at": "2026-06-29T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029305",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:13:40+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029305&episodeid=4&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:14:10+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029305&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
     {
      "at": "2026-07-08T02:47:59.522952+00:00",
+     "episode": 4,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029307": {
+   "alias_ids": [
+    "gdacs:WF:1029307"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029307"
+    ],
+    "episode_id": 4,
+    "geo": {
+     "depth_km": null,
+     "lat": -9.893,
+     "lon": 18.4688
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6149 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-25T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "4|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029307",
+    "title": "Green Forest fires in Angola from: 25 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:25:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029307&episodeid=4&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
      "episode": 4,
      "level": "green"
     }
@@ -2133,11 +2885,11 @@
     "alias_ids": [
      "gdacs:WF:1029311"
     ],
-    "episode_id": 13,
+    "episode_id": 16,
     "geo": {
      "depth_km": null,
-     "lat": -13.2619,
-     "lon": -54.3571
+     "lat": -13.2682,
+     "lon": -54.3588
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2145,7 +2897,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 12258 ha"
+     "severity_text": "Green impact for forestfire in 13796 ha"
     },
     "iso3": "BRA",
     "mag_type": null,
@@ -2153,12 +2905,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Brazil",
     "review_status": "current",
-    "revision_signature": "13|1",
+    "revision_signature": "16|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029311",
-    "title": "Green Forest fires in Brazil from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:04:31+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029311&episodeid=13&eventtype=WF",
+    "title": "Green Forest fires in Brazil from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:06:56+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029311&episodeid=16&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2180,11 +2932,11 @@
     "alias_ids": [
      "gdacs:WF:1029316"
     ],
-    "episode_id": 8,
+    "episode_id": 11,
     "geo": {
      "depth_km": null,
-     "lat": 57.581,
-     "lon": -97.9244
+     "lat": 57.5829,
+     "lon": -97.9221
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2192,7 +2944,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6216 ha"
+     "severity_text": "Green impact for forestfire in 6478 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -2200,12 +2952,12 @@
     "occurred_at": "2026-06-26T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "8|1",
+    "revision_signature": "11|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029316",
-    "title": "Green Forest fires in Canada from: 26 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:24:58+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029316&episodeid=8&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 26 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:24:09+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029316&episodeid=11&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2310,6 +3062,53 @@
     }
    ]
   },
+  "gdacs:WF:1029322": {
+   "alias_ids": [
+    "gdacs:WF:1029322"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029322"
+    ],
+    "episode_id": 3,
+    "geo": {
+     "depth_km": null,
+     "lat": -3.9784,
+     "lon": 24.8207
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6984 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-30T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "3|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029322",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:11:30+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029322&episodeid=3&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 3,
+     "level": "green"
+    }
+   ]
+  },
   "gdacs:WF:1029323": {
    "alias_ids": [
     "gdacs:WF:1029323"
@@ -2321,11 +3120,11 @@
     "alias_ids": [
      "gdacs:WF:1029323"
     ],
-    "episode_id": 3,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": -5.1941,
-     "lon": 17.3717
+     "lat": -5.194,
+     "lon": 17.3719
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2333,7 +3132,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5572 ha"
+     "severity_text": "Green impact for forestfire in 5600 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -2341,12 +3140,12 @@
     "occurred_at": "2026-06-29T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029323",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:13:11+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029323&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:12:52+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029323&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2368,11 +3167,11 @@
     "alias_ids": [
      "gdacs:WF:1029324"
     ],
-    "episode_id": 3,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": -7.1887,
-     "lon": 18.9297
+     "lat": -7.1886,
+     "lon": 18.9296
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2380,7 +3179,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5121 ha"
+     "severity_text": "Green impact for forestfire in 5132 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -2388,12 +3187,12 @@
     "occurred_at": "2026-06-26T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029324",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 26 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:20:13+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029324&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 26 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:23:30+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029324&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2462,11 +3261,11 @@
     "alias_ids": [
      "gdacs:WF:1029326"
     ],
-    "episode_id": 6,
+    "episode_id": 8,
     "geo": {
      "depth_km": null,
-     "lat": -14.2075,
-     "lon": 133.87
+     "lat": -14.2071,
+     "lon": 133.8703
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2474,7 +3273,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 16303 ha"
+     "severity_text": "Green impact for forestfire in 16703 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2482,12 +3281,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "6|1",
+    "revision_signature": "8|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029326",
-    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:04:27+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029326&episodeid=6&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:13+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029326&episodeid=8&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2509,11 +3308,11 @@
     "alias_ids": [
      "gdacs:WF:1029327"
     ],
-    "episode_id": 4,
+    "episode_id": 6,
     "geo": {
      "depth_km": null,
-     "lat": -17.8873,
-     "lon": 137.6199
+     "lat": -17.8874,
+     "lon": 137.6197
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2521,7 +3320,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6281 ha"
+     "severity_text": "Green impact for forestfire in 6309 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2529,12 +3328,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "6|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029327",
-    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:08:06+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029327&episodeid=4&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:09:03+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029327&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2556,11 +3355,11 @@
     "alias_ids": [
      "gdacs:WF:1029328"
     ],
-    "episode_id": 6,
+    "episode_id": 9,
     "geo": {
      "depth_km": null,
-     "lat": -18.1873,
-     "lon": 137.6126
+     "lat": -18.1884,
+     "lon": 137.611
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2568,7 +3367,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 7435 ha"
+     "severity_text": "Green impact for forestfire in 8046 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2576,12 +3375,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "6|1",
+    "revision_signature": "9|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029328",
-    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:07:46+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029328&episodeid=6&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:08:55+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029328&episodeid=9&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2603,11 +3402,11 @@
     "alias_ids": [
      "gdacs:WF:1029329"
     ],
-    "episode_id": 5,
+    "episode_id": 7,
     "geo": {
      "depth_km": null,
-     "lat": -11.6851,
-     "lon": 130.6524
+     "lat": -11.6848,
+     "lon": 130.6514
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2615,7 +3414,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6072 ha"
+     "severity_text": "Green impact for forestfire in 6282 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2623,12 +3422,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "5|1",
+    "revision_signature": "7|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029329",
-    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:06:40+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029329&episodeid=5&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:09:09+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029329&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2650,11 +3449,11 @@
     "alias_ids": [
      "gdacs:WF:1029331"
     ],
-    "episode_id": 6,
+    "episode_id": 7,
     "geo": {
      "depth_km": null,
      "lat": 42.6724,
-     "lon": 2.5678
+     "lon": 2.5677
     },
     "glide": "WF-2026-000102-FRA",
     "hazard": "wildfire",
@@ -2662,7 +3461,7 @@
      "alertscore": 2,
      "episode_alert": "orange",
      "gdacs_alert": "orange",
-     "severity_text": "Orange impact for forestfire in 6561 ha"
+     "severity_text": "Orange impact for forestfire in 6576 ha"
     },
     "iso3": "FRA",
     "mag_type": null,
@@ -2670,12 +3469,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "France",
     "review_status": "current",
-    "revision_signature": "6|2",
+    "revision_signature": "7|2",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029331",
-    "title": "Orange Forest fires in France from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:03:10+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=6&eventtype=WF",
+    "title": "Orange Forest fires in France from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:39+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029331&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2697,11 +3496,11 @@
     "alias_ids": [
      "gdacs:WF:1029332"
     ],
-    "episode_id": 4,
+    "episode_id": 6,
     "geo": {
      "depth_km": null,
-     "lat": -12.9089,
-     "lon": 132.0411
+     "lat": -12.9231,
+     "lon": 132.0572
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2709,7 +3508,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 10900 ha"
+     "severity_text": "Green impact for forestfire in 15542 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2717,12 +3516,12 @@
     "occurred_at": "2026-07-06T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "6|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029332",
-    "title": "Green Forest fires in Australia from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:01:58+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029332&episodeid=4&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:10+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029332&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2744,10 +3543,10 @@
     "alias_ids": [
      "gdacs:WF:1029333"
     ],
-    "episode_id": 4,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": -14.2701,
+     "lat": -14.2695,
      "lon": 133.7291
     },
     "glide": null,
@@ -2756,7 +3555,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6518 ha"
+     "severity_text": "Green impact for forestfire in 6593 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -2764,12 +3563,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029333",
-    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:07:52+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029333&episodeid=4&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:39+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029333&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2791,11 +3590,11 @@
     "alias_ids": [
      "gdacs:WF:1029334"
     ],
-    "episode_id": 3,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": -6.1276,
-     "lon": 19.8818
+     "lat": -6.1277,
+     "lon": 19.8821
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2803,7 +3602,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5188 ha"
+     "severity_text": "Green impact for forestfire in 5224 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -2811,12 +3610,12 @@
     "occurred_at": "2026-07-06T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029334",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:02:07+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029334&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:41+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029334&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2838,11 +3637,11 @@
     "alias_ids": [
      "gdacs:WF:1029335"
     ],
-    "episode_id": 7,
+    "episode_id": 9,
     "geo": {
      "depth_km": null,
-     "lat": -8.9281,
-     "lon": 21.6404
+     "lat": -8.9315,
+     "lon": 21.6384
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2850,7 +3649,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6084 ha"
+     "severity_text": "Green impact for forestfire in 6750 ha"
     },
     "iso3": "AGO",
     "mag_type": null,
@@ -2858,12 +3657,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Angola",
     "review_status": "current",
-    "revision_signature": "7|1",
+    "revision_signature": "9|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029335",
-    "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:02:24+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029335&episodeid=7&eventtype=WF",
+    "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:02:26+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029335&episodeid=9&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -2932,11 +3731,11 @@
     "alias_ids": [
      "gdacs:WF:1029337"
     ],
-    "episode_id": 3,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": -8.2635,
-     "lon": 29.0565
+     "lat": -8.2632,
+     "lon": 29.0559
     },
     "glide": null,
     "hazard": "wildfire",
@@ -2944,7 +3743,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8604 ha"
+     "severity_text": "Green impact for forestfire in 8746 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -2952,12 +3751,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029337",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:07:27+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029337&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:08:49+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029337&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3073,11 +3872,11 @@
     "alias_ids": [
      "gdacs:WF:1029340"
     ],
-    "episode_id": 4,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": -7.5895,
-     "lon": 18.5058
+     "lat": -7.5894,
+     "lon": 18.5056
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3085,7 +3884,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 9240 ha"
+     "severity_text": "Green impact for forestfire in 9310 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -3093,12 +3892,12 @@
     "occurred_at": "2026-06-30T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "4|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029340",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 30 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:11:37+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029340&episodeid=4&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:11:47+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029340&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3120,11 +3919,11 @@
     "alias_ids": [
      "gdacs:WF:1029342"
     ],
-    "episode_id": 2,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -7.0504,
-     "lon": 18.4309
+     "lat": -7.0998,
+     "lon": 18.367
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3132,7 +3931,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5598 ha"
+     "severity_text": "Green impact for forestfire in 20378 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -3140,12 +3939,12 @@
     "occurred_at": "2026-06-29T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029342",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:12:52+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029342&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:14:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029342&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3167,11 +3966,11 @@
     "alias_ids": [
      "gdacs:WF:1029343"
     ],
-    "episode_id": 2,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -10.74,
-     "lon": 16.8363
+     "lat": -10.7414,
+     "lon": 16.8404
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3179,7 +3978,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 7282 ha"
+     "severity_text": "Green impact for forestfire in 7768 ha"
     },
     "iso3": "AGO",
     "mag_type": null,
@@ -3187,12 +3986,12 @@
     "occurred_at": "2026-06-29T00:00:00+00:00",
     "place": "Angola",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029343",
-    "title": "Green Forest fires in Angola from: 29 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:12:30+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029343&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Angola from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:14:36+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029343&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3214,11 +4013,11 @@
     "alias_ids": [
      "gdacs:WF:1029344"
     ],
-    "episode_id": 2,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -6.7353,
-     "lon": 27.0262
+     "lat": -6.7354,
+     "lon": 27.0285
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3226,7 +4025,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5341 ha"
+     "severity_text": "Green impact for forestfire in 5585 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -3234,12 +4033,12 @@
     "occurred_at": "2026-06-26T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029344",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 26 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:22:56+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029344&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 26 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:21:21+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029344&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3261,7 +4060,7 @@
     "alias_ids": [
      "gdacs:WF:1029345"
     ],
-    "episode_id": 2,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
      "lat": -7.9309,
@@ -3273,7 +4072,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5605 ha"
+     "severity_text": "Green impact for forestfire in 5617 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -3281,18 +4080,65 @@
     "occurred_at": "2026-06-25T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029345",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 25 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-07T23:27:19+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029345&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 25 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:24:48+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029345&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
     {
      "at": "2026-07-08T02:47:59.522952+00:00",
      "episode": 2,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029346": {
+   "alias_ids": [
+    "gdacs:WF:1029346"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029346"
+    ],
+    "episode_id": 3,
+    "geo": {
+     "depth_km": null,
+     "lat": -3.71,
+     "lon": 24.0876
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6615 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-24T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "3|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029346",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 24 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:31:38+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029346&episodeid=3&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 3,
      "level": "green"
     }
    ]
@@ -3308,11 +4154,11 @@
     "alias_ids": [
      "gdacs:WF:1029347"
     ],
-    "episode_id": 6,
+    "episode_id": 10,
     "geo": {
      "depth_km": null,
-     "lat": 53.4541,
-     "lon": -70.6333
+     "lat": 53.4626,
+     "lon": -70.6054
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3320,7 +4166,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 11234 ha"
+     "severity_text": "Green impact for forestfire in 14691 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3328,12 +4174,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "6|1",
+    "revision_signature": "10|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029347",
-    "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:03:34+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029347&episodeid=6&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:27+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029347&episodeid=10&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3355,11 +4201,11 @@
     "alias_ids": [
      "gdacs:WF:1029348"
     ],
-    "episode_id": 7,
+    "episode_id": 12,
     "geo": {
      "depth_km": null,
-     "lat": 50.2026,
-     "lon": -78.8669
+     "lat": 50.1913,
+     "lon": -78.7936
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3367,7 +4213,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 23005 ha"
+     "severity_text": "Green impact for forestfire in 36800 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3375,12 +4221,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "7|1",
+    "revision_signature": "12|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029348",
-    "title": "Green Forest fires in Canada from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:08:32+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029348&episodeid=7&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:56+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029348&episodeid=12&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3449,11 +4295,11 @@
     "alias_ids": [
      "gdacs:WF:1029350"
     ],
-    "episode_id": 5,
+    "episode_id": 7,
     "geo": {
      "depth_km": null,
-     "lat": 57.9793,
-     "lon": -66.9822
+     "lat": 57.9831,
+     "lon": -66.9674
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3461,7 +4307,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6504 ha"
+     "severity_text": "Green impact for forestfire in 7938 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3469,12 +4315,12 @@
     "occurred_at": "2026-06-27T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "5|1",
+    "revision_signature": "7|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029350",
-    "title": "Green Forest fires in Canada from: 27 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:18:54+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029350&episodeid=5&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 27 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:18:30+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029350&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3496,11 +4342,11 @@
     "alias_ids": [
      "gdacs:WF:1029352"
     ],
-    "episode_id": 2,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -13.8963,
-     "lon": 133.9946
+     "lat": -13.8981,
+     "lon": 134.0029
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3508,7 +4354,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 18185 ha"
+     "severity_text": "Green impact for forestfire in 21676 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -3516,12 +4362,12 @@
     "occurred_at": "2026-07-07T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029352",
-    "title": "Green Forest fires in Australia from: 07 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:01:01+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029352&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 07 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:00:26+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029352&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3543,11 +4389,11 @@
     "alias_ids": [
      "gdacs:WF:1029353"
     ],
-    "episode_id": 5,
+    "episode_id": 7,
     "geo": {
      "depth_km": null,
-     "lat": 56.8252,
-     "lon": -66.3882
+     "lat": 56.8287,
+     "lon": -66.3885
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3555,7 +4401,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8484 ha"
+     "severity_text": "Green impact for forestfire in 9186 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3563,12 +4409,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "5|1",
+    "revision_signature": "7|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029353",
-    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:02:31+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029353&episodeid=5&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:48+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029353&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3637,11 +4483,11 @@
     "alias_ids": [
      "gdacs:WF:1029355"
     ],
-    "episode_id": 3,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
      "lat": -12.7286,
-     "lon": 142.5512
+     "lon": 142.5498
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3649,7 +4495,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5378 ha"
+     "severity_text": "Green impact for forestfire in 5554 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -3657,12 +4503,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029355",
-    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:06:11+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029355&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:33+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029355&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3684,11 +4530,11 @@
     "alias_ids": [
      "gdacs:WF:1029356"
     ],
-    "episode_id": 2,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": -17.8471,
-     "lon": 137.2299
+     "lat": -17.847,
+     "lon": 137.2331
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3696,7 +4542,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5339 ha"
+     "severity_text": "Green impact for forestfire in 5762 ha"
     },
     "iso3": "AUS",
     "mag_type": null,
@@ -3704,12 +4550,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Australia",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029356",
-    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:06:20+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029356&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Australia from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:05:20+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029356&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3778,11 +4624,11 @@
     "alias_ids": [
      "gdacs:WF:1029358"
     ],
-    "episode_id": 3,
+    "episode_id": 6,
     "geo": {
      "depth_km": null,
-     "lat": 4.9618,
-     "lon": 34.7639
+     "lat": 4.9578,
+     "lon": 34.772
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3790,7 +4636,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6826 ha"
+     "severity_text": "Green impact for forestfire in 8953 ha"
     },
     "iso3": "SDN",
     "mag_type": null,
@@ -3798,12 +4644,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "Sudan",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "6|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029358",
-    "title": "Green Forest fires in Sudan from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:03:17+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029358&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in Sudan from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:53+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029358&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3825,11 +4671,11 @@
     "alias_ids": [
      "gdacs:WF:1029359"
     ],
-    "episode_id": 3,
+    "episode_id": 7,
     "geo": {
      "depth_km": null,
-     "lat": 49.952,
-     "lon": -121.4756
+     "lat": 49.9871,
+     "lon": -121.4209
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3837,7 +4683,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8602 ha"
+     "severity_text": "Green impact for forestfire in 20183 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -3845,12 +4691,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "3|1",
+    "revision_signature": "7|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029359",
-    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:04:43+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029359&episodeid=3&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:05+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029359&episodeid=7&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3919,11 +4765,11 @@
     "alias_ids": [
      "gdacs:WF:1029361"
     ],
-    "episode_id": 1,
+    "episode_id": 2,
     "geo": {
      "depth_km": null,
-     "lat": -6.9733,
-     "lon": 18.5238
+     "lat": -6.9818,
+     "lon": 18.5195
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3931,20 +4777,20 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5197 ha"
+     "severity_text": "Green impact for forestfire in 6474 ha"
     },
     "iso3": "COD",
     "mag_type": null,
     "magnitude": null,
-    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "2|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029361",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 06 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:01:44+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029361&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:55+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029361&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -3966,11 +4812,11 @@
     "alias_ids": [
      "gdacs:WF:1029362"
     ],
-    "episode_id": 2,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": -7.9124,
-     "lon": 20.0927
+     "lat": -7.9182,
+     "lon": 20.0949
     },
     "glide": null,
     "hazard": "wildfire",
@@ -3978,7 +4824,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 10973 ha"
+     "severity_text": "Green impact for forestfire in 12210 ha"
     },
     "iso3": "AGO",
     "mag_type": null,
@@ -3986,12 +4832,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Angola",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029362",
-    "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:02:17+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029362&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Angola from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:02:20+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029362&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4013,11 +4859,11 @@
     "alias_ids": [
      "gdacs:WF:1029363"
     ],
-    "episode_id": 2,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": -8.5206,
-     "lon": 21.8487
+     "lat": -8.5204,
+     "lon": 21.848
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4025,7 +4871,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 9804 ha"
+     "severity_text": "Green impact for forestfire in 10668 ha"
     },
     "iso3": "AGO",
     "mag_type": null,
@@ -4033,12 +4879,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "Angola",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029363",
-    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:03:03+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029363&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:18+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029363&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4060,11 +4906,11 @@
     "alias_ids": [
      "gdacs:WF:1029364"
     ],
-    "episode_id": 1,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -7.1093,
-     "lon": 26.6579
+     "lat": -7.1086,
+     "lon": 26.6588
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4072,7 +4918,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5820 ha"
+     "severity_text": "Green impact for forestfire in 6046 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -4080,12 +4926,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029364",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:04:06+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029364&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:03+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029364&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4107,11 +4953,11 @@
     "alias_ids": [
      "gdacs:WF:1029365"
     ],
-    "episode_id": 1,
+    "episode_id": 2,
     "geo": {
      "depth_km": null,
-     "lat": -9.2396,
-     "lon": 17.3581
+     "lat": -9.2403,
+     "lon": 17.3591
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4119,7 +4965,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5591 ha"
+     "severity_text": "Green impact for forestfire in 5702 ha"
     },
     "iso3": "AGO",
     "mag_type": null,
@@ -4127,12 +4973,12 @@
     "occurred_at": "2026-07-01T00:00:00+00:00",
     "place": "Angola",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "2|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029365",
-    "title": "Green Forest fires in Angola from: 01 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:09:11+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029365&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Angola from: 01 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:10:27+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029365&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4154,11 +5000,11 @@
     "alias_ids": [
      "gdacs:WF:1029366"
     ],
-    "episode_id": 1,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": -6.0294,
-     "lon": 26.4777
+     "lat": -6.03,
+     "lon": 26.4775
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4166,7 +5012,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8690 ha"
+     "severity_text": "Green impact for forestfire in 8948 ha"
     },
     "iso3": "COD",
     "mag_type": null,
@@ -4174,12 +5020,12 @@
     "occurred_at": "2026-06-30T00:00:00+00:00",
     "place": "The Democratic Republic of Congo",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029366",
-    "title": "Green Forest fires in The Democratic Republic of Congo from: 30 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:11:43+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029366&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:11:36+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029366&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4248,11 +5094,11 @@
     "alias_ids": [
      "gdacs:WF:1029368"
     ],
-    "episode_id": 1,
+    "episode_id": 2,
     "geo": {
      "depth_km": null,
-     "lat": -13.1892,
-     "lon": 24.7406
+     "lat": -13.1896,
+     "lon": 24.7412
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4260,7 +5106,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5127 ha"
+     "severity_text": "Green impact for forestfire in 5376 ha"
     },
     "iso3": "ZMB",
     "mag_type": null,
@@ -4268,12 +5114,12 @@
     "occurred_at": "2026-06-28T00:00:00+00:00",
     "place": "Zambia",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "2|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029368",
-    "title": "Green Forest fires in Zambia from: 28 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:15:53+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029368&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Zambia from: 28 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:16:16+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029368&episodeid=2&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4342,11 +5188,11 @@
     "alias_ids": [
      "gdacs:WF:1029370"
     ],
-    "episode_id": 1,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": 53.4938,
-     "lon": -69.5001
+     "lat": 53.5051,
+     "lon": -69.4828
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4354,7 +5200,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5052 ha"
+     "severity_text": "Green impact for forestfire in 7500 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4362,12 +5208,12 @@
     "occurred_at": "2026-07-05T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029370",
-    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:02:40+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029370&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:05+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029370&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4436,11 +5282,11 @@
     "alias_ids": [
      "gdacs:WF:1029372"
     ],
-    "episode_id": 2,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": 54.7526,
-     "lon": -76.2071
+     "lat": 54.7508,
+     "lon": -76.222
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4448,7 +5294,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 8331 ha"
+     "severity_text": "Green impact for forestfire in 6214 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4456,12 +5302,12 @@
     "occurred_at": "2026-07-04T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "2|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029372",
-    "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:03:50+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029372&episodeid=2&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:10+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029372&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4483,11 +5329,11 @@
     "alias_ids": [
      "gdacs:WF:1029373"
     ],
-    "episode_id": 1,
+    "episode_id": 6,
     "geo": {
      "depth_km": null,
-     "lat": 53.9065,
-     "lon": -72.7775
+     "lat": 53.9112,
+     "lon": -72.8178
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4495,7 +5341,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5090 ha"
+     "severity_text": "Green impact for forestfire in 11395 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4503,12 +5349,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "6|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029373",
-    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:05:32+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029373&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:05:14+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029373&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4530,11 +5376,11 @@
     "alias_ids": [
      "gdacs:WF:1029374"
     ],
-    "episode_id": 1,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": 54.3772,
-     "lon": -72.6112
+     "lat": 54.3775,
+     "lon": -72.6116
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4542,7 +5388,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5105 ha"
+     "severity_text": "Green impact for forestfire in 5268 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4550,12 +5396,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029374",
-    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:05:52+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029374&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:19+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029374&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4577,11 +5423,11 @@
     "alias_ids": [
      "gdacs:WF:1029375"
     ],
-    "episode_id": 1,
+    "episode_id": 6,
     "geo": {
      "depth_km": null,
-     "lat": 64.8433,
-     "lon": 110.2784
+     "lat": 64.8479,
+     "lon": 110.2881
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4589,7 +5435,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5136 ha"
+     "severity_text": "Green impact for forestfire in 6974 ha"
     },
     "iso3": "RUS",
     "mag_type": null,
@@ -4597,12 +5443,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Russian Federation",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "6|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029375",
-    "title": "Green Forest fires in Russian Federation from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:06:00+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029375&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Russian Federation from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:06:40+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029375&episodeid=6&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4624,11 +5470,11 @@
     "alias_ids": [
      "gdacs:WF:1029376"
     ],
-    "episode_id": 1,
+    "episode_id": 5,
     "geo": {
      "depth_km": null,
-     "lat": 53.8041,
-     "lon": -71.6921
+     "lat": 53.8423,
+     "lon": -71.7035
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4636,7 +5482,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5838 ha"
+     "severity_text": "Green impact for forestfire in 14208 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4644,12 +5490,12 @@
     "occurred_at": "2026-07-03T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "5|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029376",
-    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:06:29+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029376&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:05:03+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029376&episodeid=5&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4671,11 +5517,11 @@
     "alias_ids": [
      "gdacs:WF:1029377"
     ],
-    "episode_id": 1,
+    "episode_id": 4,
     "geo": {
      "depth_km": null,
-     "lat": 51.6179,
-     "lon": -78.1606
+     "lat": 51.6319,
+     "lon": -78.183
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4683,7 +5529,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5547 ha"
+     "severity_text": "Green impact for forestfire in 8459 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4691,12 +5537,12 @@
     "occurred_at": "2026-07-02T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "4|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029377",
-    "title": "Green Forest fires in Canada from: 02 Jul 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:08:13+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029377&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T19:07:42+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029377&episodeid=4&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4718,11 +5564,11 @@
     "alias_ids": [
      "gdacs:WF:1029378"
     ],
-    "episode_id": 1,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": 56.9382,
-     "lon": -66.5608
+     "lat": 56.9453,
+     "lon": -66.5649
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4730,7 +5576,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 6106 ha"
+     "severity_text": "Green impact for forestfire in 7158 ha"
     },
     "iso3": "CAN",
     "mag_type": null,
@@ -4738,12 +5584,12 @@
     "occurred_at": "2026-06-30T00:00:00+00:00",
     "place": "Canada",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029378",
-    "title": "Green Forest fires in Canada from: 30 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:11:24+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029378&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Canada from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:11:23+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029378&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
@@ -4765,11 +5611,11 @@
     "alias_ids": [
      "gdacs:WF:1029379"
     ],
-    "episode_id": 1,
+    "episode_id": 3,
     "geo": {
      "depth_km": null,
-     "lat": 64.9978,
-     "lon": 127.9934
+     "lat": 64.9982,
+     "lon": 127.9912
     },
     "glide": null,
     "hazard": "wildfire",
@@ -4777,7 +5623,7 @@
      "alertscore": 1,
      "episode_alert": "green",
      "gdacs_alert": "green",
-     "severity_text": "Green impact for forestfire in 5069 ha"
+     "severity_text": "Green impact for forestfire in 5203 ha"
     },
     "iso3": "RUS",
     "mag_type": null,
@@ -4785,17 +5631,1662 @@
     "occurred_at": "2026-06-30T00:00:00+00:00",
     "place": "Russian Federation",
     "review_status": "current",
-    "revision_signature": "1|1",
+    "revision_signature": "3|1",
     "source": "gdacs",
     "stable_key": "gdacs:WF:1029379",
-    "title": "Green Forest fires in Russian Federation from: 30 Jun 2026 to: 07 Jul 2026.",
-    "updated_at": "2026-07-08T03:11:56+00:00",
-    "url": "https://www.gdacs.org/report.aspx?eventid=1029379&episodeid=1&eventtype=WF",
+    "title": "Green Forest fires in Russian Federation from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:12:27+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029379&episodeid=3&eventtype=WF",
     "usgs_ref": null
    },
    "level_history": [
     {
      "at": "2026-07-08T02:47:59.522952+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029380": {
+   "alias_ids": [
+    "gdacs:WF:1029380"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029380"
+    ],
+    "episode_id": 2,
+    "geo": {
+     "depth_km": null,
+     "lat": -9.2141,
+     "lon": 21.6107
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 7042 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-29T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "2|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029380",
+    "title": "Green Forest fires in Angola from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:13:43+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029380&episodeid=2&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 2,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029381": {
+   "alias_ids": [
+    "gdacs:WF:1029381"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029381"
+    ],
+    "episode_id": 2,
+    "geo": {
+     "depth_km": null,
+     "lat": 56.1961,
+     "lon": -69.1355
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 10980 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-05T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "2|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029381",
+    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:02:12+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029381&episodeid=2&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 2,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029382": {
+   "alias_ids": [
+    "gdacs:WF:1029382"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029382"
+    ],
+    "episode_id": 2,
+    "geo": {
+     "depth_km": null,
+     "lat": 57.2093,
+     "lon": -68.6601
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 7508 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-04T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "2|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029382",
+    "title": "Green Forest fires in Canada from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:04:32+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029382&episodeid=2&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 2,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029383": {
+   "alias_ids": [
+    "gdacs:WF:1029383"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029383"
+    ],
+    "episode_id": 4,
+    "geo": {
+     "depth_km": null,
+     "lat": 53.6298,
+     "lon": -72.1275
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6707 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-03T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "4|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029383",
+    "title": "Green Forest fires in Canada from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:06:20+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029383&episodeid=4&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 4,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029384": {
+   "alias_ids": [
+    "gdacs:WF:1029384"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029384"
+    ],
+    "episode_id": 2,
+    "geo": {
+     "depth_km": null,
+     "lat": -13.1698,
+     "lon": 133.42
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5175 ha"
+    },
+    "iso3": "AUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-02T00:00:00+00:00",
+    "place": "Australia",
+    "review_status": "current",
+    "revision_signature": "2|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029384",
+    "title": "Green Forest fires in Australia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:09:28+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029384&episodeid=2&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 2,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029385": {
+   "alias_ids": [
+    "gdacs:WF:1029385"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029385"
+    ],
+    "episode_id": 3,
+    "geo": {
+     "depth_km": null,
+     "lat": -11.3622,
+     "lon": 130.5307
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6116 ha"
+    },
+    "iso3": "AUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-24T00:00:00+00:00",
+    "place": "Australia",
+    "review_status": "current",
+    "revision_signature": "3|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029385",
+    "title": "Green Forest fires in Australia from: 24 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:29:26+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029385&episodeid=3&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 3,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029386": {
+   "alias_ids": [
+    "gdacs:WF:1029386"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029386"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.6057,
+     "lon": 19.5299
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6536 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-07T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029386",
+    "title": "Green Forest fires in Angola from: 07 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:00:13+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029386&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029387": {
+   "alias_ids": [
+    "gdacs:WF:1029387"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029387"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.0598,
+     "lon": 19.6335
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 9056 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Angola, The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029387",
+    "title": "Green Forest fires in Angola, The Democratic Republic of Congo from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:27+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029387&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029388": {
+   "alias_ids": [
+    "gdacs:WF:1029388"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029388"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -15.2084,
+     "lon": 25.8888
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5585 ha"
+    },
+    "iso3": "ZMB",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Zambia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029388",
+    "title": "Green Forest fires in Zambia from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:00:52+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029388&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029389": {
+   "alias_ids": [
+    "gdacs:WF:1029389"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029389"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -8.0515,
+     "lon": 19.6509
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5172 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029389",
+    "title": "Green Forest fires in Angola from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:01+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029389&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029390": {
+   "alias_ids": [
+    "gdacs:WF:1029390"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029390"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.3763,
+     "lon": 19.2737
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5829 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-05T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029390",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:02:44+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029390&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029391": {
+   "alias_ids": [
+    "gdacs:WF:1029391"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029391"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -8.3432,
+     "lon": 19.7365
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5741 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-04T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029391",
+    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:17+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029391&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029392": {
+   "alias_ids": [
+    "gdacs:WF:1029392"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029392"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -9.3129,
+     "lon": 21.1853
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5972 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-04T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029392",
+    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:51+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029392&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029393": {
+   "alias_ids": [
+    "gdacs:WF:1029393"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029393"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -9.022,
+     "lon": 20.992
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5978 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-04T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029393",
+    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:57+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029393&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029394": {
+   "alias_ids": [
+    "gdacs:WF:1029394"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029394"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.2316,
+     "lon": 20.258
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5700 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-04T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029394",
+    "title": "Green Forest fires in Angola from: 04 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:03:12+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029394&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029395": {
+   "alias_ids": [
+    "gdacs:WF:1029395"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029395"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -8.9157,
+     "lon": 29.4017
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6440 ha"
+    },
+    "iso3": "ZMB",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-03T00:00:00+00:00",
+    "place": "Zambia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029395",
+    "title": "Green Forest fires in Zambia from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:05:50+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029395&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029396": {
+   "alias_ids": [
+    "gdacs:WF:1029396"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029396"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.5558,
+     "lon": 18.0935
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6392 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-03T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029396",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:06:12+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029396&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029397": {
+   "alias_ids": [
+    "gdacs:WF:1029397"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029397"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.5556,
+     "lon": 18.6423
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6351 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-03T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029397",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:06:05+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029397&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029398": {
+   "alias_ids": [
+    "gdacs:WF:1029398"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029398"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -5.0932,
+     "lon": 25.7549
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5432 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-03T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029398",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 03 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:27+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029398&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029399": {
+   "alias_ids": [
+    "gdacs:WF:1029399"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029399"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.0528,
+     "lon": 18.6776
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5125 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-02T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029399",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:07:45+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029399&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029400": {
+   "alias_ids": [
+    "gdacs:WF:1029400"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029400"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -11.2787,
+     "lon": 24.7385
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5794 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-02T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo, Zambia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029400",
+    "title": "Green Forest fires in The Democratic Republic of Congo, Zambia from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:09:16+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029400&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029401": {
+   "alias_ids": [
+    "gdacs:WF:1029401"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029401"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.3002,
+     "lon": 18.3788
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6402 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-01T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029401",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 01 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:10:50+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029401&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029402": {
+   "alias_ids": [
+    "gdacs:WF:1029402"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029402"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.4732,
+     "lon": 20.095
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5883 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-30T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029402",
+    "title": "Green Forest fires in Angola from: 30 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:11:10+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029402&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029403": {
+   "alias_ids": [
+    "gdacs:WF:1029403"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029403"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -7.8087,
+     "lon": 18.6243
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5393 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-29T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029403",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:13:30+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029403&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029404": {
+   "alias_ids": [
+    "gdacs:WF:1029404"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029404"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -10.7899,
+     "lon": 17.8531
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6373 ha"
+    },
+    "iso3": "AGO",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-29T00:00:00+00:00",
+    "place": "Angola",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029404",
+    "title": "Green Forest fires in Angola from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:13:18+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029404&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029405": {
+   "alias_ids": [
+    "gdacs:WF:1029405"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029405"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -3.6963,
+     "lon": 23.5084
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5199 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-24T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029405",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 24 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:29:20+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029405&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029406": {
+   "alias_ids": [
+    "gdacs:WF:1029406"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029406"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -3.2474,
+     "lon": 23.7689
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6290 ha"
+    },
+    "iso3": "COD",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-24T00:00:00+00:00",
+    "place": "The Democratic Republic of Congo",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029406",
+    "title": "Green Forest fires in The Democratic Republic of Congo from: 24 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:28:37+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029406&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029407": {
+   "alias_ids": [
+    "gdacs:WF:1029407"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029407"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": 62.104,
+     "lon": 136.4299
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5926 ha"
+    },
+    "iso3": "RUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Russian Federation",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029407",
+    "title": "Green Forest fires in Russian Federation from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:00:40+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029407&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029408": {
+   "alias_ids": [
+    "gdacs:WF:1029408"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029408"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -12.3377,
+     "lon": 133.423
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5486 ha"
+    },
+    "iso3": "AUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Australia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029408",
+    "title": "Green Forest fires in Australia from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:20+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029408&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029409": {
+   "alias_ids": [
+    "gdacs:WF:1029409"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029409"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": 62.894,
+     "lon": 133.8478
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 6195 ha"
+    },
+    "iso3": "RUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-06T00:00:00+00:00",
+    "place": "Russian Federation",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029409",
+    "title": "Green Forest fires in Russian Federation from: 06 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:01:34+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029409&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029410": {
+   "alias_ids": [
+    "gdacs:WF:1029410"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029410"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": 51.6668,
+     "lon": -78.5305
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5174 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-05T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029410",
+    "title": "Green Forest fires in Canada from: 05 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:02:33+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029410&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029411": {
+   "alias_ids": [
+    "gdacs:WF:1029411"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029411"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": 51.6158,
+     "lon": -78.1935
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 14719 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-07-02T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029411",
+    "title": "Green Forest fires in Canada from: 02 Jul 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:08:28+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029411&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029412": {
+   "alias_ids": [
+    "gdacs:WF:1029412"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029412"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": 65.201,
+     "lon": -117.4432
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5105 ha"
+    },
+    "iso3": "CAN",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-29T00:00:00+00:00",
+    "place": "Canada",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029412",
+    "title": "Green Forest fires in Canada from: 29 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:14:42+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029412&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029413": {
+   "alias_ids": [
+    "gdacs:WF:1029413"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029413"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -16.3903,
+     "lon": -59.5659
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5065 ha"
+    },
+    "iso3": "BOL",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-26T00:00:00+00:00",
+    "place": "Bolivia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029413",
+    "title": "Green Forest fires in Bolivia from: 26 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:21:58+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029413&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": 1,
+     "level": "green"
+    }
+   ]
+  },
+  "gdacs:WF:1029414": {
+   "alias_ids": [
+    "gdacs:WF:1029414"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "gdacs:WF:1029414"
+    ],
+    "episode_id": 1,
+    "geo": {
+     "depth_km": null,
+     "lat": -11.2767,
+     "lon": 132.5827
+    },
+    "glide": null,
+    "hazard": "wildfire",
+    "impact": {
+     "alertscore": 1,
+     "episode_alert": "green",
+     "gdacs_alert": "green",
+     "severity_text": "Green impact for forestfire in 5207 ha"
+    },
+    "iso3": "AUS",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-26T00:00:00+00:00",
+    "place": "Australia",
+    "review_status": "current",
+    "revision_signature": "1|1",
+    "source": "gdacs",
+    "stable_key": "gdacs:WF:1029414",
+    "title": "Green Forest fires in Australia from: 26 Jun 2026 to: 08 Jul 2026.",
+    "updated_at": "2026-07-08T23:23:02+00:00",
+    "url": "https://www.gdacs.org/report.aspx?eventid=1029414&episodeid=1&eventtype=WF",
+    "usgs_ref": null
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
      "episode": 1,
      "level": "green"
     }
@@ -4897,11 +7388,11 @@
   },
   "nc75382936": {
    "alias_ids": [
+    "atth565s",
+    "ew1782313840",
     "nc75382936",
     "us6000t7uu",
-    "usauto6000t7uu",
-    "atth565s",
-    "ew1782313840"
+    "usauto6000t7uu"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -4937,7 +7428,7 @@
     "source": "usgs",
     "stable_key": "nc75382936",
     "title": "M 5.6 - 11 km N of Redwood Valley, CA",
-    "updated_at": "2026-07-07T15:20:54.661000+00:00",
+    "updated_at": "2026-07-08T15:29:07.887000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936"
    },
    "level_history": [
@@ -5126,6 +7617,51 @@
    "level_history": [
     {
      "at": "2026-07-08T03:04:10.628145+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "reliefweb:EP-2026-000107-CAF": {
+   "alias_ids": [
+    "reliefweb:EP-2026-000107-CAF"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "reliefweb:EP-2026-000107-CAF"
+    ],
+    "countries": [
+     "Central African Republic"
+    ],
+    "geo": {
+     "depth_km": null,
+     "lat": null,
+     "lon": null
+    },
+    "glide": "EP-2026-000107-CAF",
+    "hazard": "epidemic",
+    "impact": {
+     "editorial": true
+    },
+    "iso3": "CAF",
+    "mag_type": null,
+    "magnitude": null,
+    "occurred_at": "2026-06-26T00:00:00+00:00",
+    "place": "Central African Republic",
+    "review_status": "current",
+    "revision_signature": "Central African Republic: Cholera Outbreak - Jun 2026",
+    "source": "reliefweb",
+    "stable_key": "reliefweb:EP-2026-000107-CAF",
+    "title": "Central African Republic: Cholera Outbreak - Jun 2026",
+    "updated_at": "2026-06-26T00:00:00+00:00",
+    "url": "https://reliefweb.int/disaster/ep-2026-000107-caf"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
      "episode": null,
      "level": null
     }
@@ -5901,6 +8437,51 @@
     }
    ]
   },
+  "us6000t7m1": {
+   "alias_ids": [
+    "us6000t7m1"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000t7m1"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -25.9527,
+     "lon": 72.1132
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-06-17T00:06:54.681000+00:00",
+    "place": "Mid-Indian Ridge",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000t7m1",
+    "title": "M 4.7 - Mid-Indian Ridge",
+    "updated_at": "2026-07-09T01:08:37.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7m1"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us6000t7m8": {
    "alias_ids": [
     "us6000t7m8"
@@ -6377,7 +8958,7 @@
     "source": "usgs",
     "stable_key": "us6000t7zc",
     "title": "M 7.2 - 21 km ENE of San Felipe, Venezuela",
-    "updated_at": "2026-07-05T22:52:10.624000+00:00",
+    "updated_at": "2026-07-08T18:42:54.838000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc"
    },
    "level_history": [
@@ -6406,10 +8987,10 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 704,
+     "felt": 705,
      "mmi": 8.641,
      "pager_alert": "red",
-     "sig": 2612
+     "sig": 2613
     },
     "iso3": null,
     "mag_type": "mww",
@@ -6421,7 +9002,7 @@
     "source": "usgs",
     "stable_key": "us6000t7zp",
     "title": "M 7.5 - 20 km ESE of Yumare, Venezuela",
-    "updated_at": "2026-07-08T02:32:25.492000+00:00",
+    "updated_at": "2026-07-08T19:17:38.262000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp"
    },
    "level_history": [
@@ -6699,6 +9280,96 @@
     }
    ]
   },
+  "us6000t87x": {
+   "alias_ids": [
+    "us6000t87x"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000t87x"
+    ],
+    "geo": {
+     "depth_km": 9.158,
+     "lat": 3.504,
+     "lon": 128.4414
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-20T10:38:26.284000+00:00",
+    "place": "202 km NNE of Tobelo, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000t87x",
+    "title": "M 4.5 - 202 km NNE of Tobelo, Indonesia",
+    "updated_at": "2026-07-08T14:33:33.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t87x"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000t87z": {
+   "alias_ids": [
+    "us6000t87z"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000t87z"
+    ],
+    "geo": {
+     "depth_km": 76.318,
+     "lat": 5.4058,
+     "lon": 125.2035
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 326
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.6,
+    "occurred_at": "2026-06-20T12:56:16.422000+00:00",
+    "place": "24 km SW of Balangonan, Philippines",
+    "review_status": "reviewed",
+    "revision_signature": "4.6|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000t87z",
+    "title": "M 4.6 - 24 km SW of Balangonan, Philippines",
+    "updated_at": "2026-07-08T15:12:27.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t87z"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us6000t88d": {
    "alias_ids": [
     "us6000t88d"
@@ -6969,10 +9640,10 @@
   },
   "us6000t8ec": {
    "alias_ids": [
+    "atth8lhw",
     "pt26177001",
     "us6000t8ec",
-    "usauto6000t8ec",
-    "atth8lhw"
+    "usauto6000t8ec"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -6992,10 +9663,10 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 49,
+     "felt": 52,
      "mmi": 7.01,
      "pager_alert": "green",
-     "sig": 678
+     "sig": 680
     },
     "iso3": null,
     "mag_type": "mww",
@@ -7007,7 +9678,7 @@
     "source": "usgs",
     "stable_key": "us6000t8ec",
     "title": "M 6.5 - 34 km WSW of Sarangani, Philippines",
-    "updated_at": "2026-07-02T17:48:49.791000+00:00",
+    "updated_at": "2026-07-08T20:58:11.879000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8ec"
    },
    "level_history": [
@@ -7723,7 +10394,7 @@
     "source": "usgs",
     "stable_key": "us6000t8yt",
     "title": "M 5.5 - 218 km W of Bandon, Oregon",
-    "updated_at": "2026-07-07T11:45:38.109000+00:00",
+    "updated_at": "2026-07-08T11:45:41.220000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8yt"
    },
    "level_history": [
@@ -8357,8 +11028,8 @@
   },
   "us6000t9e1": {
    "alias_ids": [
-    "usauto6000t9e1",
-    "us6000t9e1"
+    "us6000t9e1",
+    "usauto6000t9e1"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -8391,7 +11062,7 @@
     "source": "usgs",
     "stable_key": "us6000t9e1",
     "title": "M 5.6 - 224 km S of Suva, Fiji",
-    "updated_at": "2026-07-02T11:10:49.634000+00:00",
+    "updated_at": "2026-07-08T16:25:12.186000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9e1"
    },
    "level_history": [
@@ -8642,28 +11313,28 @@
     ],
     "geo": {
      "depth_km": 259,
-     "lat": -16.9457,
-     "lon": -174.8243
+     "lat": -16.9598,
+     "lon": -174.8208
     },
     "glide": null,
     "hazard": "earthquake",
     "impact": {
      "felt": 1,
-     "mmi": 2.872,
+     "mmi": 2.87,
      "pager_alert": "green",
      "sig": 500
     },
     "iso3": null,
     "mag_type": "mww",
     "magnitude": 5.7,
-    "occurred_at": "2026-07-01T21:13:40.262000+00:00",
-    "place": "155 km SW of Hihifo, Tonga",
+    "occurred_at": "2026-07-01T21:13:40.196000+00:00",
+    "place": "156 km SW of Hihifo, Tonga",
     "review_status": "reviewed",
     "revision_signature": "5.7|reviewed",
     "source": "usgs",
     "stable_key": "us6000t9hu",
-    "title": "M 5.7 - 155 km SW of Hihifo, Tonga",
-    "updated_at": "2026-07-02T21:43:58.488000+00:00",
+    "title": "M 5.7 - 156 km SW of Hihifo, Tonga",
+    "updated_at": "2026-07-08T17:57:50.003000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9hu"
    },
    "level_history": [
@@ -9505,7 +12176,7 @@
     "source": "usgs",
     "stable_key": "us6000t9r5",
     "title": "M 6.2 - 58 km W of Tobelo, Indonesia",
-    "updated_at": "2026-07-04T02:51:31.131000+00:00",
+    "updated_at": "2026-07-08T16:32:46.085000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9r5"
    },
    "level_history": [
@@ -12058,7 +14729,7 @@
     "us6000taf3"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:gdacs:EQ:1550754",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12326,7 +14997,7 @@
     "us6000tai6"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
-   "incident": null,
+   "incident": "inc:gdacs:EQ:1550754",
    "latest": {
     "alert_level": null,
     "alias_ids": [
@@ -12503,8 +15174,8 @@
   },
   "us6000tal2": {
    "alias_ids": [
-    "usauto6000tal2",
-    "us6000tal2"
+    "us6000tal2",
+    "usauto6000tal2"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": "inc:gdacs:EQ:1550554",
@@ -12537,7 +15208,7 @@
     "source": "usgs",
     "stable_key": "us6000tal2",
     "title": "M 5.3 - Reykjanes Ridge",
-    "updated_at": "2026-07-07T06:13:04.040000+00:00",
+    "updated_at": "2026-07-08T12:37:51.040000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tal2"
    },
    "level_history": [
@@ -12549,8 +15220,8 @@
   },
   "us6000talg": {
    "alias_ids": [
-    "usauto6000talg",
-    "us6000talg"
+    "us6000talg",
+    "usauto6000talg"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": "inc:gdacs:EQ:1550568",
@@ -12583,7 +15254,7 @@
     "source": "usgs",
     "stable_key": "us6000talg",
     "title": "M 5.4 - 162 km NNW of Tobelo, Indonesia",
-    "updated_at": "2026-07-07T09:40:23.970000+00:00",
+    "updated_at": "2026-07-08T07:44:06.723000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000talg"
    },
    "level_history": [
@@ -12926,10 +15597,10 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 26,
+     "felt": 29,
      "mmi": null,
      "pager_alert": null,
-     "sig": 443
+     "sig": 445
     },
     "iso3": null,
     "mag_type": "mww",
@@ -12941,7 +15612,7 @@
     "source": "usgs",
     "stable_key": "us6000tarc",
     "title": "M 5.3 - 10 km WSW of Orotina, Costa Rica",
-    "updated_at": "2026-07-08T02:57:10.661000+00:00",
+    "updated_at": "2026-07-08T12:40:13.073000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tarc"
    },
    "level_history": [
@@ -12987,7 +15658,7 @@
     "source": "usgs",
     "stable_key": "us6000tary",
     "title": "M 5.3 - 95 km WSW of Labuan, Indonesia",
-    "updated_at": "2026-07-08T02:50:01.480000+00:00",
+    "updated_at": "2026-07-08T12:43:17.040000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tary"
    },
    "level_history": [
@@ -13033,7 +15704,7 @@
     "source": "usgs",
     "stable_key": "us6000tasa",
     "title": "M 4.9 - 88 km WNW of Hicks Bay, New Zealand",
-    "updated_at": "2026-07-07T23:01:56.922000+00:00",
+    "updated_at": "2026-07-08T21:02:48.285000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tasa"
    },
    "level_history": [
@@ -13108,7 +15779,7 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 2,
+     "felt": 4,
      "mmi": null,
      "pager_alert": null,
      "sig": 401
@@ -13123,7 +15794,7 @@
     "source": "usgs",
     "stable_key": "us6000tatd",
     "title": "M 5.1 - 13 km W of Changning, China",
-    "updated_at": "2026-07-08T01:22:34.300000+00:00",
+    "updated_at": "2026-07-08T12:57:10.040000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tatd"
    },
    "level_history": [
@@ -13307,6 +15978,556 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us6000tauv": {
+   "alias_ids": [
+    "usauto6000tauv",
+    "us6000tauv"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550718",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "usauto6000tauv",
+     "us6000tauv"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 71.1194,
+     "lon": -7.1298
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T04:21:46.738000+00:00",
+    "place": "61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tauv",
+    "title": "M 4.7 - 61 km ENE of Olonkinbyen, Svalbard and Jan Mayen",
+    "updated_at": "2026-07-08T04:33:21.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauv"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000tauz": {
+   "alias_ids": [
+    "us6000tauz"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550728",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000tauz"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -10.7092,
+     "lon": -74.7855
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": 1,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T05:00:32.411000+00:00",
+    "place": "25 km NNE of Santa Rosa, Peru",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tauz",
+    "title": "M 4.7 - 25 km NNE of Santa Rosa, Peru",
+    "updated_at": "2026-07-08T07:18:11.522000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tauz"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000tavs": {
+   "alias_ids": [
+    "us6000tavs"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550754",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000tavs"
+    ],
+    "geo": {
+     "depth_km": 58.199,
+     "lat": 40.1437,
+     "lon": 141.8982
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-08T07:35:51.628000+00:00",
+    "place": "8 km ENE of Noda, Japan",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tavs",
+    "title": "M 4.7 - 8 km ENE of Noda, Japan",
+    "updated_at": "2026-07-08T08:23:26.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tavs"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000tavx": {
+   "alias_ids": [
+    "us6000tavx"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550568",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000tavx"
+    ],
+    "geo": {
+     "depth_km": 141.091,
+     "lat": 1.8113,
+     "lon": 127.4396
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 354
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.8,
+    "occurred_at": "2026-07-08T08:36:06.960000+00:00",
+    "place": "64 km W of Tobelo, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tavx",
+    "title": "M 4.8 - 64 km W of Tobelo, Indonesia",
+    "updated_at": "2026-07-08T08:50:25.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tavx"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000taw2": {
+   "alias_ids": [
+    "us6000taw2"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000taw2"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -3.3267,
+     "lon": 145.092
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-05T05:37:11.133000+00:00",
+    "place": "140 km NE of Angoram, Papua New Guinea",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000taw2",
+    "title": "M 4.5 - 140 km NE of Angoram, Papua New Guinea",
+    "updated_at": "2026-07-08T09:18:05.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000taw2"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000taw8": {
+   "alias_ids": [
+    "us6000taw8"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000taw8"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -46.7232,
+     "lon": 96.1357
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-05T17:27:21.406000+00:00",
+    "place": "southeast Indian Ridge",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000taw8",
+    "title": "M 4.5 - southeast Indian Ridge",
+    "updated_at": "2026-07-08T09:32:42.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000taw8"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000tawe": {
+   "alias_ids": [
+    "usauto6000tawe",
+    "atthuoo3",
+    "us6000tawe"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550772",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "usauto6000tawe",
+     "atthuoo3",
+     "us6000tawe"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -20.2559,
+     "lon": 168.8353
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 3.86,
+     "pager_alert": "green",
+     "sig": 518
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.8,
+    "occurred_at": "2026-07-08T09:50:23.421000+00:00",
+    "place": "91 km SSW of Isangel, Vanuatu",
+    "review_status": "reviewed",
+    "revision_signature": "5.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tawe",
+    "title": "M 5.8 - 91 km SSW of Isangel, Vanuatu",
+    "updated_at": "2026-07-08T12:22:04.431000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawe"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us6000tawr": {
+   "alias_ids": [
+    "us6000tawr"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550780",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000tawr"
+    ],
+    "geo": {
+     "depth_km": 25.506,
+     "lat": -6.1834,
+     "lon": 150.91
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 385
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 5,
+    "occurred_at": "2026-07-08T11:23:04.023000+00:00",
+    "place": "110 km SE of Kimbe, Papua New Guinea",
+    "review_status": "reviewed",
+    "revision_signature": "5|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tawr",
+    "title": "M 5.0 - 110 km SE of Kimbe, Papua New Guinea",
+    "updated_at": "2026-07-08T11:42:36.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawr"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000tawt": {
+   "alias_ids": [
+    "usauto6000tawt",
+    "us6000tawt"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550772",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "usauto6000tawt",
+     "us6000tawt"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -20.3518,
+     "lon": 168.6887
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 416
+    },
+    "iso3": null,
+    "mag_type": "mwr",
+    "magnitude": 5.2,
+    "occurred_at": "2026-07-08T11:42:51.921000+00:00",
+    "place": "109 km SW of Isangel, Vanuatu",
+    "review_status": "reviewed",
+    "revision_signature": "5.2|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tawt",
+    "title": "M 5.2 - 109 km SW of Isangel, Vanuatu",
+    "updated_at": "2026-07-08T12:00:37.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tawt"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us6000taww": {
+   "alias_ids": [
+    "us6000taww"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550783",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "us6000taww"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -23.5549,
+     "lon": -174.9716
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 0,
+     "pager_alert": "green",
+     "sig": 449
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 5.4,
+    "occurred_at": "2026-07-08T12:18:59.673000+00:00",
+    "place": "245 km S of \u2018Ohonua, Tonga",
+    "review_status": "reviewed",
+    "revision_signature": "5.4|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000taww",
+    "title": "M 5.4 - 245 km S of \u2018Ohonua, Tonga",
+    "updated_at": "2026-07-08T16:52:19.950000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000taww"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us6000tay7": {
+   "alias_ids": [
+    "usauto6000tay7",
+    "us6000tay7"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550787",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "usauto6000tay7",
+     "us6000tay7"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -6.427,
+     "lon": 68.7
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 0,
+     "pager_alert": "green",
+     "sig": 432
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.3,
+    "occurred_at": "2026-07-08T13:01:10.891000+00:00",
+    "place": "Chagos Archipelago region",
+    "review_status": "reviewed",
+    "revision_signature": "5.3|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tay7",
+    "title": "M 5.3 - Chagos Archipelago region",
+    "updated_at": "2026-07-08T16:56:32.070000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tay7"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us6000tazy": {
+   "alias_ids": [
+    "us6000tazy"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550816",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us6000tazy"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 33.0578,
+     "lon": 47.3941
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-08T15:22:34.759000+00:00",
+    "place": "7 km NNW of \u0100bd\u0101n\u0101n, Iran",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us6000tazy",
+    "title": "M 4.5 - 7 km NNW of \u0100bd\u0101n\u0101n, Iran",
+    "updated_at": "2026-07-08T15:46:23.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tazy"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -14919,29 +18140,29 @@
      "usauto7000srxn"
     ],
     "geo": {
-     "depth_km": 2.608,
-     "lat": -49.7125,
-     "lon": 164.0611
+     "depth_km": 10,
+     "lat": -49.6503,
+     "lon": 164.0868
     },
     "glide": null,
     "hazard": "earthquake",
     "impact": {
      "felt": null,
-     "mmi": 3.555,
+     "mmi": 3.544,
      "pager_alert": "green",
      "sig": 554
     },
     "iso3": null,
     "mag_type": "mww",
     "magnitude": 6,
-    "occurred_at": "2026-06-10T00:44:19.256000+00:00",
+    "occurred_at": "2026-06-10T00:44:20.778000+00:00",
     "place": "Auckland Islands, New Zealand region",
     "review_status": "reviewed",
     "revision_signature": "6|reviewed",
     "source": "usgs",
     "stable_key": "us7000srxn",
     "title": "M 6.0 - Auckland Islands, New Zealand region",
-    "updated_at": "2026-07-01T23:06:39.487000+00:00",
+    "updated_at": "2026-07-08T22:28:51.474000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000srxn"
    },
    "level_history": [
@@ -15347,6 +18568,51 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us7000ss6x": {
+   "alias_ids": [
+    "us7000ss6x"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000ss6x"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 10.487,
+     "lon": -12.1972
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-06-11T09:04:56.004000+00:00",
+    "place": "16 km NW of Mamou, Guinea",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000ss6x",
+    "title": "M 4.7 - 16 km NW of Mamou, Guinea",
+    "updated_at": "2026-07-08T11:24:27.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ss6x"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -16213,9 +19479,9 @@
      "us7000ssnv"
     ],
     "geo": {
-     "depth_km": 41.492,
-     "lat": 53.0785,
-     "lon": -166.9697
+     "depth_km": 52.008,
+     "lat": 53.1458,
+     "lon": -167.0294
     },
     "glide": null,
     "hazard": "earthquake",
@@ -16228,14 +19494,14 @@
     "iso3": null,
     "mag_type": "mwr",
     "magnitude": 5,
-    "occurred_at": "2026-06-13T10:38:47.612000+00:00",
-    "place": "93 km SSW of Unalaska, Alaska",
+    "occurred_at": "2026-06-13T10:38:48.540000+00:00",
+    "place": "87 km SSW of Unalaska, Alaska",
     "review_status": "reviewed",
     "revision_signature": "5|reviewed",
     "source": "usgs",
     "stable_key": "us7000ssnv",
-    "title": "M 5.0 - 93 km SSW of Unalaska, Alaska",
-    "updated_at": "2026-07-05T10:48:55.940000+00:00",
+    "title": "M 5.0 - 87 km SSW of Unalaska, Alaska",
+    "updated_at": "2026-07-08T10:49:03.013000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ssnv"
    },
    "level_history": [
@@ -16247,8 +19513,8 @@
   },
   "us7000ssnz": {
    "alias_ids": [
-    "us7000ssnz",
-    "aka2026lpykmo"
+    "aka2026lpykmo",
+    "us7000ssnz"
    ],
    "first_seen": "2026-07-08T02:28:18.028074+00:00",
    "incident": null,
@@ -16281,7 +19547,7 @@
     "source": "usgs",
     "stable_key": "us7000ssnz",
     "title": "M 5.2 - 203 km WSW of Adak, Alaska",
-    "updated_at": "2026-07-05T11:34:59.800000+00:00",
+    "updated_at": "2026-07-08T11:35:08.671000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ssnz"
    },
    "level_history": [
@@ -16555,6 +19821,141 @@
     }
    ]
   },
+  "us7000ssyx": {
+   "alias_ids": [
+    "us7000ssyx"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000ssyx"
+    ],
+    "geo": {
+     "depth_km": 58.514,
+     "lat": 51.6207,
+     "lon": 158.5238
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 326
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.6,
+    "occurred_at": "2026-06-15T00:59:17.161000+00:00",
+    "place": "140 km E of Ozernovskiy, Russia",
+    "review_status": "reviewed",
+    "revision_signature": "4.6|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000ssyx",
+    "title": "M 4.6 - 140 km E of Ozernovskiy, Russia",
+    "updated_at": "2026-07-08T23:27:24.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ssyx"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000st08": {
+   "alias_ids": [
+    "us7000st08"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000st08"
+    ],
+    "geo": {
+     "depth_km": 185.505,
+     "lat": -22.0293,
+     "lon": -67.3384
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-15T05:24:51.095000+00:00",
+    "place": "130 km SE of Ollag\u00fce, Chile",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000st08",
+    "title": "M 4.5 - 130 km SE of Ollag\u00fce, Chile",
+    "updated_at": "2026-07-08T11:20:21.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000st08"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000st12": {
+   "alias_ids": [
+    "us7000st12"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000st12"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 17.4422,
+     "lon": -46.5623
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 354
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.8,
+    "occurred_at": "2026-06-15T08:02:32.356000+00:00",
+    "place": "northern Mid-Atlantic Ridge",
+    "review_status": "reviewed",
+    "revision_signature": "4.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000st12",
+    "title": "M 4.8 - northern Mid-Atlantic Ridge",
+    "updated_at": "2026-07-08T10:44:50.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000st12"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000st1c": {
    "alias_ids": [
     "us7000st1c",
@@ -16576,10 +19977,10 @@
     "glide": null,
     "hazard": "earthquake",
     "impact": {
-     "felt": 25,
+     "felt": 28,
      "mmi": 4.287,
      "pager_alert": "green",
-     "sig": 605
+     "sig": 607
     },
     "iso3": null,
     "mag_type": "mww",
@@ -16591,7 +19992,7 @@
     "source": "usgs",
     "stable_key": "us7000st1c",
     "title": "M 6.2 - 68 km ESE of Pondaguitan, Philippines",
-    "updated_at": "2026-07-06T15:39:43.219000+00:00",
+    "updated_at": "2026-07-08T21:13:16.622000+00:00",
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000st1c"
    },
    "level_history": [
@@ -16823,6 +20224,51 @@
     }
    ]
   },
+  "us7000std4": {
+   "alias_ids": [
+    "us7000std4"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000std4"
+    ],
+    "geo": {
+     "depth_km": 41.134,
+     "lat": 0.5489,
+     "lon": 126.5962
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 369
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.9,
+    "occurred_at": "2026-06-16T10:23:49.689000+00:00",
+    "place": "91 km WSW of Ternate, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.9|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000std4",
+    "title": "M 4.9 - 91 km WSW of Ternate, Indonesia",
+    "updated_at": "2026-07-08T09:34:12.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000std4"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000stdb": {
    "alias_ids": [
     "us7000stdb"
@@ -16863,6 +20309,96 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us7000stdf": {
+   "alias_ids": [
+    "us7000stdf"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000stdf"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -36.2962,
+     "lon": -82.8425
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 354
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.8,
+    "occurred_at": "2026-06-16T11:30:32.468000+00:00",
+    "place": "southeast central Pacific Ocean",
+    "review_status": "reviewed",
+    "revision_signature": "4.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000stdf",
+    "title": "M 4.8 - southeast central Pacific Ocean",
+    "updated_at": "2026-07-08T08:55:32.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000stdf"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000stdg": {
+   "alias_ids": [
+    "us7000stdg"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000stdg"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -1.1979,
+     "lon": 120.2873
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 354
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.8,
+    "occurred_at": "2026-06-16T11:03:51.794000+00:00",
+    "place": "56 km WNW of Poso, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000stdg",
+    "title": "M 4.8 - 56 km WNW of Poso, Indonesia",
+    "updated_at": "2026-07-08T09:16:31.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000stdg"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -17303,6 +20839,96 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us7000stlm": {
+   "alias_ids": [
+    "us7000stlm"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000stlm"
+    ],
+    "geo": {
+     "depth_km": 57.203,
+     "lat": 14.4168,
+     "lon": 122.7856
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-17T10:31:53.726000+00:00",
+    "place": "12 km NE of Luklukan, Philippines",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000stlm",
+    "title": "M 4.5 - 12 km NE of Luklukan, Philippines",
+    "updated_at": "2026-07-08T09:40:22.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000stlm"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000stm3": {
+   "alias_ids": [
+    "us7000stm3"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000stm3"
+    ],
+    "geo": {
+     "depth_km": 83.796,
+     "lat": 5.3277,
+     "lon": 125.1915
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 326
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.6,
+    "occurred_at": "2026-06-17T10:58:45.224000+00:00",
+    "place": "31 km WSW of Sarangani, Philippines",
+    "review_status": "reviewed",
+    "revision_signature": "4.6|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000stm3",
+    "title": "M 4.6 - 31 km WSW of Sarangani, Philippines",
+    "updated_at": "2026-07-08T09:50:40.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000stm3"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -18631,6 +22257,51 @@
     }
    ]
   },
+  "us7000su6s": {
+   "alias_ids": [
+    "us7000su6s"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000su6s"
+    ],
+    "geo": {
+     "depth_km": 48.253,
+     "lat": 6.5964,
+     "lon": 126.8425
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-06-17T21:49:27.117000+00:00",
+    "place": "64 km ESE of Bobon, Philippines",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000su6s",
+    "title": "M 4.7 - 64 km ESE of Bobon, Philippines",
+    "updated_at": "2026-07-09T01:14:58.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000su6s"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000su9f": {
    "alias_ids": [
     "us7000su9f",
@@ -19077,6 +22748,143 @@
     }
    ]
   },
+  "us7000suii": {
+   "alias_ids": [
+    "usauto7000suii",
+    "us7000suii"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "usauto7000suii",
+     "us7000suii"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 52.8032,
+     "lon": 161.0383
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 3.898,
+     "pager_alert": "green",
+     "sig": 518
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.8,
+    "occurred_at": "2026-06-19T07:52:57.678000+00:00",
+    "place": "164 km E of Petropavlovsk-Kamchatsky, Russia",
+    "review_status": "reviewed",
+    "revision_signature": "5.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suii",
+    "title": "M 5.8 - 164 km E of Petropavlovsk-Kamchatsky, Russia",
+    "updated_at": "2026-07-08T16:42:40.022000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suii"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us7000suij": {
+   "alias_ids": [
+    "us7000suij"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suij"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 52.6887,
+     "lon": 161.0186
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-19T07:48:55.579000+00:00",
+    "place": "166 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suij",
+    "title": "M 4.5 - 166 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "updated_at": "2026-07-08T12:37:36.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suij"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000suik": {
+   "alias_ids": [
+    "us7000suik"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suik"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 52.7246,
+     "lon": 161.0403
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 416
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 5.2,
+    "occurred_at": "2026-06-19T08:03:40.712000+00:00",
+    "place": "166 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "review_status": "reviewed",
+    "revision_signature": "5.2|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suik",
+    "title": "M 5.2 - 166 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "updated_at": "2026-07-08T13:13:15.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suik"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000sum3": {
    "alias_ids": [
     "us7000sum3"
@@ -19121,6 +22929,51 @@
     }
    ]
   },
+  "us7000sumg": {
+   "alias_ids": [
+    "us7000sumg"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sumg"
+    ],
+    "geo": {
+     "depth_km": 190.964,
+     "lat": -16.2685,
+     "lon": 167.937
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-06-15T21:20:43.203000+00:00",
+    "place": "58 km ESE of Lakatoro, Vanuatu",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sumg",
+    "title": "M 4.7 - 58 km ESE of Lakatoro, Vanuatu",
+    "updated_at": "2026-07-08T23:36:57.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sumg"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000suqu": {
    "alias_ids": [
     "us7000suqu"
@@ -19161,6 +23014,145 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us7000susb": {
+   "alias_ids": [
+    "usauto7000susb",
+    "us7000susb"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "usauto7000susb",
+     "us7000susb"
+    ],
+    "geo": {
+     "depth_km": 35,
+     "lat": 52.7287,
+     "lon": 160.6412
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 4.023,
+     "pager_alert": "green",
+     "sig": 518
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.8,
+    "occurred_at": "2026-06-20T03:49:06.278000+00:00",
+    "place": "140 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "review_status": "reviewed",
+    "revision_signature": "5.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000susb",
+    "title": "M 5.8 - 140 km ESE of Petropavlovsk-Kamchatsky, Russia",
+    "updated_at": "2026-07-08T14:55:24.737000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000susb"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us7000suti": {
+   "alias_ids": [
+    "us7000suti"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suti"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 34.7236,
+     "lon": 24.1051
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 369
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.9,
+    "occurred_at": "2026-06-20T09:31:08.196000+00:00",
+    "place": "12 km S of Kastr\u00ed, Greece",
+    "review_status": "reviewed",
+    "revision_signature": "4.9|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suti",
+    "title": "M 4.9 - 12 km S of Kastr\u00ed, Greece",
+    "updated_at": "2026-07-08T14:04:55.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suti"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000sutj": {
+   "alias_ids": [
+    "us7000sutj",
+    "usauto7000sutj"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sutj",
+     "usauto7000sutj"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 34.6999,
+     "lon": 24.1141
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": 10,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 419
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.2,
+    "occurred_at": "2026-06-20T09:37:24.186000+00:00",
+    "place": "15 km S of Kastr\u00ed, Greece",
+    "review_status": "reviewed",
+    "revision_signature": "5.2|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sutj",
+    "title": "M 5.2 - 15 km S of Kastr\u00ed, Greece",
+    "updated_at": "2026-07-08T14:19:21.411000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sutj"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -19249,6 +23241,141 @@
    "level_history": [
     {
      "at": "2026-07-08T02:28:18.028074+00:00",
+     "level": null
+    }
+   ]
+  },
+  "us7000suy3": {
+   "alias_ids": [
+    "us7000suy3"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suy3"
+    ],
+    "geo": {
+     "depth_km": 601.162,
+     "lat": -26.3201,
+     "lon": 178.2626
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 354
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.8,
+    "occurred_at": "2026-06-21T06:04:30.034000+00:00",
+    "place": "south of the Fiji Islands",
+    "review_status": "reviewed",
+    "revision_signature": "4.8|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suy3",
+    "title": "M 4.8 - south of the Fiji Islands",
+    "updated_at": "2026-07-08T15:32:09.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suy3"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000suy5": {
+   "alias_ids": [
+    "us7000suy5"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suy5"
+    ],
+    "geo": {
+     "depth_km": 115.612,
+     "lat": 2.3386,
+     "lon": 125.5355
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": 2,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-21T06:18:18.935000+00:00",
+    "place": "109 km NNE of Bitung, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suy5",
+    "title": "M 4.5 - 109 km NNE of Bitung, Indonesia",
+    "updated_at": "2026-07-08T15:35:35.220000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suy5"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000suy7": {
+   "alias_ids": [
+    "us7000suy7"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000suy7"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 24.2567,
+     "lon": -115.773
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 326
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.6,
+    "occurred_at": "2026-06-21T06:31:58.883000+00:00",
+    "place": "Off the coast of Baja California Sur, Mexico",
+    "review_status": "reviewed",
+    "revision_signature": "4.6|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000suy7",
+    "title": "M 4.6 - Off the coast of Baja California Sur, Mexico",
+    "updated_at": "2026-07-08T15:41:30.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000suy7"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
      "level": null
     }
    ]
@@ -19517,6 +23644,51 @@
     }
    ]
   },
+  "us7000sv66": {
+   "alias_ids": [
+    "us7000sv66"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": null,
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sv66"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 28.5309,
+     "lon": 130.4585
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-06-16T23:18:37.325000+00:00",
+    "place": "84 km E of Tatsug\u014d, Japan",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sv66",
+    "title": "M 4.5 - 84 km E of Tatsug\u014d, Japan",
+    "updated_at": "2026-07-09T00:38:51.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sv66"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
   "us7000sv7j": {
    "alias_ids": [
     "us7000sv7j"
@@ -19560,6 +23732,235 @@
      "level": null
     }
    ]
+  },
+  "us7000sz2b": {
+   "alias_ids": [
+    "usauto7000sz2b",
+    "us7000sz2b"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550840",
+   "latest": {
+    "alert_level": "green",
+    "alias_ids": [
+     "usauto7000sz2b",
+     "us7000sz2b"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": -61.7788,
+     "lon": 154.8869
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": 0,
+     "pager_alert": "green",
+     "sig": 465
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5.5,
+    "occurred_at": "2026-07-08T19:07:10.909000+00:00",
+    "place": "Balleny Islands region",
+    "review_status": "reviewed",
+    "revision_signature": "5.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sz2b",
+    "title": "M 5.5 - Balleny Islands region",
+    "updated_at": "2026-07-08T21:37:01.536000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz2b"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": "green"
+    }
+   ]
+  },
+  "us7000sz31": {
+   "alias_ids": [
+    "us7000sz31"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550851",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sz31"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 11.319,
+     "lon": 126.335
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 369
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.9,
+    "occurred_at": "2026-07-08T20:32:04.403000+00:00",
+    "place": "69 km NE of Sulangan, Philippines",
+    "review_status": "reviewed",
+    "revision_signature": "4.9|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sz31",
+    "title": "M 4.9 - 69 km NE of Sulangan, Philippines",
+    "updated_at": "2026-07-08T20:49:28.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz31"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000sz3z": {
+   "alias_ids": [
+    "us7000sz3z",
+    "usauto7000sz3z"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550669",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sz3z",
+     "usauto7000sz3z"
+    ],
+    "geo": {
+     "depth_km": 10,
+     "lat": 28.4707,
+     "lon": 104.7074
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": 1,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 385
+    },
+    "iso3": null,
+    "mag_type": "mww",
+    "magnitude": 5,
+    "occurred_at": "2026-07-08T23:44:13.741000+00:00",
+    "place": "1 km NNW of Xunchang, China",
+    "review_status": "reviewed",
+    "revision_signature": "5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sz3z",
+    "title": "M 5.0 - 1 km NNW of Xunchang, China",
+    "updated_at": "2026-07-09T00:22:18.663000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz3z"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000sz4p": {
+   "alias_ids": [
+    "us7000sz4p"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550675",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sz4p"
+    ],
+    "geo": {
+     "depth_km": 155.94,
+     "lat": 38.2486,
+     "lon": 74.0686
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 312
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.5,
+    "occurred_at": "2026-07-09T01:15:09.100000+00:00",
+    "place": "12 km NE of Murghob, Tajikistan",
+    "review_status": "reviewed",
+    "revision_signature": "4.5|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sz4p",
+    "title": "M 4.5 - 12 km NE of Murghob, Tajikistan",
+    "updated_at": "2026-07-09T01:24:18.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz4p"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
+  },
+  "us7000sz4q": {
+   "alias_ids": [
+    "us7000sz4q"
+   ],
+   "first_seen": "2026-07-09T01:40:32.058428+00:00",
+   "incident": "inc:gdacs:EQ:1550568",
+   "latest": {
+    "alert_level": null,
+    "alias_ids": [
+     "us7000sz4q"
+    ],
+    "geo": {
+     "depth_km": 35,
+     "lat": 1.4658,
+     "lon": 126.3353
+    },
+    "glide": null,
+    "hazard": "earthquake",
+    "impact": {
+     "felt": null,
+     "mmi": null,
+     "pager_alert": null,
+     "sig": 340
+    },
+    "iso3": null,
+    "mag_type": "mb",
+    "magnitude": 4.7,
+    "occurred_at": "2026-07-09T01:16:25.762000+00:00",
+    "place": "134 km E of Bitung, Indonesia",
+    "review_status": "reviewed",
+    "revision_signature": "4.7|reviewed",
+    "source": "usgs",
+    "stable_key": "us7000sz4q",
+    "title": "M 4.7 - 134 km E of Bitung, Indonesia",
+    "updated_at": "2026-07-09T01:33:37.040000+00:00",
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000sz4q"
+   },
+   "level_history": [
+    {
+     "at": "2026-07-09T01:40:32.058428+00:00",
+     "episode": null,
+     "level": null
+    }
+   ]
   }
  },
  "incidents": {
@@ -19592,9 +23993,13 @@
     "gdacs:EQ:1550568",
     "gdacs:EQ:1550615",
     "gdacs:EQ:1550684",
+    "gdacs:EQ:1550763",
+    "gdacs:EQ:1550874",
     "us6000talg",
     "us6000tant",
-    "us6000tau8"
+    "us6000tau8",
+    "us6000tavx",
+    "us7000sz4q"
    ],
    "methods": [
     "fuzzy"
@@ -19660,9 +24065,11 @@
     "gdacs:EQ:1550669",
     "gdacs:EQ:1550674",
     "gdacs:EQ:1550709",
+    "gdacs:EQ:1550868",
     "us6000tatd",
     "us6000tati",
-    "us6000taui"
+    "us6000taui",
+    "us7000sz3z"
    ],
    "methods": [
     "fuzzy"
@@ -19671,7 +24078,103 @@
   "inc:gdacs:EQ:1550675": {
    "members": [
     "gdacs:EQ:1550675",
-    "us6000tatn"
+    "gdacs:EQ:1550875",
+    "us6000tatn",
+    "us7000sz4p"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550718": {
+   "members": [
+    "gdacs:EQ:1550718",
+    "us6000tauv"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550728": {
+   "members": [
+    "gdacs:EQ:1550728",
+    "us6000tauz"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550754": {
+   "members": [
+    "gdacs:EQ:1550754",
+    "us6000taf3",
+    "us6000tai6",
+    "us6000tavs"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550772": {
+   "members": [
+    "gdacs:EQ:1550772",
+    "gdacs:EQ:1550781",
+    "us6000tawe",
+    "us6000tawt"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550780": {
+   "members": [
+    "gdacs:EQ:1550780",
+    "us6000tawr"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550783": {
+   "members": [
+    "gdacs:EQ:1550783",
+    "us6000taww"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550787": {
+   "members": [
+    "gdacs:EQ:1550787",
+    "us6000tay7"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550816": {
+   "members": [
+    "gdacs:EQ:1550816",
+    "us6000tazy"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550840": {
+   "members": [
+    "gdacs:EQ:1550840",
+    "us7000sz2b"
+   ],
+   "methods": [
+    "fuzzy"
+   ]
+  },
+  "inc:gdacs:EQ:1550851": {
+   "members": [
+    "gdacs:EQ:1550851",
+    "us7000sz31"
    ],
    "methods": [
     "fuzzy"
@@ -19822,17 +24325,17 @@
   "gdacs": {
    "consecutive_failures": 0,
    "last_error": null,
-   "last_success": "2026-07-08T03:29:15.198569+00:00"
+   "last_success": "2026-07-09T01:40:32.058428+00:00"
   },
   "reliefweb": {
    "consecutive_failures": 0,
    "last_error": null,
-   "last_success": "2026-07-08T03:29:15.198569+00:00"
+   "last_success": "2026-07-09T01:40:32.058428+00:00"
   },
   "usgs": {
    "consecutive_failures": 0,
    "last_error": null,
-   "last_success": "2026-07-08T03:29:15.198569+00:00"
+   "last_success": "2026-07-09T01:40:32.058428+00:00"
   }
  },
  "version": 2
