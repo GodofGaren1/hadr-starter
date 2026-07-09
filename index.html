@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HADR Monitor — three disaster feeds, one honest morning briefing</title>
+<meta name="description" content="An unattended agent that watches GDACS, USGS and ReliefWeb, and publishes a one-page disaster situation report every morning — and stays quiet when nothing changed.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1d21; --muted: #5c6570; --line: #e3e7eb; --card: #f6f8fa;
+    --accent: #0f62fe; --red: #c62828; --orange: #e65100; --green: #2e7d32;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --fg: #e6e9ec; --muted: #9aa4ae; --line: #2b3138; --card: #1c2126;
+      --accent: #6ea8ff; --red: #ef9a9a; --orange: #ffb74d; --green: #a5d6a7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 3.5rem 1.4rem 4rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .6rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.25rem; margin: 2.8rem 0 .7rem; letter-spacing: -.01em; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.6rem; max-width: 40em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .buttons { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.4rem 0 .6rem; }
+  .btn { display: inline-block; padding: .55rem 1.1rem; border-radius: 6px; font-weight: 600;
+    border: 1px solid var(--line); }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn.primary:hover { text-decoration: none; opacity: .9; }
+  .strip { color: var(--muted); font-size: .88rem; margin-bottom: 2.5rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 1rem 1.25rem; margin: 1rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .45rem 0; }
+  li strong { font-weight: 650; }
+  .quiet { color: var(--muted); }
+  .lvl-red { color: var(--red); font-weight: 650; }
+  .lvl-orange { color: var(--orange); font-weight: 650; }
+  .lvl-green { color: var(--green); font-weight: 650; }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>HADR Monitor</h1>
+<p class="tagline">Three disaster feeds. One honest morning briefing. Silence you
+can trust.</p>
+
+<div class="buttons">
+  <a class="btn primary" href="dashboard.html">View today's live report</a>
+  <a class="btn" href="prd.html">Read the design (PRD)</a>
+  <a class="btn" href="https://github.com/GodofGaren1/hadr-starter">Source on GitHub</a>
+</div>
+<p class="strip">Runs unattended on GitHub Actions · publishes by 08:30 Singapore
+time · every claim traceable to machine-recorded facts</p>
+
+<h2>What is this?</h2>
+<p>
+An autonomous monitoring agent for humanitarian assistance and disaster response
+(HADR). Every morning it reads three public sources — <strong>USGS</strong>
+(earthquake detection, minutes after the event), <strong>GDACS</strong> (the
+EU/UN impact model covering cyclones, floods, quakes, volcanoes, wildfires and
+droughts) and <strong>ReliefWeb</strong> (UN OCHA's curated disaster records) —
+merges their views of the same disasters into single incidents, and publishes a
+one-page situation report. When nothing significant changed overnight, it
+publishes nothing: the report you see is only ever news.
+</p>
+
+<h2>Why does it work this way?</h2>
+<p>
+Because the naive version of this tool is worse than useless. Watching disaster
+feeds sounds simple until you try it:
+</p>
+<ul>
+  <li><strong>The feeds are a firehose of noise.</strong> USGS alone lists
+  hundreds of earthquakes a day, almost all harmless. So this monitor never
+  triages on magnitude — it uses the humanitarian-impact signals the sources
+  themselves publish (USGS PAGER, GDACS alert colours: expected human
+  consequence, not physical size). A magnitude-7.5 in the deep ocean stays
+  <span class="lvl-green">green</span>; a shallow 6.0 under an unprepared city
+  goes <span class="lvl-red">red</span>.</li>
+  <li><strong>Disaster data is rewritten constantly.</strong> Magnitudes get
+  revised, alert levels upgraded days later, entire events deleted as false
+  triggers. This monitor keeps a ledger of what it has already told you, so an
+  upgrade becomes an <em>escalation</em> headline, a deletion becomes a printed
+  <em>retraction</em> — never a silent rewrite of history.</li>
+  <li><strong>Silence must mean something.</strong> A quiet dashboard is only
+  reassuring if a broken pipeline would look different from a calm world. Every
+  run commits proof-of-life state, failed feeds get named in a staleness banner
+  on the report, and the pipeline tests itself before every run.</li>
+</ul>
+<p>
+<strong>Where it's headed:</strong> richer ReliefWeb data once UN OCHA approves
+API access (the monitor reads its public RSS feed today), a Telegram channel
+that answers questions and pushes changed-morning headlines, and possibly
+official tsunami warnings (tsunami.gov) as a fourth source. The direction is
+always the same: fewer things to check, more reasons to trust the silence.
+</p>
+
+<h2>Who is it for, and what decision does it speed up?</h2>
+<p>
+Anyone who starts the day with the question <em>“did anything happen overnight
+that needs my attention?”</em> — a duty officer, a programme manager with teams
+in the field, a researcher tracking humanitarian crises, or anyone who would
+otherwise open three websites and try to reconcile them. The decision it speeds
+up is <strong>morning triage</strong>: in under two minutes you know what's new,
+what escalated, what was corrected, and what can safely be ignored — with a link
+to the primary source for every claim, so acting on it starts from evidence,
+not from a summary.
+</p>
+
+<h2>What it deliberately does <em>not</em> do</h2>
+<div class="card">
+<ul>
+  <li><strong>No conflict or epidemic monitoring.</strong> Its sources cover
+  natural hazards. A war will not appear here — pretending otherwise would be
+  false coverage, which is worse than a stated gap.</li>
+  <li><strong>No real-time paging.</strong> It is a daily briefing, not an
+  alarm. If minutes matter for your mission, you need a warning system, and
+  this page will not pretend to be one.</li>
+  <li><strong>No tsunami warnings.</strong> The earthquake feed's “tsunami”
+  flag does not mean a tsunami exists. Real warnings come from tsunami.gov —
+  so this monitor never uses the word unless a source that can issue one
+  does.</li>
+  <li><strong>No original judgments.</strong> Alert levels are USGS/GDACS
+  impact <em>estimates</em>, reported as such. The report's prose is generated,
+  but every statement must trace to a machine-recorded fact — the writing step
+  is forbidden from adding knowledge.</li>
+  <li><strong>No substitute for authorities.</strong> It links to sources and
+  never overrides national warning systems or official guidance.</li>
+  <li><strong>No completeness below its floor.</strong> Small events outside
+  the feeds' reliable coverage (roughly magnitude 4.5+ internationally) simply
+  are not in the data, and the monitor does not guess about them.</li>
+</ul>
+</div>
+
+<h2>How it earns trust</h2>
+<p class="quiet">
+A deterministic pipeline fetches, reconciles and triages; a language model is
+allowed to do exactly one thing — write the report's prose from a machine-produced
+facts file — and is never allowed to fetch data or decide whether anything
+happened. State is committed to a public git repository, so the monitor's entire
+memory and every report it has ever published are auditable, commit by commit.
+The <a href="prd.html">design document</a> spells out every rule above,
+including the ones that were hard to get right.
+</p>
+
+<footer>
+  HADR Monitor · built as a three-day agent-engineering course project ·
+  data: <a href="https://earthquake.usgs.gov">USGS</a> (public domain),
+  <a href="https://www.gdacs.org">GDACS</a> (CC BY 4.0, EC-JRC/UN OCHA),
+  <a href="https://reliefweb.int">ReliefWeb</a> (UN OCHA) ·
+  <a href="dashboard.html">live report</a> · <a href="prd.html">PRD</a> ·
+  <a href="https://github.com/GodofGaren1/hadr-starter">GitHub</a>
+</footer>
+
+</main>
+</body>
+</html>
